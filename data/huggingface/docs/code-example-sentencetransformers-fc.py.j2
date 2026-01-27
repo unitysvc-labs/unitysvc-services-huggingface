@@ -1,0 +1,55 @@
+import os
+import time
+import requests
+
+API_KEY = os.getenv("API_KEY")
+
+def sentence_similarity(
+    model_id: str,
+    source_sentence: str,
+    sentences: list[str],
+    retries: int = 5
+):
+    url = f"https://router.huggingface.co/models/{{offering.name}}"
+
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "inputs": {
+            "source_sentence": source_sentence,
+            "sentences": sentences
+        }
+    }
+
+    for _ in range(retries):
+        response = requests.post(url, headers=headers, json=payload)
+
+        if response.status_code == 503:
+            time.sleep(2)
+            continue
+
+        response.raise_for_status()
+        return response.json()
+
+    raise RuntimeError("Sentence similarity model not ready.")
+
+
+# ===== Example usage =====
+if __name__ == "__main__":
+    scores = sentence_similarity(
+        model_id="{{offering.name}}",
+        source_sentence="I love machine learning",
+        sentences=[
+            "I enjoy studying AI",
+            "The weather is nice today",
+            "Deep learning is fascinating"
+        ]
+    )
+
+    for s, score in zip(
+        ["AI", "Weather", "Deep Learning"], scores
+    ):
+        print(f"{s}: {score:.3f}")

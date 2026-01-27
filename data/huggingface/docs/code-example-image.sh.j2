@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Assumes API_KEY is already exported in the environment
+# export API_KEY="hf_..."
+
+python << 'PY'
+import os
+from huggingface_hub import InferenceClient
+
+client = InferenceClient(
+    provider="auto",
+    api_key=os.getenv("API_KEY"),
+)
+
+image = client.text_to_image(
+    prompt="A futuristic city at sunrise, ultra detailed",
+    model="{{offering.name}}",
+)
+
+output_file = "outputsh.png"
+image.save(output_file)
+print(f"Image successfully generated and saved as {output_file}")
+PY

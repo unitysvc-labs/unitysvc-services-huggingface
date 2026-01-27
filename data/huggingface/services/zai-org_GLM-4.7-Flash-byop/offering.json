@@ -1,0 +1,25 @@
+{
+  "currency": "USD",
+  "description": "Zai Org/Glm 4.7 Flash language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Zai Org/Glm 4.7 Flash",
+  "name": "zai-org/GLM-4.7-Flash",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.692Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

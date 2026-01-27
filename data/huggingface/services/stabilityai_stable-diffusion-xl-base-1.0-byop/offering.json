@@ -1,0 +1,27 @@
+{
+  "currency": "USD",
+  "description": "Stabilityai/Stable Diffusion Xl Base 1.0 language model",
+  "details": {
+    "litellm_provider": "nscale",
+    "mode": "image_generation",
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Stabilityai/Stable Diffusion Xl Base 1.0",
+  "name": "stabilityai/stable-diffusion-xl-base-1.0",
+  "schema": "offering_v1",
+  "service_type": "image_generation",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.744Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

@@ -1,0 +1,17 @@
+import os
+import requests
+
+API_KEY = os.getenv("API_KEY")
+
+response = requests.post(
+    "https://router.huggingface.co/v1/chat/completions",
+    headers={"Authorization": f"Bearer {API_KEY}"},
+    json={
+        "model": "{{offering.name}}",
+        "messages": [
+            {"role": "user", "content": "How many G's are in huggingface?"}
+        ]
+    },
+)
+
+print(response.json())

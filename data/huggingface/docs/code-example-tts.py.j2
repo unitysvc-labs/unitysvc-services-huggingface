@@ -1,0 +1,22 @@
+import os
+import requests
+
+API_KEY = os.getenv("API_KEY")
+
+url = f"https://router.huggingface.co/models/{{offering.name}}"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}"
+}
+
+payload = {
+    "inputs": "Hello world. This is text to speech from Hugging Face."
+}
+
+response = requests.post(url, headers=headers, json=payload)
+response.raise_for_status()
+
+with open("output.wav", "wb") as f:
+    f.write(response.content)
+
+print("Saved output.wav")

@@ -1,0 +1,25 @@
+{
+  "currency": "USD",
+  "description": "Dx8152/Qwen Image Edit 2511 Gaussian Splash language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Dx8152/Qwen Image Edit 2511 Gaussian Splash",
+  "name": "dx8152/Qwen-Image-Edit-2511-Gaussian-Splash",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.751Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "currency": "USD",
+  "description": "Qwen/Qwen Image Edit 2511 language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Qwen/Qwen Image Edit 2511",
+  "name": "Qwen/Qwen-Image-Edit-2511",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.742Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

@@ -1,0 +1,15 @@
+contact_email = "api-enterprise@huggingface.co"
+homepage = "https://huggingface.co/"
+name = "huggingface"
+display_name = "Hugging Face"
+schema = "provider_v1"
+status = "ready"
+terms_of_service = "https://huggingface.co/terms-of-service"
+time_created = "2025-09-08T00:00:00Z"
+
+[services_populator]
+command = ['scripts/update_services.py']
+requirements = ['any-llm-sdk[huggingface]', 'requests', 'unitysvc-services']
+
+[services_populator.envs]
+# API key should be provided via HF_TOKEN environment variable

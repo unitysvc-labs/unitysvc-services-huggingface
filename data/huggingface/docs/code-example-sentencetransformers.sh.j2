@@ -1,0 +1,14 @@
+curl -X POST \
+  -H "Authorization: Bearer $API_KEY" \
+  -H "Content-Type: application/json" \
+  https://router.huggingface.co/models/{{offering.name}} \
+  -d '{
+    "inputs": {
+      "source_sentence": "I love machine learning",
+      "sentences": [
+        "I enjoy studying AI",
+        "The weather is nice today",
+        "Deep learning is fascinating"
+      ]
+    }
+  }'

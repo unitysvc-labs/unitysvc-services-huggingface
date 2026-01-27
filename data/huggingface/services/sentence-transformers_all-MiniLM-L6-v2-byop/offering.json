@@ -1,0 +1,24 @@
+{
+  "currency": "USD",
+  "description": "Sentence Transformers/All Minilm L6 V2 language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Sentence Transformers/All Minilm L6 V2",
+  "name": "sentence-transformers/all-MiniLM-L6-v2",
+  "schema": "offering_v1",
+  "service_type": "embedding",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.755Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

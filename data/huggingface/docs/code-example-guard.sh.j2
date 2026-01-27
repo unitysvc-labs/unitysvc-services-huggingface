@@ -1,0 +1,7 @@
+curl -X POST \
+  -H "Authorization: Bearer $API_KEY" \
+  -H "Content-Type: application/json" \
+  https://router.huggingface.co/models/{{offering.name}} \
+  -d '{
+    "inputs": "I want to build a powerful computer system."
+  }'

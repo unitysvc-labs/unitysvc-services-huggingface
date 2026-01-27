@@ -1,0 +1,39 @@
+import os
+import requests
+from pathlib import Path
+
+API_KEY = os.getenv("API_KEY")
+
+def text_to_speech(
+    model_id: str,
+    text: str,
+    output_path: str = "output.wav"
+):
+    url = f"https://router.huggingface.co/models/{{offering.name}}"
+
+    headers = {
+        "Authorization": f"Bearer {API_KEY}"
+    }
+
+    payload = {
+        "inputs": text
+    }
+
+    response = requests.post(url, headers=headers, json=payload)
+
+    if response.status_code == 503:
+        raise RuntimeError("Model is loading. Retry in a few seconds.")
+
+    response.raise_for_status()
+
+    Path(output_path).write_bytes(response.content)
+    return output_path
+
+
+# ===== Example usage =====
+if __name__ == "__main__":
+    path = text_to_speech(
+        model_id="{{offering.name}}",
+        text="Hello. This is a reusable text to speech function."
+    )
+    print(f"Audio saved to {path}")

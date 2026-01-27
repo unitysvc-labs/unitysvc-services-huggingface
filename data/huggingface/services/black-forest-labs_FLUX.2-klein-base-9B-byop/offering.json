@@ -1,0 +1,24 @@
+{
+  "currency": "USD",
+  "description": "Black Forest Labs/Flux.2 Klein Base 9B language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Black Forest Labs/Flux.2 Klein Base 9B",
+  "name": "black-forest-labs/FLUX.2-klein-base-9B",
+  "schema": "offering_v1",
+  "service_type": "image_generation",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.753Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

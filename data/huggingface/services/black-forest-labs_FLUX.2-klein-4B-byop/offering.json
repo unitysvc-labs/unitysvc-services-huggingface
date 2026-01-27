@@ -1,0 +1,25 @@
+{
+  "currency": "USD",
+  "description": "Black Forest Labs/Flux.2 Klein 4B language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Black Forest Labs/Flux.2 Klein 4B",
+  "name": "black-forest-labs/FLUX.2-klein-4B",
+  "schema": "offering_v1",
+  "service_type": "image_generation",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-01-26T02:53:59.735Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

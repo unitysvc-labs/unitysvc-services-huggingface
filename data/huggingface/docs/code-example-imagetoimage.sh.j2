@@ -1,0 +1,7 @@
+curl -X POST \
+  -H "Authorization: Bearer $API_KEY" \
+  -F "image=@input.png" \
+  -F 'prompt=Turn this into a cinematic cyberpunk scene' \
+  -F 'strength=0.6' \
+  https://router.huggingface.co/models/{{offering.name}} \
+  --output output.png

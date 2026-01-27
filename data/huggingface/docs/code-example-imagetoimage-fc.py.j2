@@ -1,0 +1,52 @@
+import os
+import time
+import requests
+from pathlib import Path
+
+API_KEY = os.getenv("API_KEY")
+
+def image_to_image(
+    model_id: str,
+    image_path: str,
+    prompt: str,
+    output_path: str = "output.png",
+    strength: float = 0.6,
+    retries: int = 5
+):
+    url = f"https://router.huggingface.co/models/{{offering.name}}"
+
+    headers = {
+        "Authorization": f"Bearer {API_KEY}"
+    }
+
+    for _ in range(retries):
+        with open(image_path, "rb") as img:
+            response = requests.post(
+                url,
+                headers=headers,
+                files={"image": img},
+                data={
+                    "prompt": prompt,
+                    "strength": strength
+                }
+            )
+
+        if response.status_code == 503:
+            time.sleep(3)
+            continue
+
+        response.raise_for_status()
+        Path(output_path).write_bytes(response.content)
+        return output_path
+
+    raise RuntimeError("Model did not become ready in time.")
+
+
+# ===== Example usage =====
+if __name__ == "__main__":
+    path = image_to_image(
+        model_id="{{offering.name}}",
+        image_path="input.png",
+        prompt="Turn this into a cinematic cyberpunk scene"
+    )
+    print(f"Image saved to {path}")
