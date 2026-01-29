@@ -2,8 +2,6 @@
   "currency": "USD",
   "description": "Stabilityai/Stable Diffusion Xl Base 1.0 language model",
   "details": {
-    "litellm_provider": "nscale",
-    "mode": "image_generation",
     "object": "model",
     "owned_by": "huggingface"
   },

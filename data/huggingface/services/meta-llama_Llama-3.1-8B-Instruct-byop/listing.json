@@ -34,13 +34,7 @@
       "mime_type": "bash"
     }
   },
-  "list_price": {
-    "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.03",
-    "output": "0.03",
-    "reference": null,
-    "type": "one_million_tokens"
-  },
+  "list_price": null,
   "schema": "listing_v1",
   "service_options": {
     "default_parameters": {

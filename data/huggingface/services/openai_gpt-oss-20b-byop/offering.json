@@ -2,24 +2,11 @@
   "currency": "USD",
   "description": "Openai/Gpt Oss 20B language model",
   "details": {
-    "contextLength": 131072,
-    "litellm_provider": "deepinfra",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
-    "mode": "chat",
     "object": "model",
     "owned_by": "huggingface"
   },
   "display_name": "Openai/Gpt Oss 20B",
   "name": "openai/gpt-oss-20b",
-  "payout_price": {
-    "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.04",
-    "output": "0.15",
-    "reference": null,
-    "type": "one_million_tokens"
-  },
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "ready",
