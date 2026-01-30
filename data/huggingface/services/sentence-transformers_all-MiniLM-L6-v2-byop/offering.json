@@ -8,7 +8,7 @@
   "display_name": "Sentence Transformers/All Minilm L6 V2",
   "name": "sentence-transformers/all-MiniLM-L6-v2",
   "schema": "offering_v1",
-  "service_type": "embedding",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "byop"
@@ -17,7 +17,8 @@
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
-      "base_url": "https://api-inference.huggingface.co/",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/models/",
       "rate_limits": []
     }
   }

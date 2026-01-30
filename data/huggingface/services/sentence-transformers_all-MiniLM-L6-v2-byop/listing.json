@@ -1,10 +1,17 @@
 {
   "currency": "USD",
   "documents": {
+    "How to use this model": {
+      "category": "getting_started",
+      "file_path": "../../docs/description.md",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "markdown"
+    },
     "JavaScript code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example-sentencetransformers.js.j2",
+      "file_path": "../../docs/code-example.js.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "javascript"
@@ -12,7 +19,15 @@
     "Python code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example-sentencetransformers.py.j2",
+      "file_path": "../../docs/code-example.py.j2",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "python"
+    },
+    "Python function calling code example": {
+      "category": "code_example",
+      "description": "Example code to use the model",
+      "file_path": "../../docs/code-example-fc.py.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "python"
@@ -20,17 +35,16 @@
     "cURL code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example-sentencetransformers.sh.j2",
+      "file_path": "../../docs/code-example.sh.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "bash"
     }
   },
-  "list_price": null,
   "schema": "listing_v1",
   "service_options": {
     "default_parameters": {
-      "apikey": "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"
+      "api_key": "${ secrets.HF_TOKEN }"
     }
   },
   "status": "ready",
@@ -44,26 +58,22 @@
   "user_parameters_schema": {
     "description": "Access service with your own api-key",
     "properties": {
-      "apikey": {
+      "api_key": {
         "default": "",
         "title": "API Key",
         "type": "string"
       }
     },
     "required": [
-      "apikey"
+      "api_key"
     ],
     "title": "Be Your Own Provider",
     "type": "object"
   },
   "user_parameters_ui_schema": {
-    "apikey": {
-      "ui:autocomplete": "family-name",
-      "ui:autofocus": true,
-      "ui:description": "API Key known as HF_TOKEN",
-      "ui:emptyValue": "",
-      "ui:enableMarkdownInDescription": false,
-      "ui:placeholder": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    "api_key": {
+      "ui:description": "API Key (HF_TOKEN) is managed via secrets",
+      "ui:disabled": true
     }
   }
 }

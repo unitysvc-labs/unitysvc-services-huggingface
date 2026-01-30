@@ -1,19 +1,19 @@
 {
   "currency": "USD",
-  "description": "Zai Org/Glm Image language model",
+  "description": "Tencent/Hunyuanimage 3.0 Instruct language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Zai Org/Glm Image",
-  "name": "zai-org/GLM-Image",
+  "display_name": "Tencent/Hunyuanimage 3.0 Instruct",
+  "name": "tencent/HunyuanImage-3.0-Instruct",
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "ready",
   "tags": [
     "byop"
   ],
-  "time_created": "2026-01-26T02:53:59.736Z",
+  "time_created": "2026-01-30T03:03:50.327480Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
