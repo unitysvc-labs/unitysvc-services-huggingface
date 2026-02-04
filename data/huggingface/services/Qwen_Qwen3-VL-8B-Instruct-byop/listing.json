@@ -41,13 +41,6 @@
       "mime_type": "bash"
     }
   },
-  "list_price": {
-    "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.44999999999999996",
-    "output": "2",
-    "reference": null,
-    "type": "one_million_tokens"
-  },
   "schema": "listing_v1",
   "service_options": {
     "default_parameters": {
@@ -55,7 +48,7 @@
     }
   },
   "status": "ready",
-  "time_created": "2026-01-26T02:53:59.737Z",
+  "time_created": "2026-02-04T03:05:15.616901Z",
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",

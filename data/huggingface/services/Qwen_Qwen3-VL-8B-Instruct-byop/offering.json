@@ -1,0 +1,25 @@
+{
+  "currency": "USD",
+  "description": "Qwen/Qwen3 Vl 8B Instruct language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Qwen/Qwen3 Vl 8B Instruct",
+  "name": "Qwen/Qwen3-VL-8B-Instruct",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "byop"
+  ],
+  "time_created": "2026-02-04T03:05:15.616796Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ secrets.HF_TOKEN }",
+      "base_url": "https://api-inference.huggingface.co/models/",
+      "rate_limits": []
+    }
+  }
+}
