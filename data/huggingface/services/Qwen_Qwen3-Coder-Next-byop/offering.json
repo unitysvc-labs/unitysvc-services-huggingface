@@ -1,19 +1,19 @@
 {
   "currency": "USD",
-  "description": "Hexgrad/Kokoro 82M language model",
+  "description": "Qwen/Qwen3 Coder Next language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Hexgrad/Kokoro 82M",
-  "name": "hexgrad/Kokoro-82M",
+  "display_name": "Qwen/Qwen3 Coder Next",
+  "name": "Qwen/Qwen3-Coder-Next",
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "ready",
   "tags": [
     "byop"
   ],
-  "time_created": "2026-01-26T02:53:59.747Z",
+  "time_created": "2026-02-05T03:06:36.245772Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
