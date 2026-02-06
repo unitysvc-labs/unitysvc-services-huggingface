@@ -9,7 +9,7 @@
   "name": "black-forest-labs/FLUX.2-klein-base-9B",
   "schema": "offering_v1",
   "service_type": "image_generation",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "byop"
   ],

@@ -9,7 +9,7 @@
   "name": "zai-org/GLM-Image",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "byop"
   ],

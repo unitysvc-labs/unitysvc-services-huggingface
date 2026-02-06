@@ -9,7 +9,7 @@
   "name": "fal/flux-2-klein-4B-outpaint-lora",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "byop"
   ],

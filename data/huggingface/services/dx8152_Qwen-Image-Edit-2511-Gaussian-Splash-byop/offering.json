@@ -9,7 +9,7 @@
   "name": "dx8152/Qwen-Image-Edit-2511-Gaussian-Splash",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "byop"
   ],

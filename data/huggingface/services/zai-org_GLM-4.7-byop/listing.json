@@ -43,7 +43,7 @@
   },
   "list_price": {
     "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.39999999999999997",
+    "input": "0.44999999999999996",
     "output": "2",
     "reference": null,
     "type": "one_million_tokens"

@@ -10,7 +10,7 @@
   "display_name": "Stabilityai/Stable Diffusion Xl Base 1.0",
   "name": "stabilityai/stable-diffusion-xl-base-1.0",
   "schema": "offering_v1",
-  "service_type": "image_generation",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "byop"
@@ -20,7 +20,7 @@
     "Hugging Face API": {
       "access_method": "http",
       "api_key": "${ secrets.HF_TOKEN }",
-      "base_url": "https://api-inference.huggingface.co/",
+      "base_url": "https://api-inference.huggingface.co/models/",
       "rate_limits": []
     }
   }

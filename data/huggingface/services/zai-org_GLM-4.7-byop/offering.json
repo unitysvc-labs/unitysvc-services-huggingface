@@ -2,11 +2,11 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4.7 language model",
   "details": {
-    "contextLength": 202752,
-    "litellm_provider": "gmi",
-    "max_input_tokens": 202752,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
+    "contextLength": 200000,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 200000,
+    "max_tokens": 200000,
     "mode": "chat",
     "object": "model",
     "owned_by": "huggingface"
@@ -15,7 +15,7 @@
   "name": "zai-org/GLM-4.7",
   "payout_price": {
     "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.39999999999999997",
+    "input": "0.44999999999999996",
     "output": "2",
     "reference": null,
     "type": "one_million_tokens"

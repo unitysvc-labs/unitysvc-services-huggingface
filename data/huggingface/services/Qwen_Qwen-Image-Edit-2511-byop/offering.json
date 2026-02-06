@@ -9,7 +9,7 @@
   "name": "Qwen/Qwen-Image-Edit-2511",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "byop"
   ],
