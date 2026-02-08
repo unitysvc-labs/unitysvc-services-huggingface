@@ -29,7 +29,7 @@
   "list_price": null,
   "schema": "listing_v1",
   "service_options": {
-    "default_parameters": {
+    "ops_testing_parameters": {
       "apikey": "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"
     }
   },
@@ -50,9 +50,7 @@
         "type": "string"
       }
     },
-    "required": [
-      "apikey"
-    ],
+    "required": ["apikey"],
     "title": "Be Your Own Provider",
     "type": "object"
   },

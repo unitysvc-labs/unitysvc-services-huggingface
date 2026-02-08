@@ -37,7 +37,7 @@
   "list_price": null,
   "schema": "listing_v1",
   "service_options": {
-    "default_parameters": {
+    "ops_testing_parameters": {
       "api_key": "${ secrets.HF_TOKEN }"
     }
   },
@@ -58,9 +58,7 @@
         "type": "string"
       }
     },
-    "required": [
-      "api_key"
-    ],
+    "required": ["api_key"],
     "title": "Be Your Own Provider",
     "type": "object"
   },

@@ -19,7 +19,6 @@
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
-      "api_key": "${ secrets.HF_TOKEN }",
       "base_url": "https://api-inference.huggingface.co/models/",
       "rate_limits": []
     }
