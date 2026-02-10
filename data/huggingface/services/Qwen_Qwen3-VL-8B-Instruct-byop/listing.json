@@ -48,13 +48,13 @@
     }
   },
   "status": "ready",
-  "time_created": "2026-01-26T02:53:59.749Z",
+  "time_created": "2026-02-10T04:37:33.287597Z",
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
       "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
       "routing_key": {
-        "model": "black-forest-labs/FLUX.2-dev"
+        "model": "Qwen/Qwen3-VL-8B-Instruct"
       }
     }
   },

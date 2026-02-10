@@ -1,21 +1,19 @@
 {
   "currency": "USD",
-  "description": "Stabilityai/Stable Diffusion Xl Base 1.0 language model",
+  "description": "Qwen/Qwen3 Vl 8B Instruct language model",
   "details": {
-    "litellm_provider": "nscale",
-    "mode": "image_generation",
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Stabilityai/Stable Diffusion Xl Base 1.0",
-  "name": "stabilityai/stable-diffusion-xl-base-1.0",
+  "display_name": "Qwen/Qwen3 Vl 8B Instruct",
+  "name": "Qwen/Qwen3-VL-8B-Instruct",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "byop"
   ],
-  "time_created": "2026-01-26T02:53:59.744Z",
+  "time_created": "2026-02-10T04:37:33.287370Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",

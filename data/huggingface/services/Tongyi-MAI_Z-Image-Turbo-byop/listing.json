@@ -52,7 +52,10 @@
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
-      "base_url": "${GATEWAY_BASE_URL}/p/huggingface"
+      "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
+      "routing_key": {
+        "model": "Tongyi-MAI/Z-Image-Turbo"
+      }
     }
   },
   "user_parameters_schema": {

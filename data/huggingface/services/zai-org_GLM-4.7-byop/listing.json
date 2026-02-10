@@ -59,7 +59,10 @@
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
-      "base_url": "${GATEWAY_BASE_URL}/p/huggingface"
+      "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
+      "routing_key": {
+        "model": "zai-org/GLM-4.7"
+      }
     }
   },
   "user_parameters_schema": {
