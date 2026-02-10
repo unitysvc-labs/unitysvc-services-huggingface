@@ -30,7 +30,7 @@
   "schema": "listing_v1",
   "service_options": {
     "ops_testing_parameters": {
-      "apikey": "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"
+      "api_key": "${ secret.HF_API_KEY }"
     }
   },
   "status": "ready",
@@ -44,18 +44,18 @@
   "user_parameters_schema": {
     "description": "Access service with your own api-key",
     "properties": {
-      "apikey": {
+      "api_key": {
         "default": "",
         "title": "API Key",
         "type": "string"
       }
     },
-    "required": ["apikey"],
+    "required": ["api_key"],
     "title": "Be Your Own Provider",
     "type": "object"
   },
   "user_parameters_ui_schema": {
-    "apikey": {
+    "api_key": {
       "ui:autocomplete": "family-name",
       "ui:autofocus": true,
       "ui:description": "API Key known as HF_TOKEN",
