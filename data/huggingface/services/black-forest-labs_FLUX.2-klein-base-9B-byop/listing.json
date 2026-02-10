@@ -30,7 +30,7 @@
   "schema": "listing_v1",
   "service_options": {
     "ops_testing_parameters": {
-      "api_key": "${ secret.HF_API_KEY }"
+      "api_key": "${ secrets.HF_TOKEN }"
     }
   },
   "status": "ready",
