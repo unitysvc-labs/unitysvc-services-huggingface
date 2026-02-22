@@ -1,17 +1,21 @@
 {
   "currency": "USD",
-  "description": "Alissonerdx/Bfs Best Face Swap language model",
+  "description": "Stepfun Ai/Step 3.5 Flash language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Alissonerdx/Bfs Best Face Swap",
-  "name": "Alissonerdx/BFS-Best-Face-Swap",
+  "display_name": "Stepfun Ai/Step 3.5 Flash",
+  "name": "stepfun-ai/Step-3.5-Flash",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
-  "tags": ["byok"],
-  "time_created": "2026-01-27T05:28:04.113Z",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-02-22T06:13:30.927284Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",

@@ -56,13 +56,13 @@
     }
   },
   "status": "ready",
-  "time_created": "2026-01-26T02:53:59.744Z",
+  "time_created": "2026-02-22T06:13:30.927746Z",
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
       "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
       "routing_key": {
-        "model": "stabilityai/stable-diffusion-xl-base-1.0"
+        "model": "stepfun-ai/Step-3.5-Flash"
       }
     }
   },

@@ -10,9 +10,7 @@
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "deprecated",
-  "tags": [
-    "byop"
-  ],
+  "tags": ["byok"],
   "time_created": "2026-01-26T02:53:59.751Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {

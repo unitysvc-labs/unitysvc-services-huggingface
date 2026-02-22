@@ -1,17 +1,21 @@
 {
   "currency": "USD",
-  "description": "Alissonerdx/Bfs Best Face Swap language model",
+  "description": "Baai/Bge M3 language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Alissonerdx/Bfs Best Face Swap",
-  "name": "Alissonerdx/BFS-Best-Face-Swap",
+  "display_name": "Baai/Bge M3",
+  "name": "BAAI/bge-m3",
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "deprecated",
-  "tags": ["byok"],
-  "time_created": "2026-01-27T05:28:04.113Z",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-02-18T23:17:13.895407Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
