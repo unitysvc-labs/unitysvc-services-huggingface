@@ -1,21 +1,21 @@
 {
   "currency": "USD",
-  "description": "Black Forest Labs/Flux.1 Dev language model",
+  "description": "Qwen/Qwen3.5 397B A17B language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Black Forest Labs/Flux.1 Dev",
-  "name": "black-forest-labs/FLUX.1-dev",
+  "display_name": "Qwen/Qwen3.5 397B A17B",
+  "name": "Qwen/Qwen3.5-397B-A17B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",
     "byok"
   ],
-  "time_created": "2026-01-26T02:53:59.745Z",
+  "time_created": "2026-02-22T03:09:26.795930Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
