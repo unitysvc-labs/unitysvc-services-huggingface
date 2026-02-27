@@ -40,7 +40,6 @@ Thumbs.db
 
 # Test outputs
 *.env
-failed_*
 *.log
 *.out
 *.err
@@ -51,3 +50,4 @@ failed_*
 *.pem
 *.key
 *override.json
+failed*
