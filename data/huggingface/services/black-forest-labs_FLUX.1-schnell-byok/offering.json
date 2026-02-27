@@ -1,21 +1,23 @@
 {
   "currency": "USD",
-  "description": "Tongyi Mai/Z Image language model",
+  "description": "Black Forest Labs/Flux.1 Schnell language model",
   "details": {
+    "litellm_provider": "nscale",
+    "mode": "image_generation",
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Tongyi Mai/Z Image",
-  "name": "Tongyi-MAI/Z-Image",
+  "display_name": "Black Forest Labs/Flux.1 Schnell",
+  "name": "black-forest-labs/FLUX.1-schnell",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",
     "byok"
   ],
-  "time_created": "2026-01-31T17:45:20.614717Z",
+  "time_created": "2026-02-27T05:08:04.937547Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
