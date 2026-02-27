@@ -38,7 +38,7 @@ jobs:
           echo "## Upload Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Uploaded to Backend" >> $GITHUB_STEP_SUMMARY
-          echo "- Backend URL: \`${{ secrets.SERVICE_BASE_URL }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Backend URL: \`${{ secrets.UNITYSVC_API_URL }}\`" >> $GITHUB_STEP_SUMMARY
           echo "- Triggered by PR: #${{ github.event.pull_request.number }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Upload Details" >> $GITHUB_STEP_SUMMARY
