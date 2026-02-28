@@ -49,6 +49,13 @@
       "mime_type": "bash"
     }
   },
+  "list_price": {
+    "description": "Pricing Per 1M Tokens Input/Output",
+    "input": "0.7",
+    "output": "2.4",
+    "reference": null,
+    "type": "one_million_tokens"
+  },
   "schema": "listing_v1",
   "service_options": {
     "ops_testing_parameters": {
@@ -56,13 +63,13 @@
     }
   },
   "status": "ready",
-  "time_created": "2026-01-27T05:28:04.113Z",
+  "time_created": "2026-02-28T02:55:26.619414Z",
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
       "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
       "routing_key": {
-        "model": "Alissonerdx/BFS-Best-Face-Swap"
+        "model": "deepseek-ai/DeepSeek-R1"
       }
     }
   },

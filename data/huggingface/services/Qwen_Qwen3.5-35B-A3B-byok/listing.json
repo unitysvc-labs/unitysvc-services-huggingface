@@ -56,13 +56,13 @@
     }
   },
   "status": "ready",
-  "time_created": "2026-01-27T05:28:04.113Z",
+  "time_created": "2026-02-28T02:55:26.610094Z",
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
       "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
       "routing_key": {
-        "model": "Alissonerdx/BFS-Best-Face-Swap"
+        "model": "Qwen/Qwen3.5-35B-A3B"
       }
     }
   },
