@@ -18,7 +18,7 @@ functions = [
 ]
 
 response = requests.post(
-    "https://router.huggingface.co/v1/chat/completions",
+    f"{os.getenv('SERVICE_BASE_URL')}/chat/completions",
     headers={"Authorization": f"Bearer {UNITYSVC_API_KEY}"},
     json={
         "model": "{{offering.name}}",

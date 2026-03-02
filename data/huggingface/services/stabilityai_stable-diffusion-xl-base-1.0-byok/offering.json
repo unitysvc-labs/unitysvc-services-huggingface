@@ -21,7 +21,7 @@
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
-      "base_url": "https://api-inference.huggingface.co/models/",
+      "base_url": "https://router.huggingface.co/v1",
       "rate_limits": []
     }
   }

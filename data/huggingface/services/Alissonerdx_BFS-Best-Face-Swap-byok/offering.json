@@ -9,13 +9,17 @@
   "name": "Alissonerdx/BFS-Best-Face-Swap",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
-  "tags": ["byok"],
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
   "time_created": "2026-01-27T05:28:04.113Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
-      "base_url": "https://api-inference.huggingface.co/models/",
+      "base_url": "https://router.huggingface.co/v1",
       "rate_limits": []
     }
   }
