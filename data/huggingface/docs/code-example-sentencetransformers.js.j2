@@ -1,0 +1,30 @@
+const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
+const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+
+const response = await fetch(
+  `${SERVICE_BASE_URL}/models/{{offering.name}}`,
+  {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${UNITYSVC_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      inputs: {
+        source_sentence: "I love machine learning",
+        sentences: [
+          "I enjoy studying AI",
+          "The weather is nice today",
+          "Deep learning is fascinating"
+        ]
+      }
+    })
+  }
+);
+
+if (!response.ok) {
+  throw new Error(await response.text());
+}
+
+const scores = await response.json();
+console.log(scores);

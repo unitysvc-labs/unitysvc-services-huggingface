@@ -1,0 +1,24 @@
+{
+  "currency": "USD",
+  "description": "Tencent/Hunyuanimage 3.0 Instruct language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Tencent/Hunyuanimage 3.0 Instruct",
+  "name": "tencent/HunyuanImage-3.0-Instruct",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "byok"
+  ],
+  "time_created": "2026-01-31T17:45:20.617901Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

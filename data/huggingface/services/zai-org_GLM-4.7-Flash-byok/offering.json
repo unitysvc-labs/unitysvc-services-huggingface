@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "description": "Zai Org/Glm 4.7 Flash language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Zai Org/Glm 4.7 Flash",
+  "name": "zai-org/GLM-4.7-Flash",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-01-26T02:53:59.692Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

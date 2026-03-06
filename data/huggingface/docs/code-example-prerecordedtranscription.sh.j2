@@ -1,0 +1,4 @@
+curl -X POST \
+  -H "Authorization: Bearer $UNITYSVC_API_KEY" \
+  -F "file=@audio.wav" \
+  ${SERVICE_BASE_URL}/models/{{offering.name}}

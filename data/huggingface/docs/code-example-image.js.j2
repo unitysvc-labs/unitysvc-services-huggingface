@@ -1,0 +1,27 @@
+import fs from "fs";
+
+const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
+const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+
+async function main() {
+  const response = await fetch(`${SERVICE_BASE_URL}/v1/forward`, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${UNITYSVC_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: "{{offering.name}}",          // e.g. black-forest-labs/FLUX.1-dev
+      task: "text-to-image",               // THIS is the magic
+      inputs: "A futuristic city at sunrise, ultra detailed"
+    })
+  });
+
+  const blob = await response.arrayBuffer();
+  const buffer = Buffer.from(blob);
+
+  fs.writeFileSync("outputjs.png", buffer);
+  console.log("Image successfully generated and saved as outputjs.png");
+}
+
+main().catch(console.error);

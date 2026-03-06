@@ -1,0 +1,27 @@
+import fs from "fs";
+
+const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
+const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+
+const response = await fetch(
+  `${SERVICE_BASE_URL}/models/{{offering.name}}`,
+  {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${UNITYSVC_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      inputs: "A cinematic shot of a futuristic city at sunset, flying drones"
+    })
+  }
+);
+
+if (!response.ok) {
+  throw new Error(await response.text());
+}
+
+const videoBuffer = await response.arrayBuffer();
+fs.writeFileSync("output.mp4", Buffer.from(videoBuffer));
+
+console.log("Saved output.mp4");

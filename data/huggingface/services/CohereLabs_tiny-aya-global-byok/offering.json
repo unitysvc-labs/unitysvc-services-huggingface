@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "description": "Coherelabs/Tiny Aya Global language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Coherelabs/Tiny Aya Global",
+  "name": "CohereLabs/tiny-aya-global",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-02T22:08:24.620439Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

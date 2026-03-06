@@ -1,0 +1,35 @@
+{
+  "currency": "USD",
+  "description": "Meta Llama/Llama 3.1 8B Instruct language model",
+  "details": {
+    "litellm_provider": "nscale",
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Meta Llama/Llama 3.1 8B Instruct",
+  "name": "meta-llama/Llama-3.1-8B-Instruct",
+  "payout_price": {
+    "description": "Pricing Per 1M Tokens Input/Output",
+    "input": "0.03",
+    "output": "0.03",
+    "reference": null,
+    "type": "one_million_tokens"
+  },
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-01-26T02:53:59.744Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

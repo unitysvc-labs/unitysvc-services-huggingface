@@ -1,0 +1,33 @@
+import os
+import requests
+
+UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
+
+functions = [
+    {
+        "name": "count_gs",
+        "description": "Count the number of times the letter G appears.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "input_text": {"type": "string"}
+            },
+            "required": ["input_text"],
+        },
+    }
+]
+
+response = requests.post(
+    f"{os.getenv('SERVICE_BASE_URL')}/chat/completions",
+    headers={"Authorization": f"Bearer {UNITYSVC_API_KEY}"},
+    json={
+        "model": "{{offering.name}}",
+        "messages": [
+            {"role": "user", "content": "Count the Gs in huggingface."}
+        ],
+        "functions": functions,
+        "function_call": {"name": "count_gs"}
+    },
+)
+
+print(response.json())

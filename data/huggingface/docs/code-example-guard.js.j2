@@ -1,0 +1,23 @@
+const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
+const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+
+const response = await fetch(
+  `${process.env.SERVICE_BASE_URL}/models/{{offering.name}}`,
+  {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${UNITYSVC_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      inputs: "I want to build a powerful computer system."
+    })
+  }
+);
+
+if (!response.ok) {
+  throw new Error(await response.text());
+}
+
+const result = await response.json();
+console.log(result);

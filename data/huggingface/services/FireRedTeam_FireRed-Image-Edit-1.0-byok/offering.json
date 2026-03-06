@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "description": "Fireredteam/Firered Image Edit 1.0 language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Fireredteam/Firered Image Edit 1.0",
+  "name": "FireRedTeam/FireRed-Image-Edit-1.0",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-02-22T06:13:30.911132Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

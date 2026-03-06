@@ -1,0 +1,37 @@
+{
+  "currency": "USD",
+  "description": "Zai Org/Glm 4.7 language model",
+  "details": {
+    "contextLength": 200000,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 200000,
+    "max_tokens": 200000,
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Zai Org/Glm 4.7",
+  "name": "zai-org/GLM-4.7",
+  "payout_price": {
+    "description": "Pricing Per 1M Tokens Input/Output",
+    "input": "0.44999999999999996",
+    "output": "2",
+    "reference": null,
+    "type": "one_million_tokens"
+  },
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "byok"
+  ],
+  "time_created": "2026-01-26T02:53:59.737Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

@@ -1,0 +1,29 @@
+import fs from "fs";
+
+const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
+const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+
+const formData = new FormData();
+formData.append("image", fs.createReadStream("input.png"));
+formData.append("prompt", "Turn this into a cinematic cyberpunk scene");
+formData.append("strength", "0.6");
+
+const response = await fetch(
+  `${SERVICE_BASE_URL}/models/{{offering.name}}`,
+  {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${UNITYSVC_API_KEY}`
+    },
+    body: formData
+  }
+);
+
+if (!response.ok) {
+  throw new Error(await response.text());
+}
+
+const buffer = Buffer.from(await response.arrayBuffer());
+fs.writeFileSync("output.png", buffer);
+
+console.log("Saved output.png");

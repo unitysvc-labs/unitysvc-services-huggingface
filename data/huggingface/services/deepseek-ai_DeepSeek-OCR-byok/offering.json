@@ -1,0 +1,24 @@
+{
+  "currency": "USD",
+  "description": "Deepseek Ai/Deepseek Ocr language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Deepseek Ai/Deepseek Ocr",
+  "name": "deepseek-ai/DeepSeek-OCR",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "byok"
+  ],
+  "time_created": "2026-01-26T02:53:59.750Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://api-inference.huggingface.co/",
+      "rate_limits": []
+    }
+  }
+}

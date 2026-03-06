@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "description": "Qwen/Qwen3.5 122B A10B language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Qwen/Qwen3.5 122B A10B",
+  "name": "Qwen/Qwen3.5-122B-A10B",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-02T22:08:24.604188Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

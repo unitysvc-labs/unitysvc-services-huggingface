@@ -1,0 +1,8 @@
+curl -X POST \
+  -H "Authorization: Bearer $UNITYSVC_API_KEY" \
+  -H "Content-Type: application/json" \
+  ${SERVICE_BASE_URL}/models/{{offering.name}}\
+  -d '{
+    "inputs": "Hello from curl. Text to speech works."
+  }' \
+  --output output.wav

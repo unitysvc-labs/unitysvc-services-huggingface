@@ -1,0 +1,8 @@
+curl -X POST \
+  -H "Authorization: Bearer $UNITYSVC_API_KEY" \
+  -H "Content-Type: application/json" \
+  ${SERVICE_BASE_URL}/models/{{offering.name}} \
+  -d '{
+    "inputs": "A cinematic shot of a futuristic city at sunset, flying drones"
+  }' \
+  --output output.mp4

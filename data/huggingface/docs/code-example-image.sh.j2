@@ -1,0 +1,8 @@
+curl ${SERVICE_BASE_URL}/v1/forward \
+  -H "Authorization: Bearer $UNITYSVC_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "{{offering.name}}",
+    "prompt": "A futuristic city at sunrise, ultra detailed",
+    "size": "1024x1024"
+  }'

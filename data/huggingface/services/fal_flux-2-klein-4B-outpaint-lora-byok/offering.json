@@ -1,0 +1,24 @@
+{
+  "currency": "USD",
+  "description": "Fal/Flux 2 Klein 4B Outpaint Lora language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Fal/Flux 2 Klein 4B Outpaint Lora",
+  "name": "fal/flux-2-klein-4B-outpaint-lora",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "byok"
+  ],
+  "time_created": "2026-01-31T17:45:20.663676Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": []
+    }
+  }
+}

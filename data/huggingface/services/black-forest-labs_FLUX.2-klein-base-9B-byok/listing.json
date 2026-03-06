@@ -1,0 +1,77 @@
+{
+  "currency": "USD",
+  "documents": {
+    "Connectivity test": {
+      "category": "connectivity_test",
+      "description": "Connectivity test",
+      "file_path": "../../docs/code-example-image.sh.j2",
+      "is_active": true,
+      "is_public": false,
+      "mime_type": "bash"
+    },
+    "JavaScript code example": {
+      "category": "code_example",
+      "description": "Example code to use the model",
+      "file_path": "../../docs/code-example-image.js.j2",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "javascript"
+    },
+    "Python code example": {
+      "category": "code_example",
+      "description": "Example code to use the model",
+      "file_path": "../../docs/code-example-image.py.j2",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "python"
+    },
+    "cURL code example": {
+      "category": "code_example",
+      "description": "Example code to use the model",
+      "file_path": "../../docs/code-example-image.sh.j2",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "bash"
+    }
+  },
+  "list_price": null,
+  "schema": "listing_v1",
+  "service_options": {
+    "ops_testing_parameters": {
+      "api_key": "${ secrets.HF_TOKEN }"
+    }
+  },
+  "status": "ready",
+  "time_created": "2026-01-26T02:53:59.753Z",
+  "user_access_interfaces": {
+    "Provider API": {
+      "access_method": "http",
+      "base_url": "${GATEWAY_BASE_URL}/p/huggingface"
+    }
+  },
+  "user_parameters_schema": {
+    "description": "Access service with your own api-key",
+    "properties": {
+      "api_key": {
+        "default": "",
+        "title": "API Key",
+        "type": "string"
+      }
+    },
+    "required": [
+      "api_key"
+    ],
+    "title": "Be Your Own Provider",
+    "type": "object"
+  },
+  "user_parameters_ui_schema": {
+    "api_key": {
+      "ui:autocomplete": "family-name",
+      "ui:autofocus": true,
+      "ui:description": "API Key known as HF_TOKEN",
+      "ui:emptyValue": "",
+      "ui:enableMarkdownInDescription": false,
+      "ui:placeholder": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+  }
+}
