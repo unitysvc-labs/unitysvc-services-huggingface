@@ -1,29 +1,4 @@
-{%- set name = (offering_name ~ provider_name) | lower -%}
-
-{%- set example_suffix = "" -%}
-
-{%- if "guard" in name -%}
-  {%- set example_suffix = "-guard" -%}
-
-{%- elif "imagetoimage" in name or "image-edit" in name or "outpaint" in name -%}
-  {%- set example_suffix = "-imagetoimage" -%}
-
-{%- elif "image" in name or "flux" in name or "diffusion" in name -%}
-  {%- set example_suffix = "-image" -%}
-
-{%- elif "ocr" in name or "transcription" in name or "whisper" in name -%}
-  {%- set example_suffix = "-prerecordedtranscription" -%}
-
-{%- elif "sentence" in name or "embedding" in name or "bge" in name or "minilm" in name -%}
-  {%- set example_suffix = "-sentencetransformers" -%}
-
-{%- elif "tts" in name or "kokoro" in name -%}
-  {%- set example_suffix = "-tts" -%}
-
-{%- elif "video" in name or "ltx" in name -%}
-  {%- set example_suffix = "-ttv" -%}
-
-{%- endif -%}
+{% set example_suffix = example_suffix %}
 
 {
   "schema": "listing_v1",
