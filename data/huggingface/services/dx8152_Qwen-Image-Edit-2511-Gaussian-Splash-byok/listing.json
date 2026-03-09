@@ -49,7 +49,6 @@
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
-      "api_key": "${ secrets.HF_TOKEN }",
       "base_url": "${GATEWAY_BASE_URL}/p/huggingface"
     }
   }

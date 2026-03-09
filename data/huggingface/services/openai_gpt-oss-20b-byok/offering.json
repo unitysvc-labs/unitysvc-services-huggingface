@@ -33,6 +33,7 @@
     "Hugging Face API": {
       "access_method": "http",
       "base_url": "https://router.huggingface.co/v1",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
       "rate_limits": []
     }
   }
