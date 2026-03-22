@@ -84,56 +84,27 @@ class ModelSource:
 
         return ""
     
-    # Map HuggingFace pipeline_tag to code example template suffix
-    PIPELINE_EXAMPLE_MAP: dict[str, str] = {
-        "text-generation": "",
-        "text2text-generation": "",
-        "conversational": "",
-        "feature-extraction": "-sentencetransformers",
-        "sentence-similarity": "-sentencetransformers",
-        "text-to-image": "-image",
-        "image-to-image": "-imagetoimage",
-        "image-to-text": "",
-        "image-text-to-text": "",
-        "visual-question-answering": "",
-        "automatic-speech-recognition": "-prerecordedtranscription",
-        "text-to-speech": "-tts",
-        "text-to-audio": "-tts",
-        "text-to-video": "-ttv",
-        "image-to-video": "-ttv",
-    }
-
     def _build_template_vars(self, model_id: str, model_info: dict) -> dict:
         """Build template variables for a model."""
         service_type = self._determine_service_type(model_id)
         display_name = model_id.replace("-", " ").replace("_", " ").title()
 
-        # Fetch HuggingFace model details for pipeline_tag and tags
-        hf_details = self.data_fetcher.fetch_huggingface_model_details(model_id, quiet=True)
-        pipeline_tag = hf_details.get("pipeline_tag") if hf_details else None
-        hf_tags = hf_details.get("tags", []) if hf_details else []
+        # Get capabilities and example suffix from HuggingFace pipeline_tag
+        capabilities, hf_example_suffix = ModelDataLookup.get_capabilities_from_hf(
+            model_id, self.data_fetcher
+        )
+        # Use HF example suffix if available, otherwise fall back to name heuristics
+        example_suffix = hf_example_suffix or self._determine_example_suffix(model_id)
 
-        # Use pipeline_tag as the primary capability (HF standard taxonomy)
-        capabilities = [pipeline_tag] if pipeline_tag else [service_type]
-
-        # Determine example suffix from pipeline_tag (preferred) or name heuristics (fallback)
-        if pipeline_tag and pipeline_tag in self.PIPELINE_EXAMPLE_MAP:
-            example_suffix = self.PIPELINE_EXAMPLE_MAP[pipeline_tag]
-        else:
-            example_suffix = self._determine_example_suffix(model_id)
+        # Get cleaned HF tags for details
+        hf_tags = ModelDataLookup.get_hf_tags(model_id, self.data_fetcher)
 
         # Build details from LiteLLM data and model info
         details: dict[str, Any] = {}
-        if pipeline_tag:
-            details["pipeline_tag"] = pipeline_tag
+        if capabilities and capabilities != ["llm"]:
+            details["pipeline_tag"] = capabilities[0]
         if hf_tags:
-            # Keep meaningful tags, filter out metadata
-            details["hf_tags"] = [
-                t for t in hf_tags
-                if not t.startswith("base_model:")
-                and not t.startswith("region:")
-                and not t.startswith("license:")
-            ]
+            details["hf_tags"] = hf_tags
 
         model_data = ModelDataLookup.lookup_model_details(
             model_id, self.litellm_data or {})
