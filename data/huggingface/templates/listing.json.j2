@@ -1,4 +1,21 @@
-{% set example_suffix = example_suffix %}
+{#- Select code example templates based on model capabilities (HuggingFace pipeline_tag) -#}
+{%- if "automatic-speech-recognition" in capabilities -%}
+  {%- set ex = "-prerecordedtranscription" -%}
+{%- elif "text-to-speech" in capabilities or "text-to-audio" in capabilities -%}
+  {%- set ex = "-tts" -%}
+{%- elif "text-to-video" in capabilities or "image-to-video" in capabilities -%}
+  {%- set ex = "-ttv" -%}
+{%- elif "image-to-image" in capabilities -%}
+  {%- set ex = "-imagetoimage" -%}
+{%- elif "text-to-image" in capabilities or "unconditional-image-generation" in capabilities -%}
+  {%- set ex = "-image" -%}
+{%- elif "feature-extraction" in capabilities or "sentence-similarity" in capabilities -%}
+  {%- set ex = "-sentencetransformers" -%}
+{%- elif "guard" in (capabilities | join(" ")) -%}
+  {%- set ex = "-guard" -%}
+{%- else -%}
+  {%- set ex = "" -%}
+{%- endif -%}
 
 {
   "schema": "listing_v1",
@@ -31,7 +48,7 @@
     "Python code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ example_suffix }}.py.j2",
+      "file_path": "../../docs/code-example{{ ex }}.py.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "python"
@@ -40,7 +57,7 @@
     "Python function calling code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ example_suffix }}-fc.py.j2",
+      "file_path": "../../docs/code-example{{ ex }}-fc.py.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "python"
@@ -49,7 +66,7 @@
     "JavaScript code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ example_suffix }}.js.j2",
+      "file_path": "../../docs/code-example{{ ex }}.js.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "javascript"
@@ -58,7 +75,7 @@
     "cURL code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ example_suffix }}.sh.j2",
+      "file_path": "../../docs/code-example{{ ex }}.sh.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "bash"

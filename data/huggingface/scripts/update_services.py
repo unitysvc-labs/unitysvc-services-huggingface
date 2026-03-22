@@ -58,43 +58,15 @@ class ModelSource:
                 yield template_vars
                 print("  OK")
 
-    def _determine_example_suffix(self, model_id: str) -> str:
-        name = model_id.lower()
-
-        if "guard" in name or "moderation" in name:
-            return "-guard"
-
-        if any(k in name for k in ["imagetoimage", "image-edit", "outpaint", "inpaint"]):
-            return "-imagetoimage"
-
-        if any(k in name for k in ["diffusion", "stable-diffusion", "sdxl", "flux", "image"]):
-            return "-image"
-
-        if any(k in name for k in ["whisper", "asr", "transcription", "speech"]):
-            return "-prerecordedtranscription"
-
-        if any(k in name for k in ["sentence", "embedding", "minilm", "bge", "e5"]):
-            return "-sentencetransformers"
-
-        if any(k in name for k in ["tts", "text-to-speech", "kokoro", "bark"]):
-            return "-tts"
-
-        if any(k in name for k in ["video", "ltx", "text-to-video", "t2v"]):
-            return "-ttv"
-
-        return ""
-    
     def _build_template_vars(self, model_id: str, model_info: dict) -> dict:
         """Build template variables for a model."""
         service_type = self._determine_service_type(model_id)
         display_name = model_id.replace("-", " ").replace("_", " ").title()
 
-        # Get capabilities and example suffix from HuggingFace pipeline_tag
-        capabilities, hf_example_suffix = ModelDataLookup.get_capabilities_from_hf(
+        # Get capabilities from HuggingFace pipeline_tag
+        capabilities, _ = ModelDataLookup.get_capabilities_from_hf(
             model_id, self.data_fetcher
         )
-        # Use HF example suffix if available, otherwise fall back to name heuristics
-        example_suffix = hf_example_suffix or self._determine_example_suffix(model_id)
 
         # Get cleaned HF tags for details
         hf_tags = ModelDataLookup.get_hf_tags(model_id, self.data_fetcher)
@@ -158,7 +130,6 @@ class ModelSource:
             # Listing fields
             "list_price": pricing,
             # Provider config (for templates)
-            "example_suffix": example_suffix,
             "provider_name": PROVIDER_NAME,
             "provider_display_name": PROVIDER_DISPLAY_NAME,
             "api_base_url": "https://router.huggingface.co/v1",
