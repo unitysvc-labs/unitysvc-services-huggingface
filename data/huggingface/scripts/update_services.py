@@ -84,38 +84,7 @@ class ModelSource:
 
         return ""
     
-    # Map HuggingFace pipeline_tag to our service types
-    PIPELINE_TAG_MAP: dict[str, str] = {
-        "text-generation": "llm",
-        "text2text-generation": "llm",
-        "conversational": "llm",
-        "feature-extraction": "embedding",
-        "sentence-similarity": "embedding",
-        "fill-mask": "llm",
-        "text-classification": "llm",
-        "token-classification": "llm",
-        "question-answering": "llm",
-        "summarization": "llm",
-        "translation": "prerecorded_translation",
-        "text-to-image": "text_to_image",
-        "image-to-image": "image_generation",
-        "image-to-text": "vision_language_model",
-        "visual-question-answering": "vision_language_model",
-        "image-text-to-text": "vision_language_model",
-        "image-classification": "vision_language_model",
-        "object-detection": "vision_language_model",
-        "image-segmentation": "vision_language_model",
-        "automatic-speech-recognition": "speech_to_text",
-        "text-to-speech": "text_to_speech",
-        "text-to-audio": "text_to_speech",
-        "audio-classification": "speech_to_text",
-        "text-to-video": "video_generation",
-        "image-to-video": "video_generation",
-        "text-to-3d": "text_to_3d",
-        "video-text-to-text": "vision_language_model",
-    }
-
-    # Map pipeline_tag to code example template suffix
+    # Map HuggingFace pipeline_tag to code example template suffix
     PIPELINE_EXAMPLE_MAP: dict[str, str] = {
         "text-generation": "",
         "text2text-generation": "",
@@ -136,6 +105,7 @@ class ModelSource:
 
     def _build_template_vars(self, model_id: str, model_info: dict) -> dict:
         """Build template variables for a model."""
+        service_type = self._determine_service_type(model_id)
         display_name = model_id.replace("-", " ").replace("_", " ").title()
 
         # Fetch HuggingFace model details for pipeline_tag and tags
@@ -143,11 +113,8 @@ class ModelSource:
         pipeline_tag = hf_details.get("pipeline_tag") if hf_details else None
         hf_tags = hf_details.get("tags", []) if hf_details else []
 
-        # Determine service type from pipeline_tag (preferred) or name heuristics (fallback)
-        if pipeline_tag and pipeline_tag in self.PIPELINE_TAG_MAP:
-            service_type = self.PIPELINE_TAG_MAP[pipeline_tag]
-        else:
-            service_type = self._determine_service_type(model_id)
+        # Use pipeline_tag as the primary capability (HF standard taxonomy)
+        capabilities = [pipeline_tag] if pipeline_tag else [service_type]
 
         # Determine example suffix from pipeline_tag (preferred) or name heuristics (fallback)
         if pipeline_tag and pipeline_tag in self.PIPELINE_EXAMPLE_MAP:
@@ -160,7 +127,13 @@ class ModelSource:
         if pipeline_tag:
             details["pipeline_tag"] = pipeline_tag
         if hf_tags:
-            details["hf_tags"] = [t for t in hf_tags if not t.startswith("base_model:") and not t.startswith("region:")]
+            # Keep meaningful tags, filter out metadata
+            details["hf_tags"] = [
+                t for t in hf_tags
+                if not t.startswith("base_model:")
+                and not t.startswith("region:")
+                and not t.startswith("license:")
+            ]
 
         model_data = ModelDataLookup.lookup_model_details(
             model_id, self.litellm_data or {})
@@ -207,6 +180,7 @@ class ModelSource:
             "display_name": display_name,
             "description": f"{display_name} language model",
             "service_type": service_type,
+            "capabilities": capabilities,
             "status": "ready",
             "details": details,
             "payout_price": pricing,
