@@ -1,5 +1,7 @@
 import os
+import struct
 import time
+import wave
 import requests
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
@@ -36,6 +38,14 @@ def transcribe_audio(
 
 # ===== Example usage =====
 if __name__ == "__main__":
+    # Generate a test audio file if not present (1 second of silence)
+    if not os.path.exists("audio.wav"):
+        with wave.open("audio.wav", "w") as f:
+            f.setnchannels(1)
+            f.setsampwidth(2)
+            f.setframerate(16000)
+            f.writeframes(struct.pack("<h", 0) * 16000)
+
     text = transcribe_audio(
         model_id=os.environ.get("MODEL", "{{offering.name}}"),
         audio_path="audio.wav"

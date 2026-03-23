@@ -1,5 +1,6 @@
 import os
 import requests
+from PIL import Image
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
 SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
@@ -9,6 +10,10 @@ url = f"{SERVICE_BASE_URL}/models/{{offering.name}}"
 headers = {
     "Authorization": f"Bearer {UNITYSVC_API_KEY}"
 }
+
+# Generate a test input image if not present
+if not os.path.exists("input.png"):
+    Image.new("RGB", (64, 64), color="red").save("input.png")
 
 with open("input.png", "rb") as img:
     response = requests.post(

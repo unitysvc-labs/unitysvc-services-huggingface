@@ -2,6 +2,7 @@ import os
 import time
 import requests
 from pathlib import Path
+from PIL import Image
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
 SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
@@ -45,6 +46,10 @@ def image_to_image(
 
 # ===== Example usage =====
 if __name__ == "__main__":
+    # Generate a test input image if not present
+    if not os.path.exists("input.png"):
+        Image.new("RGB", (64, 64), color="red").save("input.png")
+
     path = image_to_image(
         model_id=os.environ.get("MODEL", "{{offering.name}}"),
         image_path="input.png",

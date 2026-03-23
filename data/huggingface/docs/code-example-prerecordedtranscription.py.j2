@@ -1,4 +1,6 @@
 import os
+import struct
+import wave
 import requests
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
@@ -9,6 +11,14 @@ url = f"{SERVICE_BASE_URL}/models/{{offering.name}}"
 headers = {
     "Authorization": f"Bearer {UNITYSVC_API_KEY}"
 }
+
+# Generate a test audio file if not present (1 second of silence)
+if not os.path.exists("audio.wav"):
+    with wave.open("audio.wav", "w") as f:
+        f.setnchannels(1)
+        f.setsampwidth(2)
+        f.setframerate(16000)
+        f.writeframes(struct.pack("<h", 0) * 16000)
 
 with open("audio.wav", "rb") as audio:
     response = requests.post(

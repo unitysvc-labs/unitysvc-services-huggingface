@@ -1,3 +1,11 @@
+# Generate a test audio file if not present (1 second of silence)
+[ -f audio.wav ] || python3 -c "
+import wave, struct
+with wave.open('audio.wav','w') as f:
+    f.setnchannels(1); f.setsampwidth(2); f.setframerate(16000)
+    f.writeframes(struct.pack('<h',0)*16000)
+"
+
 curl -X POST \
   -H "Authorization: Bearer $UNITYSVC_API_KEY" \
   -F "file=@audio.wav" \
