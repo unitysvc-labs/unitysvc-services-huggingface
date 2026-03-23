@@ -16,7 +16,7 @@
       "deploy:azure"
     ],
     "object": "model",
-    "owned_by": "huggingface",
+    "owned_by": "Qwen",
     "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Qwen/Qwen3.5 35B A3B",

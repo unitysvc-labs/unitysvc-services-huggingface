@@ -21,7 +21,7 @@
   "name": "prithivMLmods/Qwen-Image-Edit-2511-Ultra-Realistic-Portrait",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

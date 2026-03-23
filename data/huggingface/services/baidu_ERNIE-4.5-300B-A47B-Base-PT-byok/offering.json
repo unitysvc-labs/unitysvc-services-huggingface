@@ -1,0 +1,45 @@
+{
+  "capabilities": [
+    "text-generation"
+  ],
+  "currency": "USD",
+  "description": "Baidu/Ernie 4.5 300B A47B Base Pt language model",
+  "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "ernie4_5_moe",
+      "text-generation",
+      "ERNIE4.5",
+      "conversational",
+      "en",
+      "zh",
+      "endpoints_compatible"
+    ],
+    "object": "model",
+    "owned_by": "baidu",
+    "pipeline_tag": "text-generation"
+  },
+  "display_name": "Baidu/Ernie 4.5 300B A47B Base Pt",
+  "name": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-23T00:35:52.806238Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "baidu/ERNIE-4.5-300B-A47B-Base-PT"
+      }
+    }
+  }
+}

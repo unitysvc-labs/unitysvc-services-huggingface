@@ -16,7 +16,7 @@
       "deploy:azure"
     ],
     "object": "model",
-    "owned_by": "huggingface",
+    "owned_by": "Qwen",
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 Coder Next",

@@ -1,0 +1,80 @@
+{
+  "capabilities": [
+    "text-generation"
+  ],
+  "currency": "USD",
+  "description": "Utter Project/Eurollm 22B Instruct 2512 language model",
+  "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "llama",
+      "text-generation",
+      "conversational",
+      "en",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "pt",
+      "pl",
+      "nl",
+      "tr",
+      "sv",
+      "cs",
+      "el",
+      "hu",
+      "ro",
+      "fi",
+      "uk",
+      "sl",
+      "sk",
+      "da",
+      "lt",
+      "lv",
+      "et",
+      "bg",
+      "no",
+      "ca",
+      "hr",
+      "ga",
+      "mt",
+      "gl",
+      "zh",
+      "ru",
+      "ko",
+      "ja",
+      "ar",
+      "hi",
+      "arxiv:2602.05879",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
+    "object": "model",
+    "owned_by": "utter-project",
+    "pipeline_tag": "text-generation"
+  },
+  "display_name": "Utter Project/Eurollm 22B Instruct 2512",
+  "name": "utter-project/EuroLLM-22B-Instruct-2512",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-23T00:35:49.133883Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "utter-project/EuroLLM-22B-Instruct-2512"
+      }
+    }
+  }
+}

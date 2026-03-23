@@ -22,7 +22,7 @@
     "max_tokens": 16384,
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface",
+    "owned_by": "deepseek-ai",
     "pipeline_tag": "text-generation"
   },
   "display_name": "Deepseek Ai/Deepseek V3.2",

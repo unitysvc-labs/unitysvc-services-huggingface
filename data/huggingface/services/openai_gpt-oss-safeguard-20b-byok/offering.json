@@ -1,0 +1,59 @@
+{
+  "capabilities": [
+    "text-generation"
+  ],
+  "currency": "USD",
+  "description": "Openai/Gpt Oss Safeguard 20B language model",
+  "details": {
+    "contextLength": 131072,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "gpt_oss",
+      "text-generation",
+      "vllm",
+      "conversational",
+      "arxiv:2508.10925",
+      "endpoints_compatible",
+      "mxfp4",
+      "deploy:azure"
+    ],
+    "litellm_provider": "groq",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "openai",
+    "pipeline_tag": "text-generation"
+  },
+  "display_name": "Openai/Gpt Oss Safeguard 20B",
+  "name": "openai/gpt-oss-safeguard-20b",
+  "payout_price": {
+    "description": "Pricing Per 1M Tokens Input/Output",
+    "input": "0.075",
+    "output": "0.3",
+    "reference": null,
+    "type": "one_million_tokens"
+  },
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-23T00:35:45.302324Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "openai/gpt-oss-safeguard-20b"
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@
     "max_tokens": 256000,
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface",
+    "owned_by": "moonshotai",
     "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Moonshotai/Kimi K2.5",

@@ -26,7 +26,7 @@
     "max_tokens": 131072,
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface",
+    "owned_by": "openai",
     "pipeline_tag": "text-generation"
   },
   "display_name": "Openai/Gpt Oss 120B",

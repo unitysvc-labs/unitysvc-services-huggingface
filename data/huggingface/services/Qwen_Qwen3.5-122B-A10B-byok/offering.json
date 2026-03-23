@@ -1,0 +1,44 @@
+{
+  "capabilities": [
+    "image-text-to-text"
+  ],
+  "currency": "USD",
+  "description": "Qwen/Qwen3.5 122B A10B language model",
+  "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_5_moe",
+      "image-text-to-text",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
+    "object": "model",
+    "owned_by": "Qwen",
+    "pipeline_tag": "image-text-to-text"
+  },
+  "display_name": "Qwen/Qwen3.5 122B A10B",
+  "name": "Qwen/Qwen3.5-122B-A10B",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-23T00:35:41.158112Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "Qwen/Qwen3.5-122B-A10B"
+      }
+    }
+  }
+}

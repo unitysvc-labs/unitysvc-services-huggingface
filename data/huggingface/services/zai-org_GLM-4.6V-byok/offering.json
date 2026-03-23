@@ -1,0 +1,45 @@
+{
+  "capabilities": [
+    "image-text-to-text"
+  ],
+  "currency": "USD",
+  "description": "Zai Org/Glm 4.6V language model",
+  "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "glm4v_moe",
+      "image-text-to-text",
+      "conversational",
+      "zh",
+      "en",
+      "arxiv:2507.01006",
+      "endpoints_compatible"
+    ],
+    "object": "model",
+    "owned_by": "zai-org",
+    "pipeline_tag": "image-text-to-text"
+  },
+  "display_name": "Zai Org/Glm 4.6V",
+  "name": "zai-org/GLM-4.6V",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-23T00:35:44.900924Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "zai-org/GLM-4.6V"
+      }
+    }
+  }
+}
