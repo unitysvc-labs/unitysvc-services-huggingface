@@ -150,9 +150,8 @@ class ModelSource:
         if any(kw in model_lower for kw in ["embed", "embedding"]):
             return "embedding"
         if any(kw in model_lower for kw in ["rerank"]):
-            return "rerank"
-        if any(kw in model_lower for kw in ["vision"]):
-            return "vision_language_model"
+            return "embedding"
+        # vision_language_model → llm (vision is a capability, not a service type)
         return "llm"
 
     def _format_price(self, price: float) -> str:
