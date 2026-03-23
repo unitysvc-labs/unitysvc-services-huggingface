@@ -13,14 +13,14 @@ import sys
 from pathlib import Path
 from typing import Any, Iterator
 
-import any_llm
+import httpx
 
 from unitysvc_services import ModelDataFetcher, ModelDataLookup, populate_from_iterator
 
 # Provider Configuration
 PROVIDER_NAME = "huggingface"
 PROVIDER_DISPLAY_NAME = "Hugging Face"
-API_BASE_URL = "https://api-inference.huggingface.co/models/"
+ROUTER_API_URL = "https://router.huggingface.co/v1"
 ENV_API_KEY_NAME = "HF_TOKEN"
 
 SCRIPT_DIR = Path(__file__).parent
@@ -39,18 +39,27 @@ class ModelSource:
         # Fetch LiteLLM data once
         self.litellm_data = self.data_fetcher.fetch_litellm_model_data()
 
-        print(f"Fetching models from {PROVIDER_DISPLAY_NAME} API...")
+        # Fetch available models directly from HF Inference Providers API
+        # This returns only models actually available for inference
+        print(f"Fetching available models from {PROVIDER_DISPLAY_NAME} Inference API...")
         try:
-            models = any_llm.list_models(PROVIDER_NAME, api_key=self.api_key)
-            print(f"Found {len(models)} models\n")
+            r = httpx.get(
+                f"{ROUTER_API_URL}/models",
+                headers={"Authorization": f"Bearer {self.api_key}"},
+                timeout=30.0,
+            )
+            r.raise_for_status()
+            models = r.json().get("data", [])
+            print(f"Found {len(models)} available models\n")
         except Exception as e:
             print(f"Error listing models: {e}")
             return
 
-        for i, model in enumerate(models, 1):
-            model_info = json.loads(model.to_json())
-            model_id = model_info.get("id", str(model))
-            print(f"[{i}/{len(models)}] {model_id}")
+        for i, model_info in enumerate(models, 1):
+            model_id = model_info.get("id", "")
+            if not model_id:
+                continue
+            print(f"[{i}/{len(models)}] {model_id}", end="")
 
             # Build template variables
             template_vars = self._build_template_vars(model_id, model_info)
