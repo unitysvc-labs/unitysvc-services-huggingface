@@ -12,7 +12,7 @@
   "name": "black-forest-labs/FLUX.2-klein-4B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
