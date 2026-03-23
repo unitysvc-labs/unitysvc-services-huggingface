@@ -1,14 +1,29 @@
 {
   "capabilities": [
-    "llm"
+    "text-to-image"
   ],
   "currency": "USD",
   "description": "Stabilityai/Stable Diffusion Xl Base 1.0 language model",
   "details": {
+    "hf_tags": [
+      "diffusers",
+      "onnx",
+      "safetensors",
+      "text-to-image",
+      "stable-diffusion",
+      "arxiv:2307.01952",
+      "arxiv:2211.01324",
+      "arxiv:2108.01073",
+      "arxiv:2112.10752",
+      "endpoints_compatible",
+      "diffusers:StableDiffusionXLPipeline",
+      "deploy:azure"
+    ],
     "litellm_provider": "nscale",
     "mode": "image_generation",
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-to-image"
   },
   "display_name": "Stabilityai/Stable Diffusion Xl Base 1.0",
   "name": "stabilityai/stable-diffusion-xl-base-1.0",

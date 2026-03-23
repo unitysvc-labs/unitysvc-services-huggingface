@@ -1,18 +1,33 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Openai/Gpt Oss 120B language model",
   "details": {
     "contextLength": 131072,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "gpt_oss",
+      "text-generation",
+      "vllm",
+      "conversational",
+      "arxiv:2508.10925",
+      "eval-results",
+      "endpoints_compatible",
+      "8-bit",
+      "mxfp4",
+      "deploy:azure"
+    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Openai/Gpt Oss 120B",
   "name": "openai/gpt-oss-120b",

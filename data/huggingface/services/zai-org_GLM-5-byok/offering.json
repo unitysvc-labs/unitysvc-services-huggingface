@@ -1,12 +1,25 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Zai Org/Glm 5 language model",
   "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "glm_moe_dsa",
+      "text-generation",
+      "conversational",
+      "en",
+      "zh",
+      "arxiv:2602.15763",
+      "eval-results",
+      "endpoints_compatible"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 5",
   "name": "zai-org/GLM-5",

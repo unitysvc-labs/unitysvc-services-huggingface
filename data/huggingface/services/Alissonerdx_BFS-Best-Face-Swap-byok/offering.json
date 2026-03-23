@@ -1,12 +1,29 @@
 {
   "capabilities": [
-    "llm"
+    "image-to-image"
   ],
   "currency": "USD",
   "description": "Alissonerdx/Bfs Best Face Swap language model",
   "details": {
+    "hf_tags": [
+      "diffusers",
+      "lora",
+      "qwen-image-edit",
+      "face-swap",
+      "head-swap",
+      "image-editing",
+      "ai-generated",
+      "comfyui",
+      "bfs",
+      "flux 2",
+      "flux",
+      "klein",
+      "image-to-image",
+      "en"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "image-to-image"
   },
   "display_name": "Alissonerdx/Bfs Best Face Swap",
   "name": "Alissonerdx/BFS-Best-Face-Swap",

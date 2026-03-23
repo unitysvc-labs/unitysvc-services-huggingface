@@ -27,7 +27,7 @@
     "JavaScript code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example.js.j2",
+      "file_path": "../../docs/code-example-imagetoimage.js.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "javascript"
@@ -35,7 +35,7 @@
     "Python code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example.py.j2",
+      "file_path": "../../docs/code-example-imagetoimage.py.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "python"
@@ -43,7 +43,7 @@
     "Python function calling code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example-fc.py.j2",
+      "file_path": "../../docs/code-example-imagetoimage-fc.py.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "python"
@@ -51,7 +51,7 @@
     "cURL code example": {
       "category": "code_example",
       "description": "Example code to use the model",
-      "file_path": "../../docs/code-example.sh.j2",
+      "file_path": "../../docs/code-example-imagetoimage.sh.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "bash"

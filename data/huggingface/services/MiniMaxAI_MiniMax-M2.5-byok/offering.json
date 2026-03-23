@@ -1,12 +1,25 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Minimaxai/Minimax M2.5 language model",
   "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "minimax_m2",
+      "text-generation",
+      "conversational",
+      "custom_code",
+      "eval-results",
+      "endpoints_compatible",
+      "fp8",
+      "deploy:azure"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Minimaxai/Minimax M2.5",
   "name": "MiniMaxAI/MiniMax-M2.5",

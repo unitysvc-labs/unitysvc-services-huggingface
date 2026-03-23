@@ -1,12 +1,23 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder Next language model",
   "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_next",
+      "text-generation",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 Coder Next",
   "name": "Qwen/Qwen3-Coder-Next",

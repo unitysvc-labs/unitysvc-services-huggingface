@@ -1,16 +1,26 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3.5 397B A17B language model",
   "details": {
     "contextLength": 262144,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_5_moe",
+      "image-text-to-text",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible"
+    ],
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Qwen/Qwen3.5 397B A17B",
   "name": "Qwen/Qwen3.5-397B-A17B",

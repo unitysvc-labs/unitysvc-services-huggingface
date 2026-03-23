@@ -1,12 +1,23 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3.5 27B language model",
   "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_5",
+      "image-text-to-text",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Qwen/Qwen3.5 27B",
   "name": "Qwen/Qwen3.5-27B",

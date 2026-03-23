@@ -1,14 +1,38 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Meta Llama/Llama 3.1 8B Instruct language model",
   "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "llama",
+      "text-generation",
+      "facebook",
+      "meta",
+      "pytorch",
+      "llama-3",
+      "conversational",
+      "en",
+      "de",
+      "fr",
+      "it",
+      "pt",
+      "hi",
+      "es",
+      "th",
+      "arxiv:2204.05149",
+      "eval-results",
+      "text-generation-inference",
+      "endpoints_compatible"
+    ],
     "litellm_provider": "nscale",
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Meta Llama/Llama 3.1 8B Instruct",
   "name": "meta-llama/Llama-3.1-8B-Instruct",

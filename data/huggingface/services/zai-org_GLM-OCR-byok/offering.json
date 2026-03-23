@@ -1,12 +1,31 @@
 {
   "capabilities": [
-    "llm"
+    "image-to-text"
   ],
   "currency": "USD",
   "description": "Zai Org/Glm Ocr language model",
   "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "glm_ocr",
+      "image-text-to-text",
+      "image-to-text",
+      "zh",
+      "en",
+      "fr",
+      "es",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "arxiv:2603.10910",
+      "eval-results",
+      "endpoints_compatible"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "image-to-text"
   },
   "display_name": "Zai Org/Glm Ocr",
   "name": "zai-org/GLM-OCR",

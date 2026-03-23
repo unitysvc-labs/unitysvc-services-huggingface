@@ -1,12 +1,21 @@
 {
   "capabilities": [
-    "llm"
+    "image-to-image"
   ],
   "currency": "USD",
   "description": "Prithivmlmods/Qwen Image Edit 2511 Ultra Realistic Portrait language model",
   "details": {
+    "hf_tags": [
+      "diffusers",
+      "lora",
+      "art",
+      "image-to-image",
+      "en",
+      "doi:10.57967/hf/7595"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "image-to-image"
   },
   "display_name": "Prithivmlmods/Qwen Image Edit 2511 Ultra Realistic Portrait",
   "name": "prithivMLmods/Qwen-Image-Edit-2511-Ultra-Realistic-Portrait",

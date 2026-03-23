@@ -1,12 +1,20 @@
 {
   "capabilities": [
-    "llm"
+    "text-to-speech"
   ],
   "currency": "USD",
   "description": "Hexgrad/Kokoro 82M language model",
   "details": {
+    "hf_tags": [
+      "text-to-speech",
+      "en",
+      "arxiv:2306.07691",
+      "arxiv:2203.02395",
+      "doi:10.57967/hf/4329"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-to-speech"
   },
   "display_name": "Hexgrad/Kokoro 82M",
   "name": "hexgrad/Kokoro-82M",

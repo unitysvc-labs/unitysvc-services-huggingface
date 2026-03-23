@@ -1,12 +1,24 @@
 {
   "capabilities": [
-    "llm"
+    "text-to-image"
   ],
   "currency": "USD",
   "description": "Tongyi Mai/Z Image Turbo language model",
   "details": {
+    "hf_tags": [
+      "diffusers",
+      "safetensors",
+      "text-to-image",
+      "en",
+      "arxiv:2511.22699",
+      "arxiv:2511.22677",
+      "arxiv:2511.13649",
+      "diffusers:ZImagePipeline",
+      "deploy:azure"
+    ],
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "text-to-image"
   },
   "display_name": "Tongyi Mai/Z Image Turbo",
   "name": "Tongyi-MAI/Z-Image-Turbo",

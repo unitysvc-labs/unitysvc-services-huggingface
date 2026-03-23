@@ -1,18 +1,31 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Moonshotai/Kimi K2.5 language model",
   "details": {
     "contextLength": 256000,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "kimi_k25",
+      "feature-extraction",
+      "compressed-tensors",
+      "image-text-to-text",
+      "conversational",
+      "custom_code",
+      "arxiv:2602.02276",
+      "eval-results"
+    ],
     "litellm_provider": "together_ai",
     "max_input_tokens": 256000,
     "max_output_tokens": 256000,
     "max_tokens": 256000,
     "mode": "chat",
     "object": "model",
-    "owned_by": "huggingface"
+    "owned_by": "huggingface",
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Moonshotai/Kimi K2.5",
   "name": "moonshotai/Kimi-K2.5",
