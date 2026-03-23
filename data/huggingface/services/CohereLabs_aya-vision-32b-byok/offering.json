@@ -43,7 +43,7 @@
   "display_name": "Coherelabs/Aya Vision 32B",
   "name": "CohereLabs/aya-vision-32b",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",
