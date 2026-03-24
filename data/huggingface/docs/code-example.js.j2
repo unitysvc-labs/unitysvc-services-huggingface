@@ -1,4 +1,5 @@
 const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+const MODEL = process.env.MODEL;
 
 const response = await fetch(
   `${SERVICE_BASE_URL}/chat/completions`,
@@ -9,7 +10,7 @@ const response = await fetch(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "{{offering.name}}",
+      model: MODEL,
       messages: [
         { role: "user", content: "How many G's are in huggingface?" }
       ]
