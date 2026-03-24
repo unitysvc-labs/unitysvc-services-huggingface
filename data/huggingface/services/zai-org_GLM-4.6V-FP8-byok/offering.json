@@ -25,7 +25,7 @@
   "name": "zai-org/GLM-4.6V-FP8",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
