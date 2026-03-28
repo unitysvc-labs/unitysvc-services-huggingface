@@ -25,7 +25,7 @@
   "name": "baidu/ERNIE-4.5-VL-28B-A3B-PT",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
