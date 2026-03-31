@@ -23,7 +23,7 @@
   "name": "XiaomiMiMo/MiMo-V2-Flash",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

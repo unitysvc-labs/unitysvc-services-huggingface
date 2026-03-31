@@ -1,5 +1,7 @@
 {
-  "capabilities": ["llm"],
+  "capabilities": [
+    "llm"
+  ],
   "currency": "USD",
   "description": "Black Forest Labs/Flux.2 Klein 4B language model",
   "details": {
@@ -10,8 +12,12 @@
   "name": "black-forest-labs/FLUX.2-klein-4B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
-  "tags": ["ai", "gateway", "byok"],
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
   "time_created": "2026-03-22T15:39:20.591037Z",
   "upstream_access_config": {
     "Hugging Face API": {
