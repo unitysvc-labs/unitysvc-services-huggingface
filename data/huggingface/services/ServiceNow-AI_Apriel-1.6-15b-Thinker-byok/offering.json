@@ -24,7 +24,7 @@
   "name": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
