@@ -49,7 +49,7 @@
   "name": "CohereLabs/aya-expanse-32b",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
