@@ -15,7 +15,8 @@ from typing import Any, Iterator
 
 import httpx
 
-from unitysvc_services import ModelDataFetcher, ModelDataLookup, populate_from_iterator
+from unitysvc_sellers.model_data import ModelDataFetcher, ModelDataLookup
+from unitysvc_sellers.template_populate import populate_from_iterator
 
 # Provider Configuration
 PROVIDER_NAME = "huggingface"
