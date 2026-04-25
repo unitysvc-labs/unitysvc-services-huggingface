@@ -50,7 +50,7 @@
   ],
   "time_created": "2026-03-23T00:35:42.190006Z",
   "upstream_access_config": {
-    "Hugging Face API": {
+    "hugging_face_api": {
       "access_method": "http",
       "api_key": "${ customer_secrets.HF_TOKEN }",
       "base_url": "https://router.huggingface.co/v1",
