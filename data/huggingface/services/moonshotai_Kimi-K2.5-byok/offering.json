@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Moonshotai/Kimi K2.5 language model",
   "details": {
-    "contextLength": 256000,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -18,10 +17,7 @@
       "arxiv:2602.02276",
       "eval-results"
     ],
-    "litellm_provider": "together_ai",
-    "max_input_tokens": 256000,
-    "max_output_tokens": 256000,
-    "max_tokens": 256000,
+    "litellm_provider": "baseten",
     "mode": "chat",
     "object": "model",
     "owned_by": "moonshotai",
@@ -31,14 +27,14 @@
   "name": "moonshotai/Kimi-K2.5",
   "payout_price": {
     "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.5",
-    "output": "2.8",
+    "input": "0.6",
+    "output": "3",
     "reference": null,
     "type": "one_million_tokens"
   },
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",
@@ -46,7 +42,7 @@
   ],
   "time_created": "2026-03-22T20:56:34.070308Z",
   "upstream_access_config": {
-    "hugging_face_api": {
+    "Hugging Face API": {
       "access_method": "http",
       "api_key": "${ customer_secrets.HF_TOKEN }",
       "base_url": "https://router.huggingface.co/v1",

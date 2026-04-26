@@ -1,0 +1,45 @@
+{
+  "capabilities": [
+    "text-generation"
+  ],
+  "currency": "USD",
+  "description": "Deepseek Ai/Deepseek V4 Pro language model",
+  "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "deepseek_v4",
+      "text-generation",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "8-bit",
+      "fp8"
+    ],
+    "object": "model",
+    "owned_by": "deepseek-ai",
+    "pipeline_tag": "text-generation"
+  },
+  "display_name": "Deepseek Ai/Deepseek V4 Pro",
+  "name": "deepseek-ai/DeepSeek-V4-Pro",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-04-26T03:51:53.484907Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "deepseek-ai/DeepSeek-V4-Pro"
+      }
+    }
+  }
+}
