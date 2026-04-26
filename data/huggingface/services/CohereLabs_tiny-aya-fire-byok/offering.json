@@ -77,7 +77,8 @@
       "wo",
       "xh",
       "yo",
-      "zu"
+      "zu",
+      "arxiv:2603.11510"
     ],
     "object": "model",
     "owned_by": "CohereLabs",
@@ -87,7 +88,7 @@
   "name": "CohereLabs/tiny-aya-fire",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",
@@ -95,7 +96,7 @@
   ],
   "time_created": "2026-03-23T00:35:53.438789Z",
   "upstream_access_config": {
-    "hugging_face_api": {
+    "Hugging Face API": {
       "access_method": "http",
       "api_key": "${ customer_secrets.HF_TOKEN }",
       "base_url": "https://router.huggingface.co/v1",

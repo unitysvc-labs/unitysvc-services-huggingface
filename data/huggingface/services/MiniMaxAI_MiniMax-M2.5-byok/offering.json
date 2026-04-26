@@ -17,15 +17,24 @@
       "fp8",
       "deploy:azure"
     ],
+    "litellm_provider": "baseten",
+    "mode": "chat",
     "object": "model",
     "owned_by": "MiniMaxAI",
     "pipeline_tag": "text-generation"
   },
   "display_name": "Minimaxai/Minimax M2.5",
   "name": "MiniMaxAI/MiniMax-M2.5",
+  "payout_price": {
+    "description": "Pricing Per 1M Tokens Input/Output",
+    "input": "0.3",
+    "output": "1.2",
+    "reference": null,
+    "type": "one_million_tokens"
+  },
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",
@@ -33,7 +42,7 @@
   ],
   "time_created": "2026-03-22T20:56:34.055306Z",
   "upstream_access_config": {
-    "hugging_face_api": {
+    "Hugging Face API": {
       "access_method": "http",
       "api_key": "${ customer_secrets.HF_TOKEN }",
       "base_url": "https://router.huggingface.co/v1",

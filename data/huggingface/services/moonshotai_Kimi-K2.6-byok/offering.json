@@ -1,0 +1,46 @@
+{
+  "capabilities": [
+    "image-text-to-text"
+  ],
+  "currency": "USD",
+  "description": "Moonshotai/Kimi K2.6 language model",
+  "details": {
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "kimi_k25",
+      "feature-extraction",
+      "compressed-tensors",
+      "image-text-to-text",
+      "conversational",
+      "custom_code",
+      "arxiv:2602.02276",
+      "eval-results"
+    ],
+    "object": "model",
+    "owned_by": "moonshotai",
+    "pipeline_tag": "image-text-to-text"
+  },
+  "display_name": "Moonshotai/Kimi K2.6",
+  "name": "moonshotai/Kimi-K2.6",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-04-26T03:51:53.609783Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "moonshotai/Kimi-K2.6"
+      }
+    }
+  }
+}
