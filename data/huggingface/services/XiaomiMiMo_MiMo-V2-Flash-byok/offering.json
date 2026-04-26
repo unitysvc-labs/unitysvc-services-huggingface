@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Xiaomimimo/Mimo V2 Flash language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -15,8 +16,12 @@
       "eval-results",
       "fp8"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "XiaomiMiMo",
+    "parameter_count": 306655002624,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Xiaomimimo/Mimo V2 Flash",

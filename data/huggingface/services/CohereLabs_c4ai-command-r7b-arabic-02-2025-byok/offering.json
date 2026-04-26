@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Coherelabs/C4Ai Command R7B Arabic 02 2025 language model",
   "details": {
-    "contextLength": 4096,
+    "context_length": 4096,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -44,6 +44,7 @@
     "mode": "completion",
     "object": "model",
     "owned_by": "CohereLabs",
+    "parameter_count": null,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Coherelabs/C4Ai Command R7B Arabic 02 2025",

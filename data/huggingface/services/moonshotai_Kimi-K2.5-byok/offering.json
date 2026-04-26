@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Moonshotai/Kimi K2.5 language model",
   "details": {
+    "context_length": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -18,9 +19,14 @@
       "eval-results"
     ],
     "litellm_provider": "baseten",
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "moonshotai",
+    "parameter_count": 1014687129600,
     "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Moonshotai/Kimi K2.5",

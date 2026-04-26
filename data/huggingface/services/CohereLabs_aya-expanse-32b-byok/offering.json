@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Coherelabs/Aya Expanse 32B language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -41,8 +42,12 @@
       "arxiv:2412.04261",
       "text-generation-inference"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "CohereLabs",
+    "parameter_count": 32296476672,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Coherelabs/Aya Expanse 32B",

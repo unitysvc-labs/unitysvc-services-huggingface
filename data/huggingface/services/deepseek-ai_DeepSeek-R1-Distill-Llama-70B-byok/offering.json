@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 Distill Llama 70B language model",
   "details": {
-    "contextLength": 131072,
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -23,6 +23,7 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
+    "parameter_count": null,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Deepseek Ai/Deepseek R1 Distill Llama 70B",

@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 235B A22B Thinking 2507 language model",
   "details": {
-    "contextLength": 262144,
+    "context_length": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -28,6 +28,7 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": null,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 235B A22B Thinking 2507",

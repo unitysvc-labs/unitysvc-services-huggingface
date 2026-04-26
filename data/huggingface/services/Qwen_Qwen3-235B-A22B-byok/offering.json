@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 235B A22B language model",
   "details": {
-    "contextLength": 40960,
+    "context_length": 40960,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -21,9 +21,13 @@
     "max_input_tokens": 40960,
     "max_output_tokens": 40960,
     "max_tokens": 40960,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": 235093634560,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 235B A22B",

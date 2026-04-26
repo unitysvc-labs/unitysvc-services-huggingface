@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Katanemo/Arch Router 1.5B language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -19,8 +20,12 @@
       "text-generation-inference",
       "endpoints_compatible"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "katanemo",
+    "parameter_count": 1543714304,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Katanemo/Arch Router 1.5B",

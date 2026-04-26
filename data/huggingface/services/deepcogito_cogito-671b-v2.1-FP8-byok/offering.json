@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Deepcogito/Cogito 671B V2.1 Fp8 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -16,8 +17,12 @@
       "endpoints_compatible",
       "compressed-tensors"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "deepcogito",
+    "parameter_count": 669065609216,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Deepcogito/Cogito 671B V2.1 Fp8",

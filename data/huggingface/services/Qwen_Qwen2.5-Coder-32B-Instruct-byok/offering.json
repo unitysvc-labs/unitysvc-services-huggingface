@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen2.5 Coder 32B Instruct language model",
   "details": {
-    "contextLength": 32768,
+    "context_length": 32768,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -29,9 +29,13 @@
     "max_input_tokens": 32768,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": 32763876352,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen2.5 Coder 32B Instruct",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 4B Thinking 2507 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -17,8 +18,12 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": 4022468096,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 4B Thinking 2507",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Meta Llama/Llama 3.1 70B Instruct language model",
   "details": {
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -27,8 +28,13 @@
       "text-generation-inference",
       "endpoints_compatible"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "meta-llama",
+    "parameter_count": 70553706496,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Meta Llama/Llama 3.1 70B Instruct",

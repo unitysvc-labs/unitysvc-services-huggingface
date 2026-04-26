@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Utter Project/Eurollm 22B Instruct 2512 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -51,8 +52,12 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "utter-project",
+    "parameter_count": 22637328384,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Utter Project/Eurollm 22B Instruct 2512",

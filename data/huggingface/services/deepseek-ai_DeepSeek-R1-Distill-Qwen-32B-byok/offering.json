@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 Distill Qwen 32B language model",
   "details": {
-    "contextLength": 131072,
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -20,9 +20,13 @@
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
+    "parameter_count": 32763876352,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 32B",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Minimaxai/Minimax M1 80K language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -17,6 +18,7 @@
     ],
     "object": "model",
     "owned_by": "MiniMaxAI",
+    "parameter_count": null,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Minimaxai/Minimax M1 80K",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Dicta Il/Dictalm 3.0 24B Thinking language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "safetensors",
       "mistral",
@@ -14,8 +15,12 @@
       "en",
       "he"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "dicta-il",
+    "parameter_count": 23572403200,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Dicta Il/Dictalm 3.0 24B Thinking",

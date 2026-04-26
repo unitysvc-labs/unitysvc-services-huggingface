@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4.6 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -18,9 +19,13 @@
       "endpoints_compatible"
     ],
     "litellm_provider": "baseten",
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "zai-org",
+    "parameter_count": 356785884416,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 4.6",

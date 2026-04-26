@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder Next Fp8 language model",
   "details": {
+    "context_length": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -15,8 +16,13 @@
       "fp8",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": 78995521536,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 Coder Next Fp8",

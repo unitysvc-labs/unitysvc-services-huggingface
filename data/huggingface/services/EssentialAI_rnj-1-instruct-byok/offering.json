@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Essentialai/Rnj 1 Instruct language model",
   "details": {
+    "context_length": 32768,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -15,8 +16,13 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "EssentialAI",
+    "parameter_count": 8310501376,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Essentialai/Rnj 1 Instruct",

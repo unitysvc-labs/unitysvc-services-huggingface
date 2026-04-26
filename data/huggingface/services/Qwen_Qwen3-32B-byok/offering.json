@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 32B language model",
   "details": {
-    "contextLength": 40960,
+    "context_length": 40960,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -25,6 +25,7 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": null,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 32B",

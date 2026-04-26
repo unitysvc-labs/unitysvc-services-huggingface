@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Coherelabs/Tiny Aya Global language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -80,8 +81,12 @@
       "zu",
       "arxiv:2603.11510"
     ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "CohereLabs",
+    "parameter_count": 3349227520,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Coherelabs/Tiny Aya Global",

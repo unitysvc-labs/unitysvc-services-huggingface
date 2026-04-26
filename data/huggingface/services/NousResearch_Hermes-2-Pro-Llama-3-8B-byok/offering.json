@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Nousresearch/Hermes 2 Pro Llama 3 8B language model",
   "details": {
+    "context_length": 8192,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -29,8 +30,13 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "NousResearch",
+    "parameter_count": 8030523392,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Nousresearch/Hermes 2 Pro Llama 3 8B",

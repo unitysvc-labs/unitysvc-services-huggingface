@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 8B language model",
   "details": {
+    "context_length": 40960,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -17,8 +18,13 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": 8190735360,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 8B",

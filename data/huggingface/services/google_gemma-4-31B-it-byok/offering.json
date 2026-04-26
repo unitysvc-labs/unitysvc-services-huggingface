@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Google/Gemma 4 31B It language model",
   "details": {
+    "context_length": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -15,8 +16,13 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "google",
+    "parameter_count": 31273088876,
     "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Google/Gemma 4 31B It",

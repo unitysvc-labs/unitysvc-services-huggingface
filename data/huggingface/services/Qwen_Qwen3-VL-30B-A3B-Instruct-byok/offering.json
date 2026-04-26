@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 Vl 30B A3B Instruct language model",
   "details": {
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -18,8 +19,12 @@
       "endpoints_compatible",
       "deploy:azure"
     ],
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": null,
     "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Qwen/Qwen3 Vl 30B A3B Instruct",

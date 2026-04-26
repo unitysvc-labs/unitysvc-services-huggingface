@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen2.5 Coder 3B Instruct language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -24,9 +25,13 @@
       "deploy:azure"
     ],
     "litellm_provider": "nscale",
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
+    "parameter_count": 3085938688,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen2.5 Coder 3B Instruct",

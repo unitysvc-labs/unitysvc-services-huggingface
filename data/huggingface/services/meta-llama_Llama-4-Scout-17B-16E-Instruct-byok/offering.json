@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Meta Llama/Llama 4 Scout 17B 16E Instruct language model",
   "details": {
-    "contextLength": 327680,
+    "context_length": 327680,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -39,6 +39,7 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
+    "parameter_count": null,
     "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Meta Llama/Llama 4 Scout 17B 16E Instruct",
