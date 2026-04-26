@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4.7 Fp8 language model",
   "details": {
+    "context_length": 202752,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -24,9 +25,8 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation",
-    "context_length": 202752,
-    "parameter_count": null
+    "parameter_count": null,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 4.7 Fp8",
   "name": "zai-org/GLM-4.7-FP8",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4 32B 0414 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -17,9 +18,8 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation",
-    "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 4 32B 0414",
   "name": "zai-org/GLM-4-32B-0414",

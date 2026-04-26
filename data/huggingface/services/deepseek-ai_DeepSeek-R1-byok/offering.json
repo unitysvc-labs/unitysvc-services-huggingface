@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 language model",
   "details": {
+    "context_length": 163840,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -22,15 +23,14 @@
     "max_input_tokens": 163840,
     "max_output_tokens": 163840,
     "max_tokens": 163840,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "pipeline_tag": "text-generation",
-    "context_length": 163840,
     "parameter_count": 680571043840,
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    }
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Deepseek Ai/Deepseek R1",
   "name": "deepseek-ai/DeepSeek-R1",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Coherelabs/C4Ai Command A 03 2025 language model",
   "details": {
+    "context_length": 4096,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -40,15 +41,14 @@
     "max_input_tokens": 4096,
     "max_output_tokens": 4096,
     "max_tokens": 4096,
-    "mode": "completion",
-    "object": "model",
-    "owned_by": "CohereLabs",
-    "pipeline_tag": "text-generation",
-    "context_length": 4096,
     "metadata_sources": {
       "parameter_count": "huggingface_safetensors"
     },
-    "parameter_count": 111057580032
+    "mode": "completion",
+    "object": "model",
+    "owned_by": "CohereLabs",
+    "parameter_count": 111057580032,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Coherelabs/C4Ai Command A 03 2025",
   "name": "CohereLabs/c4ai-command-a-03-2025",

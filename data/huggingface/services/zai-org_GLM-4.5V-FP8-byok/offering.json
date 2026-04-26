@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4.5V Fp8 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -19,9 +20,8 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "image-text-to-text",
-    "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Zai Org/Glm 4.5V Fp8",
   "name": "zai-org/GLM-4.5V-FP8",

@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Meta Llama/Llama 3.3 70B Instruct language model",
   "details": {
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -31,15 +32,14 @@
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
-    "pipeline_tag": "text-generation",
-    "context_length": 131072,
     "parameter_count": 70553706496,
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    }
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Meta Llama/Llama 3.3 70B Instruct",
   "name": "meta-llama/Llama-3.3-70B-Instruct",

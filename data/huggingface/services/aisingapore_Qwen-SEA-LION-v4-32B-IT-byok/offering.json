@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Aisingapore/Qwen Sea Lion V4 32B It language model",
   "details": {
+    "context_length": 32768,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -32,15 +33,14 @@
     "max_input_tokens": 32768,
     "max_output_tokens": 4096,
     "max_tokens": 4096,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "aisingapore",
-    "pipeline_tag": "text-generation",
-    "context_length": 32768,
     "parameter_count": 32762123264,
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    }
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Aisingapore/Qwen Sea Lion V4 32B It",
   "name": "aisingapore/Qwen-SEA-LION-v4-32B-IT",

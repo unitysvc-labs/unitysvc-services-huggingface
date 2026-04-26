@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Moonshotai/Kimi K2 Thinking language model",
   "details": {
+    "context_length": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -20,15 +21,14 @@
     "max_input_tokens": 262144,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "moonshotai",
-    "pipeline_tag": "text-generation",
-    "context_length": 262144,
     "parameter_count": 1014687129600,
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    }
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Moonshotai/Kimi K2 Thinking",
   "name": "moonshotai/Kimi-K2-Thinking",

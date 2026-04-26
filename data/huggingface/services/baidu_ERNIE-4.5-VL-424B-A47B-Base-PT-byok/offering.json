@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt language model",
   "details": {
+    "context_length": 123000,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -17,15 +18,14 @@
       "zh",
       "endpoints_compatible"
     ],
-    "object": "model",
-    "owned_by": "baidu",
-    "pipeline_tag": "image-text-to-text",
     "metadata_sources": {
       "context_length": "openrouter",
       "parameter_count": "huggingface_safetensors"
     },
-    "context_length": 123000,
-    "parameter_count": 422842368000
+    "object": "model",
+    "owned_by": "baidu",
+    "parameter_count": 422842368000,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt",
   "name": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",

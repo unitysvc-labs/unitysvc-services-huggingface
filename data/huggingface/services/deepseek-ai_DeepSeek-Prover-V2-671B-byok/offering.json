@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek Prover V2 671B language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -18,9 +19,8 @@
     ],
     "object": "model",
     "owned_by": "deepseek-ai",
-    "pipeline_tag": "text-generation",
-    "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Deepseek Ai/Deepseek Prover V2 671B",
   "name": "deepseek-ai/DeepSeek-Prover-V2-671B",

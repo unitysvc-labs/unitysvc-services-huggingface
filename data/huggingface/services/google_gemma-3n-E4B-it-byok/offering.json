@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Google/Gemma 3N E4B It language model",
   "details": {
+    "context_length": 8192,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -34,14 +35,13 @@
       "arxiv:2107.03374",
       "endpoints_compatible"
     ],
-    "object": "model",
-    "owned_by": "google",
-    "pipeline_tag": "image-text-to-text",
     "metadata_sources": {
       "context_length": "openrouter"
     },
-    "context_length": 8192,
-    "parameter_count": null
+    "object": "model",
+    "owned_by": "google",
+    "parameter_count": null,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Google/Gemma 3N E4B It",
   "name": "google/gemma-3n-E4B-it",

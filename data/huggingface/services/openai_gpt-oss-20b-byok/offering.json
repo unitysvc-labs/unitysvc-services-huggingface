@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Openai/Gpt Oss 20B language model",
   "details": {
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -23,15 +24,14 @@
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "openai",
-    "pipeline_tag": "text-generation",
-    "context_length": 131072,
     "parameter_count": 19707494400,
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    }
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Openai/Gpt Oss 20B",
   "name": "openai/gpt-oss-20b",

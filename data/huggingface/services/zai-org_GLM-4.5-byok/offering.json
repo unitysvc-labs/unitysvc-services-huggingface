@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4.5 language model",
   "details": {
+    "context_length": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -20,15 +21,14 @@
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation",
-    "context_length": 131072,
     "parameter_count": 358337776896,
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    }
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 4.5",
   "name": "zai-org/GLM-4.5",

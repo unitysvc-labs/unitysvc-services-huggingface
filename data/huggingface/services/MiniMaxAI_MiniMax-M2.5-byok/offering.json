@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Minimaxai/Minimax M2.5 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -18,15 +19,14 @@
       "deploy:azure"
     ],
     "litellm_provider": "baseten",
-    "mode": "chat",
-    "object": "model",
-    "owned_by": "MiniMaxAI",
-    "pipeline_tag": "text-generation",
     "metadata_sources": {
       "parameter_count": "huggingface_safetensors"
     },
-    "context_length": null,
-    "parameter_count": 227410968576
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "MiniMaxAI",
+    "parameter_count": 227410968576,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Minimaxai/Minimax M2.5",
   "name": "MiniMaxAI/MiniMax-M2.5",

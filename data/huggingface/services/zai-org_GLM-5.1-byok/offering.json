@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Zai Org/Glm 5.1 language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -17,14 +18,13 @@
       "eval-results",
       "endpoints_compatible"
     ],
-    "object": "model",
-    "owned_by": "zai-org",
-    "pipeline_tag": "text-generation",
-    "context_length": null,
-    "parameter_count": 753864119552,
     "metadata_sources": {
       "parameter_count": "huggingface_safetensors"
-    }
+    },
+    "object": "model",
+    "owned_by": "zai-org",
+    "parameter_count": 753864119552,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 5.1",
   "name": "zai-org/GLM-5.1",

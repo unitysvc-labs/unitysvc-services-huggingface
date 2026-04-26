@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Aisingapore/Gemma Sea Lion V4 27B It language model",
   "details": {
+    "context_length": 8192,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -39,9 +40,8 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "aisingapore",
-    "pipeline_tag": "text-generation",
-    "context_length": 8192,
-    "parameter_count": null
+    "parameter_count": null,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Aisingapore/Gemma Sea Lion V4 27B It",
   "name": "aisingapore/Gemma-SEA-LION-v4-27B-IT",

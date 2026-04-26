@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen2.5 Coder 7B Instruct language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -25,15 +26,14 @@
       "deploy:azure"
     ],
     "litellm_provider": "nscale",
-    "mode": "chat",
-    "object": "model",
-    "owned_by": "Qwen",
-    "pipeline_tag": "text-generation",
     "metadata_sources": {
       "parameter_count": "huggingface_safetensors"
     },
-    "context_length": null,
-    "parameter_count": 7615616512
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "Qwen",
+    "parameter_count": 7615616512,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen2.5 Coder 7B Instruct",
   "name": "Qwen/Qwen2.5-Coder-7B-Instruct",

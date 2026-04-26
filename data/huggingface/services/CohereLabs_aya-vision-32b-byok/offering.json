@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Coherelabs/Aya Vision 32B language model",
   "details": {
+    "context_length": null,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -38,9 +39,8 @@
     ],
     "object": "model",
     "owned_by": "CohereLabs",
-    "pipeline_tag": "image-text-to-text",
-    "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Coherelabs/Aya Vision 32B",
   "name": "CohereLabs/aya-vision-32b",

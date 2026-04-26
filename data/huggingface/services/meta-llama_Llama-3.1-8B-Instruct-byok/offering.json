@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Meta Llama/Llama 3.1 8B Instruct language model",
   "details": {
+    "context_length": 16384,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -29,16 +30,15 @@
       "endpoints_compatible"
     ],
     "litellm_provider": "nscale",
-    "mode": "chat",
-    "object": "model",
-    "owned_by": "meta-llama",
-    "pipeline_tag": "text-generation",
     "metadata_sources": {
       "context_length": "openrouter",
       "parameter_count": "huggingface_safetensors"
     },
-    "context_length": 16384,
-    "parameter_count": 8030261248
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "meta-llama",
+    "parameter_count": 8030261248,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Meta Llama/Llama 3.1 8B Instruct",
   "name": "meta-llama/Llama-3.1-8B-Instruct",

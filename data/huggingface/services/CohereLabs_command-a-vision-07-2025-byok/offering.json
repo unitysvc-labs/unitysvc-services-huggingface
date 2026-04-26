@@ -5,6 +5,7 @@
   "currency": "USD",
   "description": "Coherelabs/Command A Vision 07 2025 language model",
   "details": {
+    "context_length": 4096,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -22,15 +23,14 @@
     "max_input_tokens": 4096,
     "max_output_tokens": 4096,
     "max_tokens": 4096,
-    "mode": "completion",
-    "object": "model",
-    "owned_by": "CohereLabs",
-    "pipeline_tag": "image-text-to-text",
-    "context_length": 4096,
     "metadata_sources": {
       "parameter_count": "huggingface_safetensors"
     },
-    "parameter_count": 111867525360
+    "mode": "completion",
+    "object": "model",
+    "owned_by": "CohereLabs",
+    "parameter_count": 111867525360,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Coherelabs/Command A Vision 07 2025",
   "name": "CohereLabs/command-a-vision-07-2025",
