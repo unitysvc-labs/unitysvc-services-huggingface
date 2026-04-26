@@ -53,7 +53,12 @@
     ],
     "object": "model",
     "owned_by": "utter-project",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 22637328384,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Utter Project/Eurollm 22B Instruct 2512",
   "name": "utter-project/EuroLLM-22B-Instruct-2512",

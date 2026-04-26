@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Coherelabs/C4Ai Command R7B 12 2024 language model",
   "details": {
-    "contextLength": 4096,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -44,7 +43,12 @@
     "mode": "completion",
     "object": "model",
     "owned_by": "CohereLabs",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 4096,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "parameter_count": 8028033024
   },
   "display_name": "Coherelabs/C4Ai Command R7B 12 2024",
   "name": "CohereLabs/c4ai-command-r7b-12-2024",

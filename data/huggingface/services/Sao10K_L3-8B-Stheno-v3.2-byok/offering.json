@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Sao10K/L3 8B Stheno V3.2 language model",
   "details": {
-    "contextLength": 8192,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -28,7 +27,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Sao10K",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 8192,
+    "parameter_count": 8030261248,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Sao10K/L3 8B Stheno V3.2",
   "name": "Sao10K/L3-8B-Stheno-v3.2",

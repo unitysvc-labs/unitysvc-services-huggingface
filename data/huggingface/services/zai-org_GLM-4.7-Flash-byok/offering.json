@@ -20,7 +20,12 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 31221485568,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Zai Org/Glm 4.7 Flash",
   "name": "zai-org/GLM-4.7-Flash",

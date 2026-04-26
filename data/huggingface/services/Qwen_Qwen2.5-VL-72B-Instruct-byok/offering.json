@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Qwen/Qwen2.5 Vl 72B Instruct language model",
   "details": {
-    "contextLength": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -29,7 +28,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "context_length": 131072,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "parameter_count": 73410777344
   },
   "display_name": "Qwen/Qwen2.5 Vl 72B Instruct",
   "name": "Qwen/Qwen2.5-VL-72B-Instruct",

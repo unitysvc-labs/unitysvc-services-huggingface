@@ -82,7 +82,12 @@
     ],
     "object": "model",
     "owned_by": "CohereLabs",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "context_length": null,
+    "parameter_count": 3349227520
   },
   "display_name": "Coherelabs/Tiny Aya Fire",
   "name": "CohereLabs/tiny-aya-fire",

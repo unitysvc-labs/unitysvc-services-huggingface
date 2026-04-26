@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Moonshotai/Kimi K2 Instruct language model",
   "details": {
-    "contextLength": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -25,7 +24,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "moonshotai",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 131072,
+    "parameter_count": 1023893241856,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Moonshotai/Kimi K2 Instruct",
   "name": "moonshotai/Kimi-K2-Instruct",

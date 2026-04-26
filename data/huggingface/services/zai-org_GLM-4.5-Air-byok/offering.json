@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Zai Org/Glm 4.5 Air language model",
   "details": {
-    "contextLength": 128000,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -23,7 +22,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 128000,
+    "parameter_count": 110468818944,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Zai Org/Glm 4.5 Air",
   "name": "zai-org/GLM-4.5-Air",

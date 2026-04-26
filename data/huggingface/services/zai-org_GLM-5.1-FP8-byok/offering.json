@@ -19,7 +19,12 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 751749169152,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Zai Org/Glm 5.1 Fp8",
   "name": "zai-org/GLM-5.1-FP8",

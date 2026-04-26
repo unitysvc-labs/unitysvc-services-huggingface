@@ -20,7 +20,12 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "context_length": null,
+    "parameter_count": 10292777472,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Zai Org/Autoglm Phone 9B Multilingual",
   "name": "zai-org/AutoGLM-Phone-9B-Multilingual",

@@ -18,7 +18,12 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "context_length": null,
+    "parameter_count": 107710927360,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Zai Org/Glm 4.5V",
   "name": "zai-org/GLM-4.5V",

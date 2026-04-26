@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 235B A22B Instruct 2507 language model",
   "details": {
-    "contextLength": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -27,7 +26,9 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 262144,
+    "parameter_count": null
   },
   "display_name": "Qwen/Qwen3 235B A22B Instruct 2507",
   "name": "Qwen/Qwen3-235B-A22B-Instruct-2507",

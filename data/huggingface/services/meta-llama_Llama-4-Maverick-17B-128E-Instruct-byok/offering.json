@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Meta Llama/Llama 4 Maverick 17B 128E Instruct language model",
   "details": {
-    "contextLength": 1048576,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -40,7 +39,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "context_length": 1048576,
+    "parameter_count": 401583781376,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Meta Llama/Llama 4 Maverick 17B 128E Instruct",
   "name": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",

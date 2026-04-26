@@ -19,7 +19,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 1777088000,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 1.5B",
   "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",

@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Minimaxai/Minimax M2.1 language model",
   "details": {
-    "contextLength": 196608,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -26,7 +25,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "MiniMaxAI",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 196608,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "parameter_count": 227410968576
   },
   "display_name": "Minimaxai/Minimax M2.1",
   "name": "MiniMaxAI/MiniMax-M2.1",

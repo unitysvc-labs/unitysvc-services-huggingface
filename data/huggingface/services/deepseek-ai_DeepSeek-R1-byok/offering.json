@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 language model",
   "details": {
-    "contextLength": 163840,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -26,7 +25,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 163840,
+    "parameter_count": 680571043840,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Deepseek Ai/Deepseek R1",
   "name": "deepseek-ai/DeepSeek-R1",

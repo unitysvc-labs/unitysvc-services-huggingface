@@ -17,7 +17,12 @@
     ],
     "object": "model",
     "owned_by": "XiaomiMiMo",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 306655002624,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Xiaomimimo/Mimo V2 Flash",
   "name": "XiaomiMiMo/MiMo-V2-Flash",

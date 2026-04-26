@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder 480B A35B Instruct Fp8 language model",
   "details": {
-    "contextLength": 256000,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -22,7 +21,9 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 256000,
+    "parameter_count": null
   },
   "display_name": "Qwen/Qwen3 Coder 480B A35B Instruct Fp8",
   "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",

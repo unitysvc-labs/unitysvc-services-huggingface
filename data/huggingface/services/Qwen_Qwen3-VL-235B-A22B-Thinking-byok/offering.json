@@ -20,7 +20,13 @@
     ],
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
+    "context_length": 131072,
+    "parameter_count": 235670022896
   },
   "display_name": "Qwen/Qwen3 Vl 235B A22B Thinking",
   "name": "Qwen/Qwen3-VL-235B-A22B-Thinking",

@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Openai/Gpt Oss 120B language model",
   "details": {
-    "contextLength": 131072,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -27,7 +26,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "openai",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 131072,
+    "parameter_count": 118244966400,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Openai/Gpt Oss 120B",
   "name": "openai/gpt-oss-120b",

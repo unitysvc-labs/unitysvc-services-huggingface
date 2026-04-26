@@ -20,7 +20,9 @@
     ],
     "object": "model",
     "owned_by": "zai-org",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Zai Org/Glm 4.6 Fp8",
   "name": "zai-org/GLM-4.6-FP8",

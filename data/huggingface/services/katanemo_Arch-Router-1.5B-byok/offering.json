@@ -21,7 +21,12 @@
     ],
     "object": "model",
     "owned_by": "katanemo",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 1543714304,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Katanemo/Arch Router 1.5B",
   "name": "katanemo/Arch-Router-1.5B",

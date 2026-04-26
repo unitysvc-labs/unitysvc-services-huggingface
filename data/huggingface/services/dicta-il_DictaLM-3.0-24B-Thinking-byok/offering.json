@@ -16,7 +16,12 @@
     ],
     "object": "model",
     "owned_by": "dicta-il",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 23572403200,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Dicta Il/Dictalm 3.0 24B Thinking",
   "name": "dicta-il/DictaLM-3.0-24B-Thinking",

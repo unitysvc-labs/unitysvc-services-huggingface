@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Sao10K/L3 70B Euryale V2.1 language model",
   "details": {
-    "contextLength": 200000,
     "hf_tags": [
       "transformers",
       "pytorch",
@@ -25,7 +24,9 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Sao10K",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 200000,
+    "parameter_count": null
   },
   "display_name": "Sao10K/L3 70B Euryale V2.1",
   "name": "Sao10K/L3-70B-Euryale-v2.1",

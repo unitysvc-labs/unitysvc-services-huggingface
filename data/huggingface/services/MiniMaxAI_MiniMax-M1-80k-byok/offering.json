@@ -17,7 +17,9 @@
     ],
     "object": "model",
     "owned_by": "MiniMaxAI",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Minimaxai/Minimax M1 80K",
   "name": "MiniMaxAI/MiniMax-M1-80k",

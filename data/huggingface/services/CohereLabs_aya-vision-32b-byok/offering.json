@@ -38,7 +38,9 @@
     ],
     "object": "model",
     "owned_by": "CohereLabs",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Coherelabs/Aya Vision 32B",
   "name": "CohereLabs/aya-vision-32b",

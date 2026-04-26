@@ -18,7 +18,12 @@
     ],
     "object": "model",
     "owned_by": "deepseek-ai",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 786381668352,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Deepseek Ai/Deepseek V4 Pro",
   "name": "deepseek-ai/DeepSeek-V4-Pro",

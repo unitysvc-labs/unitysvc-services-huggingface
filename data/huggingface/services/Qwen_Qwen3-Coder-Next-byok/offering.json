@@ -17,7 +17,13 @@
     ],
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
+    "context_length": 262144,
+    "parameter_count": 79674391296
   },
   "display_name": "Qwen/Qwen3 Coder Next",
   "name": "Qwen/Qwen3-Coder-Next",

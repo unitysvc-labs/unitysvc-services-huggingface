@@ -17,7 +17,12 @@
     ],
     "object": "model",
     "owned_by": "deepcogito",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": 671019752960,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    }
   },
   "display_name": "Deepcogito/Cogito 671B V2.1",
   "name": "deepcogito/cogito-671b-v2.1",

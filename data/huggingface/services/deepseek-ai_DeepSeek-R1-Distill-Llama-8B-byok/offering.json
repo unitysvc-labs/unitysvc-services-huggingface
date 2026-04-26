@@ -19,7 +19,9 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Deepseek Ai/Deepseek R1 Distill Llama 8B",
   "name": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",

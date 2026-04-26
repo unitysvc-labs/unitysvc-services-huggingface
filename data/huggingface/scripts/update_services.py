@@ -7,7 +7,6 @@ Yields model dictionaries that are rendered using Jinja2 templates.
 Usage: python scripts/update_services.py
 """
 
-import json
 import os
 import sys
 from pathlib import Path
@@ -25,6 +24,14 @@ ROUTER_API_URL = "https://router.huggingface.co/v1"
 ENV_API_KEY_NAME = "HF_TOKEN"
 
 SCRIPT_DIR = Path(__file__).parent
+
+
+def _hf_canonical_id(raw: str) -> str:
+    """huggingface directory naming uses 'org_model' instead of 'org/model';
+    swap the FIRST underscore so canonical helpers hit the HF API correctly."""
+    if "_" in raw and "/" not in raw:
+        return raw.replace("_", "/", 1)
+    return raw
 
 
 class ModelSource:
@@ -98,8 +105,6 @@ class ModelSource:
             ]:
                 if field in model_data:
                     details[field] = model_data[field]
-            if "max_input_tokens" in model_data:
-                details["contextLength"] = model_data["max_input_tokens"]
             if "litellm_provider" in model_data:
                 details["litellm_provider"] = model_data["litellm_provider"]
 
@@ -107,6 +112,21 @@ class ModelSource:
             details["owned_by"] = model_info["owned_by"]
         if "object" in model_info:
             details["object"] = model_info["object"]
+
+        # Canonical (snake_case) metadata required by the platform validator
+        # for LLM offerings.  Both keys must be present; null asserts
+        # "unknown".  metadata_sources records provenance so reviewers
+        # can triage stale-value reports.  Note: HF directory naming uses
+        # 'org_model' rather than 'org/model'; normalize before lookup so
+        # the canonical helper's HF API calls resolve correctly.
+        canonical = ModelDataLookup.get_canonical_metadata(
+            _hf_canonical_id(model_id),
+            fetcher=self.data_fetcher,
+        )
+        details["context_length"] = canonical["context_length"]
+        details["parameter_count"] = canonical["parameter_count"]
+        if canonical["sources"]:
+            details["metadata_sources"] = canonical["sources"]
 
         # Extract pricing
         pricing = None

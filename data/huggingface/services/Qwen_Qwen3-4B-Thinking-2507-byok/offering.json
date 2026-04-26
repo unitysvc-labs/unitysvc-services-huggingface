@@ -19,7 +19,12 @@
     ],
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "context_length": null,
+    "parameter_count": 4022468096
   },
   "display_name": "Qwen/Qwen3 4B Thinking 2507",
   "name": "Qwen/Qwen3-4B-Thinking-2507",

@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Meta Llama/Llama Guard 4 12B language model",
   "details": {
-    "contextLength": 163840,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -30,7 +29,9 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "context_length": 163840,
+    "parameter_count": null
   },
   "display_name": "Meta Llama/Llama Guard 4 12B",
   "name": "meta-llama/Llama-Guard-4-12B",

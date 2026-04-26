@@ -5,7 +5,6 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder 480B A35B Instruct language model",
   "details": {
-    "contextLength": 262144,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -23,7 +22,12 @@
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "pipeline_tag": "text-generation"
+    "pipeline_tag": "text-generation",
+    "context_length": 262144,
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "parameter_count": 480154875392
   },
   "display_name": "Qwen/Qwen3 Coder 480B A35B Instruct",
   "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",

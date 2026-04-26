@@ -19,7 +19,13 @@
     ],
     "object": "model",
     "owned_by": "baidu",
-    "pipeline_tag": "image-text-to-text"
+    "pipeline_tag": "image-text-to-text",
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
+    "context_length": 123000,
+    "parameter_count": 422842368000
   },
   "display_name": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt",
   "name": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
