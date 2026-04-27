@@ -43,7 +43,7 @@
   "name": "NousResearch/Hermes-2-Pro-Llama-3-8B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

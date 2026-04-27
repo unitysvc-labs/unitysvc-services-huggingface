@@ -32,7 +32,7 @@
   "name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

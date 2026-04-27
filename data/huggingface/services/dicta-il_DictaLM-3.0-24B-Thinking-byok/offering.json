@@ -27,7 +27,7 @@
   "name": "dicta-il/DictaLM-3.0-24B-Thinking",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

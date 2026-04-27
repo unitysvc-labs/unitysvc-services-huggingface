@@ -24,7 +24,7 @@
   "name": "deepseek-ai/DeepSeek-V3.2-Exp",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
