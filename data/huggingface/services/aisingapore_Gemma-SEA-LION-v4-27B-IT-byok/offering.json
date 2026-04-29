@@ -1,47 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Aisingapore/Gemma Sea Lion V4 27B It language model",
   "details": {
     "context_length": 8192,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "gemma3",
-      "image-text-to-text",
-      "text-generation",
-      "conversational",
-      "en",
-      "zh",
-      "vi",
-      "id",
-      "th",
-      "fil",
-      "ta",
-      "ms",
-      "km",
-      "lo",
-      "my",
-      "jv",
-      "su",
-      "arxiv:2502.14301",
-      "arxiv:2311.07911",
-      "arxiv:2306.05685",
-      "arxiv:1910.09700",
-      "text-generation-inference",
-      "endpoints_compatible"
-    ],
     "litellm_provider": "publicai",
     "max_input_tokens": 8192,
     "max_output_tokens": 4096,
     "max_tokens": 4096,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "aisingapore",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Aisingapore/Gemma Sea Lion V4 27B It",
   "name": "aisingapore/Gemma-SEA-LION-v4-27B-IT",

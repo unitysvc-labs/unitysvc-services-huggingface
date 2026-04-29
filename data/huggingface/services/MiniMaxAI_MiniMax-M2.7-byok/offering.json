@@ -1,29 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Minimaxai/Minimax M2.7 language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "minimax_m2",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "eval-results",
-      "endpoints_compatible",
-      "fp8"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "MiniMaxAI",
-    "parameter_count": 227410968576,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Minimaxai/Minimax M2.7",
   "name": "MiniMaxAI/MiniMax-M2.7",

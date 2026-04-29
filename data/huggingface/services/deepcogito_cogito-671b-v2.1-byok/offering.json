@@ -1,28 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Deepcogito/Cogito 671B V2.1 language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "text-generation-inference",
-      "endpoints_compatible"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "deepcogito",
-    "parameter_count": 671019752960,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Deepcogito/Cogito 671B V2.1",
   "name": "deepcogito/cogito-671b-v2.1",

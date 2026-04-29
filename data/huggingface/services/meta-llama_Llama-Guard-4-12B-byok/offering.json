@@ -1,37 +1,22 @@
 {
   "capabilities": [
-    "image-text-to-text"
+    "llm"
   ],
   "currency": "USD",
   "description": "Meta Llama/Llama Guard 4 12B language model",
   "details": {
     "context_length": 163840,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "llama4",
-      "image-text-to-text",
-      "facebook",
-      "meta",
-      "pytorch",
-      "llama",
-      "safety",
-      "conversational",
-      "en",
-      "arxiv:2503.05731",
-      "arxiv:2407.21783",
-      "text-generation-inference",
-      "endpoints_compatible"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 163840,
     "max_output_tokens": 163840,
     "max_tokens": 163840,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
-    "parameter_count": null,
-    "pipeline_tag": "image-text-to-text"
+    "parameter_count": null
   },
   "display_name": "Meta Llama/Llama Guard 4 12B",
   "name": "meta-llama/Llama-Guard-4-12B",

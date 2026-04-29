@@ -1,29 +1,17 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Essentialai/Rnj 1 Instruct language model",
   "details": {
     "context_length": 32768,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "gemma3_text",
-      "text-generation",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
     "metadata_sources": {
-      "context_length": "openrouter",
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "openrouter"
     },
     "object": "model",
     "owned_by": "EssentialAI",
-    "parameter_count": 8310501376,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Essentialai/Rnj 1 Instruct",
   "name": "EssentialAI/rnj-1-instruct",

@@ -1,25 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Minimaxai/Minimax M1 80K language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "minimax_m1",
-      "text-generation",
-      "vllm",
-      "conversational",
-      "custom_code",
-      "arxiv:2506.13585"
-    ],
     "object": "model",
     "owned_by": "MiniMaxAI",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Minimaxai/Minimax M1 80K",
   "name": "MiniMaxAI/MiniMax-M1-80k",

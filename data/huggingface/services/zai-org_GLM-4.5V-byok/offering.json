@@ -1,29 +1,14 @@
 {
   "capabilities": [
-    "image-text-to-text"
+    "llm"
   ],
   "currency": "USD",
   "description": "Zai Org/Glm 4.5V language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "glm4v_moe",
-      "image-text-to-text",
-      "conversational",
-      "zh",
-      "en",
-      "arxiv:2507.01006",
-      "endpoints_compatible"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "zai-org",
-    "parameter_count": 107710927360,
-    "pipeline_tag": "image-text-to-text"
+    "parameter_count": null
   },
   "display_name": "Zai Org/Glm 4.5V",
   "name": "zai-org/GLM-4.5V",

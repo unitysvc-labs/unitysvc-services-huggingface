@@ -1,32 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Sao10K/L3 70B Euryale V2.1 language model",
   "details": {
     "context_length": 200000,
-    "hf_tags": [
-      "transformers",
-      "pytorch",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "conversational",
-      "en",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
     "max_output_tokens": 100000,
     "max_tokens": 100000,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Sao10K",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Sao10K/L3 70B Euryale V2.1",
   "name": "Sao10K/L3-70B-Euryale-v2.1",

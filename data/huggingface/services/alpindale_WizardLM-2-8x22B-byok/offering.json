@@ -1,32 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Alpindale/Wizardlm 2 8X22B language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "mixtral",
-      "text-generation",
-      "conversational",
-      "arxiv:2304.12244",
-      "arxiv:2306.08568",
-      "arxiv:2308.09583",
-      "model-index",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "alpindale",
-    "parameter_count": 140620634112,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Alpindale/Wizardlm 2 8X22B",
   "name": "alpindale/WizardLM-2-8x22B",

@@ -1,36 +1,22 @@
 {
   "capabilities": [
-    "image-text-to-text"
+    "llm"
   ],
   "currency": "USD",
   "description": "Coherelabs/Command A Vision 07 2025 language model",
   "details": {
     "context_length": 4096,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "cohere2_vision",
-      "image-text-to-text",
-      "conversational",
-      "en",
-      "fr",
-      "de",
-      "es",
-      "it",
-      "pt"
-    ],
     "litellm_provider": "cohere",
     "max_input_tokens": 4096,
     "max_output_tokens": 4096,
     "max_tokens": 4096,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "litellm"
     },
     "mode": "completion",
     "object": "model",
     "owned_by": "CohereLabs",
-    "parameter_count": 111867525360,
-    "pipeline_tag": "image-text-to-text"
+    "parameter_count": null
   },
   "display_name": "Coherelabs/Command A Vision 07 2025",
   "name": "CohereLabs/command-a-vision-07-2025",

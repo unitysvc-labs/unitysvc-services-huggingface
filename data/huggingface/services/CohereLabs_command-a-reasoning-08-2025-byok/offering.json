@@ -3,21 +3,27 @@
     "llm"
   ],
   "currency": "USD",
-  "description": "Zai Org/Glm 5 language model",
+  "description": "Coherelabs/Command A Reasoning 08 2025 language model",
   "details": {
-    "context_length": null,
-    "litellm_provider": "baseten",
-    "mode": "chat",
+    "context_length": 4096,
+    "litellm_provider": "cohere",
+    "max_input_tokens": 4096,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
+    "mode": "completion",
     "object": "model",
-    "owned_by": "zai-org",
+    "owned_by": "CohereLabs",
     "parameter_count": null
   },
-  "display_name": "Zai Org/Glm 5",
-  "name": "zai-org/GLM-5",
+  "display_name": "Coherelabs/Command A Reasoning 08 2025",
+  "name": "CohereLabs/command-a-reasoning-08-2025",
   "payout_price": {
     "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.95",
-    "output": "3.15",
+    "input": "1",
+    "output": "2",
     "reference": null,
     "type": "one_million_tokens"
   },
@@ -29,7 +35,7 @@
     "gateway",
     "byok"
   ],
-  "time_created": "2026-03-22T20:56:34.063995Z",
+  "time_created": "2026-04-29T04:28:02.692517Z",
   "upstream_access_config": {
     "Hugging Face API": {
       "access_method": "http",
@@ -37,7 +43,7 @@
       "base_url": "https://router.huggingface.co/v1",
       "rate_limits": [],
       "routing_key": {
-        "model": "zai-org/GLM-5"
+        "model": "CohereLabs/command-a-reasoning-08-2025"
       }
     }
   }

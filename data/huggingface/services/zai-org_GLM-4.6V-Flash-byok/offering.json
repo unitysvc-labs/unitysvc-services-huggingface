@@ -1,30 +1,14 @@
 {
   "capabilities": [
-    "image-text-to-text"
+    "llm"
   ],
   "currency": "USD",
   "description": "Zai Org/Glm 4.6V Flash language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "glm4v",
-      "image-text-to-text",
-      "conversational",
-      "zh",
-      "en",
-      "arxiv:2507.01006",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "zai-org",
-    "parameter_count": 10292777472,
-    "pipeline_tag": "image-text-to-text"
+    "parameter_count": null
   },
   "display_name": "Zai Org/Glm 4.6V Flash",
   "name": "zai-org/GLM-4.6V-Flash",

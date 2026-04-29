@@ -1,32 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3 32B language model",
   "details": {
     "context_length": 40960,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "qwen3",
-      "text-generation",
-      "conversational",
-      "arxiv:2309.00071",
-      "arxiv:2505.09388",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 40960,
     "max_output_tokens": 40960,
     "max_tokens": 40960,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Qwen/Qwen3 32B",
   "name": "Qwen/Qwen3-32B",
