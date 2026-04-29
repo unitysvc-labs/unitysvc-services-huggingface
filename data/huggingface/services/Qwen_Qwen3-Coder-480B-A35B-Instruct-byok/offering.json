@@ -1,33 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder 480B A35B Instruct language model",
   "details": {
     "context_length": 262144,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "qwen3_moe",
-      "text-generation",
-      "conversational",
-      "arxiv:2505.09388",
-      "eval-results",
-      "endpoints_compatible"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 262144,
     "max_output_tokens": 262144,
     "max_tokens": 262144,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "openrouter"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": 480154875392,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Qwen/Qwen3 Coder 480B A35B Instruct",
   "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",

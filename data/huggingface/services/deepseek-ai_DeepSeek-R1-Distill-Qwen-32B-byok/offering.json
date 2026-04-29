@@ -1,33 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 Distill Qwen 32B language model",
   "details": {
     "context_length": 131072,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "conversational",
-      "arxiv:2501.12948",
-      "text-generation-inference",
-      "endpoints_compatible"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "litellm"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "parameter_count": 32763876352,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 32B",
   "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",

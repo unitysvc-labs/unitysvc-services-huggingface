@@ -3,21 +3,21 @@
     "llm"
   ],
   "currency": "USD",
-  "description": "Zai Org/Glm 5 language model",
+  "description": "Deepseek Ai/Deepseek R1 Distill Qwen 14B language model",
   "details": {
     "context_length": null,
-    "litellm_provider": "baseten",
+    "litellm_provider": "nscale",
     "mode": "chat",
     "object": "model",
-    "owned_by": "zai-org",
+    "owned_by": "deepseek-ai",
     "parameter_count": null
   },
-  "display_name": "Zai Org/Glm 5",
-  "name": "zai-org/GLM-5",
+  "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 14B",
+  "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
   "payout_price": {
     "description": "Pricing Per 1M Tokens Input/Output",
-    "input": "0.95",
-    "output": "3.15",
+    "input": "0.07",
+    "output": "0.07",
     "reference": null,
     "type": "one_million_tokens"
   },
@@ -29,7 +29,7 @@
     "gateway",
     "byok"
   ],
-  "time_created": "2026-03-22T20:56:34.063995Z",
+  "time_created": "2026-04-29T04:27:17.820085Z",
   "upstream_access_config": {
     "Hugging Face API": {
       "access_method": "http",
@@ -37,7 +37,7 @@
       "base_url": "https://router.huggingface.co/v1",
       "rate_limits": [],
       "routing_key": {
-        "model": "zai-org/GLM-5"
+        "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
       }
     }
   }

@@ -1,29 +1,20 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder 480B A35B Instruct Fp8 language model",
   "details": {
-    "context_length": 256000,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "qwen3_moe",
-      "text-generation",
-      "conversational",
-      "arxiv:2505.09388",
-      "endpoints_compatible",
-      "fp8",
-      "deploy:azure"
-    ],
+    "context_length": 262144,
     "litellm_provider": "together_ai",
     "max_input_tokens": 256000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Qwen/Qwen3 Coder 480B A35B Instruct Fp8",
   "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",

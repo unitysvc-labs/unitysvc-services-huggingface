@@ -1,34 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Moonshotai/Kimi K2 Instruct 0905 language model",
   "details": {
-    "context_length": 262144,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "kimi_k2",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "eval-results",
-      "endpoints_compatible",
-      "fp8"
-    ],
+    "context_length": 131072,
     "litellm_provider": "deepinfra",
     "max_input_tokens": 262144,
     "max_output_tokens": 262144,
     "max_tokens": 262144,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "openrouter"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "moonshotai",
-    "parameter_count": 1023893241856,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Moonshotai/Kimi K2 Instruct 0905",
   "name": "moonshotai/Kimi-K2-Instruct-0905",

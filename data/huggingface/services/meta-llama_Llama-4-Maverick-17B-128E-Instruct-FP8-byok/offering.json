@@ -1,50 +1,22 @@
 {
   "capabilities": [
-    "image-text-to-text"
+    "llm"
   ],
   "currency": "USD",
   "description": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8 language model",
   "details": {
     "context_length": 1048576,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "llama4",
-      "image-text-to-text",
-      "facebook",
-      "meta",
-      "pytorch",
-      "llama",
-      "conversational",
-      "ar",
-      "de",
-      "en",
-      "es",
-      "fr",
-      "hi",
-      "id",
-      "it",
-      "pt",
-      "th",
-      "tl",
-      "vi",
-      "arxiv:2204.05149",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "compressed-tensors"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 1048576,
     "max_output_tokens": 1048576,
     "max_tokens": 1048576,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "openrouter"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
-    "parameter_count": 386547056640,
-    "pipeline_tag": "image-text-to-text"
+    "parameter_count": null
   },
   "display_name": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8",
   "name": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",

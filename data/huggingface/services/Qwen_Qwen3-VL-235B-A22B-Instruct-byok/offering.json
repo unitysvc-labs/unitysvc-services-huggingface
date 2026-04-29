@@ -1,36 +1,22 @@
 {
   "capabilities": [
-    "image-text-to-text"
+    "llm"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3 Vl 235B A22B Instruct language model",
   "details": {
     "context_length": 262144,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "qwen3_vl_moe",
-      "image-text-to-text",
-      "conversational",
-      "arxiv:2505.09388",
-      "arxiv:2502.13923",
-      "arxiv:2409.12191",
-      "arxiv:2308.12966",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
     "litellm_provider": "gmi",
     "max_input_tokens": 262144,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "openrouter"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": 235670022896,
-    "pipeline_tag": "image-text-to-text"
+    "parameter_count": null
   },
   "display_name": "Qwen/Qwen3 Vl 235B A22B Instruct",
   "name": "Qwen/Qwen3-VL-235B-A22B-Instruct",

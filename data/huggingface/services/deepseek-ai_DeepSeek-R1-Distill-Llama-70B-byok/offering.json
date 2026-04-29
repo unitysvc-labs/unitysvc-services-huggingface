@@ -1,30 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 Distill Llama 70B language model",
   "details": {
     "context_length": 131072,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "conversational",
-      "arxiv:2501.12948",
-      "text-generation-inference",
-      "endpoints_compatible"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Deepseek Ai/Deepseek R1 Distill Llama 70B",
   "name": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",

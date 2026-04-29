@@ -1,31 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Swiss Ai/Apertus 8B Instruct 2509 language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "apertus",
-      "text-generation",
-      "multilingual",
-      "compliant",
-      "swiss-ai",
-      "conversational",
-      "arxiv:2509.14233",
-      "endpoints_compatible",
-      "deploy:azure"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "swiss-ai",
-    "parameter_count": 8053338176,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Swiss Ai/Apertus 8B Instruct 2509",
   "name": "swiss-ai/Apertus-8B-Instruct-2509",

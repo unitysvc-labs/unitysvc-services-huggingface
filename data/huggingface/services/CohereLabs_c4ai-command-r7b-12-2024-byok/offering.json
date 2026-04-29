@@ -1,54 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Coherelabs/C4Ai Command R7B 12 2024 language model",
   "details": {
     "context_length": 4096,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "cohere2",
-      "text-generation",
-      "conversational",
-      "en",
-      "fr",
-      "de",
-      "es",
-      "it",
-      "pt",
-      "ja",
-      "ko",
-      "zh",
-      "ar",
-      "el",
-      "fa",
-      "pl",
-      "id",
-      "cs",
-      "he",
-      "hi",
-      "nl",
-      "ro",
-      "ru",
-      "tr",
-      "uk",
-      "vi",
-      "arxiv:2504.00698"
-    ],
     "litellm_provider": "cohere",
     "max_input_tokens": 4096,
     "max_output_tokens": 4096,
     "max_tokens": 4096,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "litellm"
     },
     "mode": "completion",
     "object": "model",
     "owned_by": "CohereLabs",
-    "parameter_count": 8028033024,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Coherelabs/C4Ai Command R7B 12 2024",
   "name": "CohereLabs/c4ai-command-r7b-12-2024",

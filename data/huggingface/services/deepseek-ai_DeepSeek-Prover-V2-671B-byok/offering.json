@@ -1,26 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek Prover V2 671B language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "fp8"
-    ],
     "object": "model",
     "owned_by": "deepseek-ai",
-    "parameter_count": null,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Deepseek Ai/Deepseek Prover V2 671B",
   "name": "deepseek-ai/DeepSeek-Prover-V2-671B",

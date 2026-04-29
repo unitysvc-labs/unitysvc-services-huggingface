@@ -1,36 +1,22 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek R1 0528 language model",
   "details": {
     "context_length": 163840,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "arxiv:2501.12948",
-      "eval-results",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "fp8"
-    ],
     "litellm_provider": "deepinfra",
     "max_input_tokens": 163840,
     "max_output_tokens": 163840,
     "max_tokens": 163840,
     "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
+      "context_length": "litellm"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "deepseek-ai",
-    "parameter_count": 680571043840,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Deepseek Ai/Deepseek R1 0528",
   "name": "deepseek-ai/DeepSeek-R1-0528",

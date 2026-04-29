@@ -1,29 +1,14 @@
 {
   "capabilities": [
-    "text-generation"
+    "llm"
   ],
   "currency": "USD",
   "description": "Deepseek Ai/Deepseek V4 Pro language model",
   "details": {
     "context_length": null,
-    "hf_tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v4",
-      "text-generation",
-      "conversational",
-      "eval-results",
-      "endpoints_compatible",
-      "8-bit",
-      "fp8"
-    ],
-    "metadata_sources": {
-      "parameter_count": "huggingface_safetensors"
-    },
     "object": "model",
     "owned_by": "deepseek-ai",
-    "parameter_count": 786381668352,
-    "pipeline_tag": "text-generation"
+    "parameter_count": null
   },
   "display_name": "Deepseek Ai/Deepseek V4 Pro",
   "name": "deepseek-ai/DeepSeek-V4-Pro",
