@@ -1,8 +1,8 @@
 const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
-const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+const SERVICE_BASE_URL = "{{ service_base_url }}";
 
 const response = await fetch(
-  `${process.env.SERVICE_BASE_URL}/models/{{offering.name}}`,
+  `${"{{ service_base_url }}"}/models/{{offering.name}}`,
   {
     method: "POST",
     headers: {

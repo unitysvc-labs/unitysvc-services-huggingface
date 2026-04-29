@@ -14,7 +14,7 @@ def generate_image(prompt: str, model: str):
 # Simulated “function call”
 result = generate_image(
     prompt="A futuristic city at sunrise, ultra detailed",
-    model=os.environ.get("MODEL", "{{offering.name}}")
+    model="{{ routing_key.model }}"
 )
 
 print("Function call completed:", result)

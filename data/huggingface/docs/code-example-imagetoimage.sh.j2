@@ -6,5 +6,5 @@ curl -X POST \
   -F "image=@input.png" \
   -F 'prompt=Turn this into a cinematic cyberpunk scene' \
   -F 'strength=0.6' \
-  ${SERVICE_BASE_URL}/models/{{offering.name}} \
+  {{ service_base_url }}/models/{{offering.name}} \
   --output output.png

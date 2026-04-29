@@ -3,7 +3,7 @@ import requests
 from PIL import Image
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 
 url = f"{SERVICE_BASE_URL}/models/{{offering.name}}"
 

@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 
 def image_to_image(
     model_id: str,
@@ -51,7 +51,7 @@ if __name__ == "__main__":
         Image.new("RGB", (64, 64), color="red").save("input.png")
 
     path = image_to_image(
-        model_id=os.environ.get("MODEL", "{{offering.name}}"),
+        model_id="{{ routing_key.model }}",
         image_path="input.png",
         prompt="Turn this into a cinematic cyberpunk scene"
     )

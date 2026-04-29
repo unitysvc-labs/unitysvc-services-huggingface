@@ -1,7 +1,7 @@
 import fs from "fs";
 
 const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
-const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
+const SERVICE_BASE_URL = "{{ service_base_url }}";
 
 const formData = new FormData();
 formData.append("image", fs.createReadStream("input.png"));
