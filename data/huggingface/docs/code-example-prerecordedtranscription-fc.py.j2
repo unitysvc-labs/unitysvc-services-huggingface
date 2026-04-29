@@ -5,7 +5,7 @@ import wave
 import requests
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 
 def transcribe_audio(
     model_id: str,
@@ -47,7 +47,7 @@ if __name__ == "__main__":
             f.writeframes(struct.pack("<h", 0) * 16000)
 
     text = transcribe_audio(
-        model_id=os.environ.get("MODEL", "{{offering.name}}"),
+        model_id="{{ routing_key.model }}",
         audio_path="audio.wav"
     )
     print(text)

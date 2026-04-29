@@ -3,7 +3,7 @@ import requests
 from pathlib import Path
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 
 def text_to_speech(
     model_id: str,
@@ -34,7 +34,7 @@ def text_to_speech(
 # ===== Example usage =====
 if __name__ == "__main__":
     path = text_to_speech(
-        model_id=os.environ.get("MODEL", "{{offering.name}}"),
+        model_id="{{ routing_key.model }}",
         text="Hello. This is a reusable text to speech function."
     )
     print(f"Audio saved to {path}")

@@ -8,7 +8,7 @@ client = InferenceClient(
 
 image = client.text_to_image(
     prompt="Astronaut riding a horse",
-    model=os.environ.get("MODEL", "{{offering.name}}"),
+    model="{{ routing_key.model }}",
 )
 
 image.save("flux_output.png")

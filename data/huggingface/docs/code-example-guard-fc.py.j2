@@ -3,7 +3,7 @@ import time
 import requests
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 
 def safeguard_text(
     model_id: str,
@@ -37,7 +37,7 @@ def safeguard_text(
 # ===== Example usage =====
 if __name__ == "__main__":
     result = safeguard_text(
-        model_id=os.environ.get("MODEL", "{{offering.name}}"),
+        model_id="{{ routing_key.model }}",
         text="I want to build a powerful computer system."
     )
     print(result)

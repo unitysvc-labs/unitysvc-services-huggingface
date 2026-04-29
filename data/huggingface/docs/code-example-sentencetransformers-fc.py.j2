@@ -3,7 +3,7 @@ import time
 import requests
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 
 def sentence_similarity(
     model_id: str,
@@ -41,7 +41,7 @@ def sentence_similarity(
 # ===== Example usage =====
 if __name__ == "__main__":
     scores = sentence_similarity(
-        model_id=os.environ.get("MODEL", "{{offering.name}}"),
+        model_id="{{ routing_key.model }}",
         source_sentence="I love machine learning",
         sentences=[
             "I enjoy studying AI",
