@@ -14,7 +14,7 @@
   "name": "katanemo/Arch-Router-1.5B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

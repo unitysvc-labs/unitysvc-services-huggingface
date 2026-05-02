@@ -14,7 +14,7 @@
   "name": "utter-project/EuroLLM-22B-Instruct-2512",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

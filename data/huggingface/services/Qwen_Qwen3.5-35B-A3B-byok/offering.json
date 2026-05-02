@@ -17,7 +17,7 @@
   "name": "Qwen/Qwen3.5-35B-A3B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
