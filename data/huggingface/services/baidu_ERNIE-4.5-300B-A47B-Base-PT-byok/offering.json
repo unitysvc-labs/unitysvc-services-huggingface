@@ -17,7 +17,7 @@
   "name": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",

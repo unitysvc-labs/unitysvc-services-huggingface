@@ -14,7 +14,7 @@
   "name": "deepcogito/cogito-671b-v2.1",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "ai",
     "gateway",
