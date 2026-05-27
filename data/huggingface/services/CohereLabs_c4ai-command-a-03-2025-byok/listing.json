@@ -36,7 +36,7 @@
   "user_access_interfaces": {
     "provider_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/p/huggingface",
+      "base_url": "${API_GATEWAY_BASE_URL}/huggingface",
       "routing_key": {
         "model": "CohereLabs/c4ai-command-a-03-2025"
       }
