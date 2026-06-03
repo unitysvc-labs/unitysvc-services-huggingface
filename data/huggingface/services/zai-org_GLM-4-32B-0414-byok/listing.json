@@ -23,13 +23,14 @@
       "$doc_preset": "llm_code_example_shell"
     }
   },
+  "name": "huggingface/zai-org/GLM-4-32B-0414",
   "schema": "listing_v1",
   "status": "ready",
   "time_created": "2026-03-23T00:35:47.616162Z",
   "user_access_interfaces": {
     "provider_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/huggingface",
+      "base_url": "${API_GATEWAY_BASE_URL}/{{ service_name }}",
       "routing_key": {
         "model": "zai-org/GLM-4-32B-0414"
       }

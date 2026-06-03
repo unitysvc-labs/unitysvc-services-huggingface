@@ -23,13 +23,14 @@
       "$doc_preset": "llm_code_example_shell"
     }
   },
+  "name": "huggingface/XiaomiMiMo/MiMo-V2-Flash",
   "schema": "listing_v1",
   "status": "ready",
   "time_created": "2026-03-23T00:35:41.047706Z",
   "user_access_interfaces": {
     "provider_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/huggingface",
+      "base_url": "${API_GATEWAY_BASE_URL}/{{ service_name }}",
       "routing_key": {
         "model": "XiaomiMiMo/MiMo-V2-Flash"
       }
