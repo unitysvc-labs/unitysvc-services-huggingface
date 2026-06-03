@@ -30,13 +30,14 @@
     "reference": null,
     "type": "one_million_tokens"
   },
+  "name": "huggingface/CohereLabs/command-a-reasoning-08-2025",
   "schema": "listing_v1",
   "status": "ready",
   "time_created": "2026-04-29T04:28:02.693694Z",
   "user_access_interfaces": {
     "provider_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/huggingface",
+      "base_url": "${API_GATEWAY_BASE_URL}/{{ service_name }}",
       "routing_key": {
         "model": "CohereLabs/command-a-reasoning-08-2025"
       }

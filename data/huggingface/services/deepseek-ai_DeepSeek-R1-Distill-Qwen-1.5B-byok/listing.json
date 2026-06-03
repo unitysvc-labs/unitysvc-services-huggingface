@@ -30,13 +30,14 @@
     "reference": null,
     "type": "one_million_tokens"
   },
+  "name": "huggingface/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "schema": "listing_v1",
   "status": "ready",
   "time_created": "2026-03-23T00:35:44.563780Z",
   "user_access_interfaces": {
     "provider_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/huggingface",
+      "base_url": "${API_GATEWAY_BASE_URL}/{{ service_name }}",
       "routing_key": {
         "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
       }
