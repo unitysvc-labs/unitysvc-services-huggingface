@@ -1,20 +1,37 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Zai Org/Autoglm Phone 9B Multilingual language model",
   "details": {
     "context_length": null,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "glm4v",
+      "image-text-to-text",
+      "agent",
+      "conversational",
+      "zh",
+      "arxiv:2411.00820",
+      "arxiv:2509.18119",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "zai-org",
-    "parameter_count": null
+    "parameter_count": 10292777472,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Zai Org/Autoglm Phone 9B Multilingual",
   "name": "zai-org/AutoGLM-Phone-9B-Multilingual",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

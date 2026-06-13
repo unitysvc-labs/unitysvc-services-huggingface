@@ -1,20 +1,55 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Coherelabs/Aya Vision 32B language model",
   "details": {
     "context_length": null,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "aya_vision",
+      "image-text-to-text",
+      "conversational",
+      "en",
+      "fr",
+      "de",
+      "es",
+      "it",
+      "pt",
+      "ja",
+      "ko",
+      "zh",
+      "ar",
+      "el",
+      "fa",
+      "pl",
+      "id",
+      "cs",
+      "he",
+      "hi",
+      "nl",
+      "ro",
+      "ru",
+      "tr",
+      "uk",
+      "vi",
+      "arxiv:2412.04261"
+    ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "CohereLabs",
-    "parameter_count": null
+    "parameter_count": 33137896688,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Coherelabs/Aya Vision 32B",
   "name": "CohereLabs/aya-vision-32b",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

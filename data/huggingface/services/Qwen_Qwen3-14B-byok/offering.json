@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Qwen/Qwen3 14B language model",
   "details": {
-    "context_length": 40960,
+    "context_length": 131702,
     "hf_tags": [
       "transformers",
       "safetensors",
@@ -21,10 +21,14 @@
     "max_input_tokens": 40960,
     "max_output_tokens": 40960,
     "max_tokens": 40960,
+    "metadata_sources": {
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
+    },
     "mode": "chat",
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": null,
+    "parameter_count": 14768307200,
     "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 14B",
@@ -38,7 +42,7 @@
   },
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

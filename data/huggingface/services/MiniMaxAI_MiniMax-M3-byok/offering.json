@@ -1,0 +1,54 @@
+{
+  "capabilities": [
+    "image-text-to-text"
+  ],
+  "currency": "USD",
+  "description": "Minimaxai/Minimax M3 language model",
+  "details": {
+    "context_length": null,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "minimax_m3_vl",
+      "image-text-to-text",
+      "multimodal",
+      "moe",
+      "agent",
+      "coding",
+      "video",
+      "conversational",
+      "custom_code",
+      "arxiv:2606.13392",
+      "endpoints_compatible"
+    ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "object": "model",
+    "owned_by": "MiniMaxAI",
+    "parameter_count": 426993800960,
+    "pipeline_tag": "image-text-to-text"
+  },
+  "display_name": "Minimaxai/Minimax M3",
+  "name": "MiniMaxAI/MiniMax-M3",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-06-13T06:22:02.160033Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "MiniMaxAI/MiniMax-M3"
+      }
+    }
+  }
+}

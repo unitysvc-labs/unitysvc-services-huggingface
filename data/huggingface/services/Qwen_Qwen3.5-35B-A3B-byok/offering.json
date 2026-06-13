@@ -1,23 +1,35 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3.5 35B A3B language model",
   "details": {
     "context_length": 262144,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_5_moe",
+      "image-text-to-text",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
     "metadata_sources": {
-      "context_length": "openrouter"
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
     },
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": null
+    "parameter_count": 35951817904,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Qwen/Qwen3.5 35B A3B",
   "name": "Qwen/Qwen3.5-35B-A3B",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

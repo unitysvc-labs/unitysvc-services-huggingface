@@ -1,23 +1,35 @@
 {
   "capabilities": [
-    "llm"
+    "image-text-to-text"
   ],
   "currency": "USD",
   "description": "Google/Gemma 4 26B A4B It language model",
   "details": {
     "context_length": 262144,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "gemma4",
+      "image-text-to-text",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
     "metadata_sources": {
-      "context_length": "openrouter"
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
     },
     "object": "model",
     "owned_by": "google",
-    "parameter_count": null
+    "parameter_count": 25805936206,
+    "pipeline_tag": "image-text-to-text"
   },
   "display_name": "Google/Gemma 4 26B A4B It",
   "name": "google/gemma-4-26B-A4B-it",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

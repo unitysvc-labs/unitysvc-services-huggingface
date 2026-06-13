@@ -1,0 +1,51 @@
+{
+  "capabilities": [
+    "text-generation"
+  ],
+  "currency": "USD",
+  "description": "Stepfun Ai/Step 3.5 Flash language model",
+  "details": {
+    "context_length": null,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "step3p5",
+      "text-generation",
+      "conversational",
+      "custom_code",
+      "arxiv:2602.10604",
+      "arxiv:2601.05593",
+      "arxiv:2507.19427",
+      "eval-results"
+    ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
+    "object": "model",
+    "owned_by": "stepfun-ai",
+    "parameter_count": 199384289280,
+    "pipeline_tag": "text-generation"
+  },
+  "display_name": "Stepfun Ai/Step 3.5 Flash",
+  "name": "stepfun-ai/Step-3.5-Flash",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-06-13T06:22:10.057059Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "stepfun-ai/Step-3.5-Flash"
+      }
+    }
+  }
+}

@@ -1,20 +1,34 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Zai Org/Glm 4 32B 0414 language model",
   "details": {
     "context_length": null,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "glm4",
+      "text-generation",
+      "conversational",
+      "zh",
+      "en",
+      "endpoints_compatible"
+    ],
+    "metadata_sources": {
+      "parameter_count": "huggingface_safetensors"
+    },
     "object": "model",
     "owned_by": "zai-org",
-    "parameter_count": null
+    "parameter_count": 32566081536,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Zai Org/Glm 4 32B 0414",
   "name": "zai-org/GLM-4-32B-0414",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

@@ -1,23 +1,35 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Qwen/Qwen3 Coder Next language model",
   "details": {
     "context_length": 262144,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_next",
+      "text-generation",
+      "conversational",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
     "metadata_sources": {
-      "context_length": "openrouter"
+      "context_length": "openrouter",
+      "parameter_count": "huggingface_safetensors"
     },
     "object": "model",
     "owned_by": "Qwen",
-    "parameter_count": null
+    "parameter_count": 79674391296,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Qwen/Qwen3 Coder Next",
   "name": "Qwen/Qwen3-Coder-Next",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",

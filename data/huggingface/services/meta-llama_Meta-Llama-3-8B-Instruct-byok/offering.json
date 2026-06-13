@@ -1,22 +1,40 @@
 {
   "capabilities": [
-    "llm"
+    "text-generation"
   ],
   "currency": "USD",
   "description": "Meta Llama/Meta Llama 3 8B Instruct language model",
   "details": {
     "context_length": 8192,
+    "hf_tags": [
+      "transformers",
+      "safetensors",
+      "llama",
+      "text-generation",
+      "facebook",
+      "meta",
+      "pytorch",
+      "llama-3",
+      "conversational",
+      "en",
+      "eval-results",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure"
+    ],
     "litellm_provider": "anyscale",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "metadata_sources": {
-      "context_length": "litellm"
+      "context_length": "litellm",
+      "parameter_count": "huggingface_safetensors"
     },
     "mode": "chat",
     "object": "model",
     "owned_by": "meta-llama",
-    "parameter_count": null
+    "parameter_count": 8030261248,
+    "pipeline_tag": "text-generation"
   },
   "display_name": "Meta Llama/Meta Llama 3 8B Instruct",
   "name": "meta-llama/Meta-Llama-3-8B-Instruct",
@@ -29,7 +47,7 @@
   },
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "ai",
     "gateway",
