@@ -1,0 +1,49 @@
+{
+  "capabilities": [
+    "llm"
+  ],
+  "currency": "USD",
+  "description": "Qwen/Qwen2.5 7B Instruct language model",
+  "details": {
+    "context_length": 32768,
+    "litellm_provider": "deepinfra",
+    "max_input_tokens": 32768,
+    "max_output_tokens": 32768,
+    "max_tokens": 32768,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
+    "mode": "chat",
+    "object": "model",
+    "owned_by": "Qwen",
+    "parameter_count": null
+  },
+  "display_name": "Qwen/Qwen2.5 7B Instruct",
+  "name": "Qwen/Qwen2.5-7B-Instruct",
+  "payout_price": {
+    "description": "Pricing Per 1M Tokens Input/Output",
+    "input": "0.04",
+    "output": "0.09999999999999999",
+    "reference": null,
+    "type": "one_million_tokens"
+  },
+  "service_type": "llm",
+  "status": "deprecated",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-03-23T00:35:41.612676Z",
+  "upstream_access_config": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.HF_TOKEN }",
+      "base_url": "https://router.huggingface.co/v1",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "Qwen/Qwen2.5-7B-Instruct"
+      }
+    }
+  }
+}
