@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt language model",
+    "details": {
+      "context_length": 131072,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "object": "model",
+      "owned_by": "baidu",
+      "parameter_count": null
+    },
+    "display_name": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

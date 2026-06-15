@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Qwen/Qwen2.5 72B Instruct language model",
+    "details": {
+      "context_length": 32768,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "chat",
+        "conversational",
+        "en",
+        "arxiv:2309.00071",
+        "arxiv:2407.10671",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 32768,
+      "max_output_tokens": 32768,
+      "max_tokens": 32768,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 72706203648,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Qwen/Qwen2.5 72B Instruct",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.12",
+      "output": "0.39",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "Qwen/Qwen2.5-72B-Instruct",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.12",
+      "output": "0.39",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

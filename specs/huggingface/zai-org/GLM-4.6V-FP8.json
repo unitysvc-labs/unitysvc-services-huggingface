@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Zai Org/Glm 4.6V Fp8 language model",
+    "details": {
+      "context_length": null,
+      "object": "model",
+      "owned_by": "zai-org",
+      "parameter_count": null
+    },
+    "display_name": "Zai Org/Glm 4.6V Fp8",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "zai-org/GLM-4.6V-FP8",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

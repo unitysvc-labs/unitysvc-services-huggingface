@@ -1,0 +1,55 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Qwen/Qwen3 Coder 480B A35B Instruct language model",
+    "details": {
+      "context_length": 1048576,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_moe",
+        "text-generation",
+        "conversational",
+        "arxiv:2505.09388",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 262144,
+      "max_output_tokens": 262144,
+      "max_tokens": 262144,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 480154875392,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Qwen/Qwen3 Coder 480B A35B Instruct",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.39999999999999997",
+      "output": "1.5999999999999999",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.39999999999999997",
+      "output": "1.5999999999999999",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

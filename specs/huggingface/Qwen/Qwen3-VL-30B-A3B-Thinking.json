@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Qwen/Qwen3 Vl 30B A3B Thinking language model",
+    "details": {
+      "context_length": 131072,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": null
+    },
+    "display_name": "Qwen/Qwen3 Vl 30B A3B Thinking",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Moonshotai/Kimi K2 Thinking language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "kimi_k2",
+        "text-generation",
+        "conversational",
+        "custom_code",
+        "eval-results",
+        "endpoints_compatible",
+        "compressed-tensors"
+      ],
+      "litellm_provider": "gmi",
+      "max_input_tokens": 262144,
+      "max_output_tokens": 16384,
+      "max_tokens": 16384,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "moonshotai",
+      "parameter_count": 1014687129600,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Moonshotai/Kimi K2 Thinking",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.7999999999999999",
+      "output": "1.2",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "moonshotai/Kimi-K2-Thinking",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.7999999999999999",
+      "output": "1.2",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Katanemo/Arch Router 1.5B language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "routing",
+        "preference",
+        "arxiv:2506.16655",
+        "llm",
+        "conversational",
+        "en",
+        "text-generation-inference",
+        "endpoints_compatible"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "katanemo",
+      "parameter_count": 1543714304,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Katanemo/Arch Router 1.5B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "katanemo/Arch-Router-1.5B",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

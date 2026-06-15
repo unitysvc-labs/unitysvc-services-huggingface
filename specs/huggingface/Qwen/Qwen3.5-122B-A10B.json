@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Qwen/Qwen3.5 122B A10B language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_5_moe",
+        "image-text-to-text",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 125086490096,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Qwen/Qwen3.5 122B A10B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "Qwen/Qwen3.5-122B-A10B",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

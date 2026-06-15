@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Swiss Ai/Apertus 8B Instruct 2509 language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "apertus",
+        "text-generation",
+        "multilingual",
+        "compliant",
+        "swiss-ai",
+        "conversational",
+        "arxiv:2509.14233",
+        "eval-results",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "swiss-ai",
+      "parameter_count": 8053338176,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Swiss Ai/Apertus 8B Instruct 2509",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "swiss-ai/Apertus-8B-Instruct-2509",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

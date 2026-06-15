@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Sao10K/L3 8B Lunaris V1 language model",
+    "details": {
+      "context_length": 8192,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "conversational",
+        "en",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 8192,
+      "max_output_tokens": 8192,
+      "max_tokens": 8192,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "Sao10K",
+      "parameter_count": 8030261248,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Sao10K/L3 8B Lunaris V1",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.04",
+      "output": "0.049999999999999996",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "Sao10K/L3-8B-Lunaris-v1",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.04",
+      "output": "0.049999999999999996",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

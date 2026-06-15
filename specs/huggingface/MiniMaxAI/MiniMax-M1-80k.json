@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Minimaxai/Minimax M1 80K language model",
+    "details": {
+      "context_length": null,
+      "object": "model",
+      "owned_by": "MiniMaxAI",
+      "parameter_count": null
+    },
+    "display_name": "Minimaxai/Minimax M1 80K",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "MiniMaxAI/MiniMax-M1-80k",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

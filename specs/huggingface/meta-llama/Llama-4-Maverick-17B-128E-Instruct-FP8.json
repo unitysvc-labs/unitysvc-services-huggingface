@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8 language model",
+    "details": {
+      "context_length": 1048576,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "max_tokens": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "meta-llama",
+      "parameter_count": null
+    },
+    "display_name": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.15",
+      "output": "0.6",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.15",
+      "output": "0.6",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

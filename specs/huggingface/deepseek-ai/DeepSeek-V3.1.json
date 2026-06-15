@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Deepseek Ai/Deepseek V3.1 language model",
+    "details": {
+      "context_length": 163840,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 163840,
+      "max_output_tokens": 163840,
+      "max_tokens": 163840,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "deepseek-ai",
+      "parameter_count": null
+    },
+    "display_name": "Deepseek Ai/Deepseek V3.1",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.27",
+      "output": "1",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "deepseek-ai/DeepSeek-V3.1",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.27",
+      "output": "1",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

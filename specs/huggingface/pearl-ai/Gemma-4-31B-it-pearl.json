@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Pearl Ai/Gemma 4 31B It Pearl language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "vllm",
+        "safetensors",
+        "gemma4",
+        "gemma",
+        "pearl",
+        "quantized",
+        "text-generation",
+        "mining",
+        "conversational",
+        "en",
+        "8-bit"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "pearl-ai",
+      "parameter_count": 16955473920,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Pearl Ai/Gemma 4 31B It Pearl",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "pearl-ai/Gemma-4-31B-it-pearl",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

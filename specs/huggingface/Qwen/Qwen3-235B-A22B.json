@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Qwen/Qwen3 235B A22B language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_moe",
+        "text-generation",
+        "conversational",
+        "arxiv:2309.00071",
+        "arxiv:2505.09388",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 40960,
+      "max_output_tokens": 40960,
+      "max_tokens": 40960,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 235093634560,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Qwen/Qwen3 235B A22B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.18",
+      "output": "0.54",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "Qwen/Qwen3-235B-A22B",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.18",
+      "output": "0.54",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

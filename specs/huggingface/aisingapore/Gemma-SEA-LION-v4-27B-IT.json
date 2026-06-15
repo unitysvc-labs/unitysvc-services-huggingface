@@ -1,0 +1,72 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Aisingapore/Gemma Sea Lion V4 27B It language model",
+    "details": {
+      "context_length": 8192,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "gemma3",
+        "image-text-to-text",
+        "text-generation",
+        "conversational",
+        "en",
+        "zh",
+        "vi",
+        "id",
+        "th",
+        "fil",
+        "ta",
+        "ms",
+        "km",
+        "lo",
+        "my",
+        "jv",
+        "su",
+        "arxiv:2502.14301",
+        "arxiv:2311.07911",
+        "arxiv:2306.05685",
+        "arxiv:1910.09700",
+        "text-generation-inference",
+        "endpoints_compatible"
+      ],
+      "litellm_provider": "publicai",
+      "max_input_tokens": 8192,
+      "max_output_tokens": 4096,
+      "max_tokens": 4096,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "aisingapore",
+      "parameter_count": 27432406640,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Aisingapore/Gemma Sea Lion V4 27B It",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0",
+      "output": "0",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0",
+      "output": "0",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}
