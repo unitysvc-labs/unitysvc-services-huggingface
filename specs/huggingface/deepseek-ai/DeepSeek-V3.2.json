@@ -1,0 +1,55 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Deepseek Ai/Deepseek V3.2 language model",
+    "details": {
+      "context_length": 163840,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "deepseek_v32",
+        "text-generation",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible",
+        "fp8"
+      ],
+      "litellm_provider": "gmi",
+      "max_input_tokens": 163840,
+      "max_output_tokens": 16384,
+      "max_tokens": 16384,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "deepseek-ai",
+      "parameter_count": 681408069632,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Deepseek Ai/Deepseek V3.2",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.28",
+      "output": "0.39999999999999997",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "deepseek-ai/DeepSeek-V3.2",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.28",
+      "output": "0.39999999999999997",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

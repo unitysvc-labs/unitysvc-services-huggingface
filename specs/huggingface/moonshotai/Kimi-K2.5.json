@@ -1,0 +1,54 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Moonshotai/Kimi K2.5 language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "kimi_k25",
+        "image-feature-extraction",
+        "compressed-tensors",
+        "image-text-to-text",
+        "conversational",
+        "custom_code",
+        "arxiv:2602.02276",
+        "eval-results"
+      ],
+      "litellm_provider": "baseten",
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "moonshotai",
+      "parameter_count": 1014687129600,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Moonshotai/Kimi K2.5",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.6",
+      "output": "3",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "moonshotai/Kimi-K2.5",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.6",
+      "output": "3",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Moonshotai/Kimi K2.7 Code language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "kimi_k25",
+        "image-feature-extraction",
+        "compressed-tensors",
+        "image-text-to-text",
+        "conversational",
+        "custom_code"
+      ],
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "moonshotai",
+      "parameter_count": 1014687129600,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Moonshotai/Kimi K2.7 Code",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "moonshotai/Kimi-K2.7-Code",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

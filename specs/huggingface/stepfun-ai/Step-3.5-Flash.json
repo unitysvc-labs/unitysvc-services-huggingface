@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Stepfun Ai/Step 3.5 Flash language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "step3p5",
+        "text-generation",
+        "conversational",
+        "custom_code",
+        "arxiv:2602.10604",
+        "arxiv:2601.05593",
+        "arxiv:2507.19427",
+        "eval-results"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "stepfun-ai",
+      "parameter_count": 199384289280,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Stepfun Ai/Step 3.5 Flash",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "stepfun-ai/Step-3.5-Flash",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

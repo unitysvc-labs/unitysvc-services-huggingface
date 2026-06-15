@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Inclusionai/Ling 2.6 1T language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "bailing_hybrid",
+        "text-generation",
+        "conversational",
+        "custom_code",
+        "eval-results",
+        "compressed-tensors"
+      ],
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "inclusionAI",
+      "parameter_count": 1009494523904,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Inclusionai/Ling 2.6 1T",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "inclusionAI/Ling-2.6-1T",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Google/Gemma 3N E4B It language model",
+    "details": {
+      "context_length": 32768,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "object": "model",
+      "owned_by": "google",
+      "parameter_count": null
+    },
+    "display_name": "Google/Gemma 3N E4B It",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "google/gemma-3n-E4B-it",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

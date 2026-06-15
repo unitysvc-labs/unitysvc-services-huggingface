@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Qwen/Qwen3 4B Instruct 2507 language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3",
+        "text-generation",
+        "conversational",
+        "arxiv:2505.09388",
+        "eval-results",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 4022468096,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Qwen/Qwen3 4B Instruct 2507",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "Qwen/Qwen3-4B-Instruct-2507",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

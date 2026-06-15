@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Qwen/Qwen3.5 397B A17B language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_5_moe",
+        "image-text-to-text",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 262144,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 403397920304,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Qwen/Qwen3.5 397B A17B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.6",
+      "output": "3.5999999999999996",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "Qwen/Qwen3.5-397B-A17B",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.6",
+      "output": "3.5999999999999996",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

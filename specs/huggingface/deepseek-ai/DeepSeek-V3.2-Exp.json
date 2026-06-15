@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Deepseek Ai/Deepseek V3.2 Exp language model",
+    "details": {
+      "context_length": null,
+      "object": "model",
+      "owned_by": "deepseek-ai",
+      "parameter_count": null
+    },
+    "display_name": "Deepseek Ai/Deepseek V3.2 Exp",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "deepseek-ai/DeepSeek-V3.2-Exp",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

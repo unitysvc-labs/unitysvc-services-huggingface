@@ -1,0 +1,61 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Meta Llama/Meta Llama 3 70B Instruct language model",
+    "details": {
+      "context_length": 8192,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "facebook",
+        "meta",
+        "pytorch",
+        "llama-3",
+        "conversational",
+        "en",
+        "eval-results",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "litellm_provider": "anyscale",
+      "max_input_tokens": 8192,
+      "max_output_tokens": 8192,
+      "max_tokens": 8192,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "meta-llama",
+      "parameter_count": 70553706496,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Meta Llama/Meta Llama 3 70B Instruct",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "1",
+      "output": "1",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "meta-llama/Meta-Llama-3-70B-Instruct",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "1",
+      "output": "1",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

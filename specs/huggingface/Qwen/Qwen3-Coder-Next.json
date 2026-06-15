@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Qwen/Qwen3 Coder Next language model",
+    "details": {
+      "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_next",
+        "text-generation",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 79674391296,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Qwen/Qwen3 Coder Next",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "Qwen/Qwen3-Coder-Next",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Qwen/Qwen3 Vl 235B A22B Thinking language model",
+    "details": {
+      "context_length": 131072,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_vl_moe",
+        "image-text-to-text",
+        "conversational",
+        "arxiv:2505.09388",
+        "arxiv:2502.13923",
+        "arxiv:2409.12191",
+        "arxiv:2308.12966",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "Qwen",
+      "parameter_count": 235670022896,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Qwen/Qwen3 Vl 235B A22B Thinking",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

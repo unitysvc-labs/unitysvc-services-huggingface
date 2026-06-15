@@ -1,0 +1,72 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Meta Llama/Llama 4 Scout 17B 16E Instruct language model",
+    "details": {
+      "context_length": 10000000,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "llama4",
+        "image-text-to-text",
+        "facebook",
+        "meta",
+        "pytorch",
+        "llama",
+        "conversational",
+        "ar",
+        "de",
+        "en",
+        "es",
+        "fr",
+        "hi",
+        "id",
+        "it",
+        "pt",
+        "th",
+        "tl",
+        "vi",
+        "arxiv:2204.05149",
+        "eval-results",
+        "text-generation-inference",
+        "endpoints_compatible"
+      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 327680,
+      "max_output_tokens": 327680,
+      "max_tokens": 327680,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "meta-llama",
+      "parameter_count": 108641793536,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Meta Llama/Llama 4 Scout 17B 16E Instruct",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.08",
+      "output": "0.3",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.08",
+      "output": "0.3",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}
