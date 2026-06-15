@@ -1,3 +1,7 @@
 {
-  "service_id": "ddaeb43f-0ff1-4e63-b101-8881e0eb8c58"
+  "display_name": "Qwen/Qwen3 Coder Next Fp8",
+  "name": "huggingface/Qwen/Qwen3-Coder-Next-FP8",
+  "service_id": "ddaeb43f-0ff1-4e63-b101-8881e0eb8c58",
+  "status": "updated",
+  "time_created": "2026-06-06T15:41:57.225094Z"
 }

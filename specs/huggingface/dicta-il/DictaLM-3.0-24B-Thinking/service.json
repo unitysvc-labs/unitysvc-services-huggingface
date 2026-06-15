@@ -1,3 +1,7 @@
 {
-  "service_id": "bb758e69-1bdb-4624-979f-fd631520600f"
+  "display_name": "Dicta Il/Dictalm 3.0 24B Thinking",
+  "name": "huggingface/dicta-il/DictaLM-3.0-24B-Thinking",
+  "service_id": "bb758e69-1bdb-4624-979f-fd631520600f",
+  "status": "updated",
+  "time_created": "2026-06-06T15:42:24.831943Z"
 }

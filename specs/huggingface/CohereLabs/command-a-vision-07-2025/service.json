@@ -1,3 +1,7 @@
 {
-  "service_id": "8530dfe6-6b71-409e-a286-48387a28c711"
+  "display_name": "Coherelabs/Command A Vision 07 2025",
+  "name": "huggingface/CohereLabs/command-a-vision-07-2025",
+  "service_id": "8530dfe6-6b71-409e-a286-48387a28c711",
+  "status": "updated",
+  "time_created": "2026-06-06T15:41:36.966474Z"
 }

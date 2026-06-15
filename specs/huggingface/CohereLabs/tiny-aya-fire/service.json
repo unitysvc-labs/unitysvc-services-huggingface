@@ -1,3 +1,7 @@
 {
-  "service_id": "1029d393-4c37-4847-bbd0-ac8e1b1798c3"
+  "display_name": "Coherelabs/Tiny Aya Fire",
+  "name": "huggingface/CohereLabs/tiny-aya-fire",
+  "service_id": "1029d393-4c37-4847-bbd0-ac8e1b1798c3",
+  "status": "updated",
+  "time_created": "2026-06-06T15:41:38.191646Z"
 }

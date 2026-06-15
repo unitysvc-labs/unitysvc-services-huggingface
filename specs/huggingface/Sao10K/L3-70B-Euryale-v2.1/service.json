@@ -1,3 +1,7 @@
 {
-  "service_id": "76b670b6-d838-4521-821c-5f1f9b32083f"
+  "display_name": "Sao10K/L3 70B Euryale V2.1",
+  "name": "huggingface/Sao10K/L3-70B-Euryale-v2.1",
+  "service_id": "76b670b6-d838-4521-821c-5f1f9b32083f",
+  "status": "updated",
+  "time_created": "2026-06-06T15:42:06.367042Z"
 }

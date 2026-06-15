@@ -1,3 +1,7 @@
 {
-  "service_id": "eabb2a2b-aaa7-4cc2-b00f-a311deae53e1"
+  "display_name": "Baidu/Ernie 4.5 300B A47B Base Pt",
+  "name": "huggingface/baidu/ERNIE-4.5-300B-A47B-Base-PT",
+  "service_id": "eabb2a2b-aaa7-4cc2-b00f-a311deae53e1",
+  "status": "updated",
+  "time_created": "2026-06-06T15:42:12.145437Z"
 }
