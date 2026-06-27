@@ -13,6 +13,7 @@
         "deepseek_v4",
         "text-generation",
         "conversational",
+        "arxiv:2606.19348",
         "eval-results",
         "endpoints_compatible",
         "8-bit",

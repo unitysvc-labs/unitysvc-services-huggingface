@@ -4,31 +4,35 @@
     "capabilities": [
       "text-generation"
     ],
-    "description": "Minimaxai/Minimax M1 80K language model",
+    "description": "Xiaomimimo/Mimo V2.5 Pro language model",
     "details": {
       "context_length": null,
       "hf_tags": [
-        "transformers",
         "safetensors",
-        "minimax_m1",
+        "mimo_v2",
         "text-generation",
-        "vllm",
+        "agent",
+        "long-context",
+        "code",
         "conversational",
         "custom_code",
-        "arxiv:2506.13585"
+        "en",
+        "zh",
+        "eval-results",
+        "fp8"
       ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },
       "object": "model",
-      "owned_by": "MiniMaxAI",
-      "parameter_count": 456073926656,
+      "owned_by": "XiaomiMiMo",
+      "parameter_count": 1013569290240,
       "pipeline_tag": "text-generation"
     },
-    "display_name": "Minimaxai/Minimax M1 80K",
+    "display_name": "Xiaomimimo/Mimo V2.5 Pro",
     "env_api_key_name": "HF_TOKEN",
     "list_price": null,
-    "offering_name": "MiniMaxAI/MiniMax-M1-80k",
+    "offering_name": "XiaomiMiMo/MiMo-V2.5-Pro",
     "payout_price": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",

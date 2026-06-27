@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3.5 397B A17B language model",
     "details": {
-      "context_length": 262144,
+      "context_length": 256000,
       "hf_tags": [
         "transformers",
         "safetensors",

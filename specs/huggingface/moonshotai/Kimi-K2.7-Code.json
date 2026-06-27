@@ -11,7 +11,7 @@
         "transformers",
         "safetensors",
         "kimi_k25",
-        "image-feature-extraction",
+        "feature-extraction",
         "compressed-tensors",
         "image-text-to-text",
         "conversational",

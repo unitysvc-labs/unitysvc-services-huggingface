@@ -20,6 +20,7 @@
         "conversational",
         "custom_code",
         "arxiv:2606.13392",
+        "eval-results",
         "endpoints_compatible"
       ],
       "metadata_sources": {
