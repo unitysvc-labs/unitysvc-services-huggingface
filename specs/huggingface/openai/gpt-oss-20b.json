@@ -21,10 +21,10 @@
         "mxfp4",
         "deploy:azure"
       ],
-      "litellm_provider": "deepinfra",
-      "max_input_tokens": 131072,
-      "max_output_tokens": 131072,
-      "max_tokens": 131072,
+      "litellm_provider": "cloudflare",
+      "max_input_tokens": 128000,
+      "max_output_tokens": 128000,
+      "max_tokens": 128000,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
@@ -39,16 +39,16 @@
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.04",
-      "output": "0.15",
+      "input": "0.19999999999999998",
+      "output": "0.3",
       "reference": null,
       "type": "one_million_tokens"
     },
     "offering_name": "openai/gpt-oss-20b",
     "payout_price": {
       "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.04",
-      "output": "0.15",
+      "input": "0.19999999999999998",
+      "output": "0.3",
       "reference": null,
       "type": "one_million_tokens"
     },

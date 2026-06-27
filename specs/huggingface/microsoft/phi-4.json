@@ -4,50 +4,54 @@
     "capabilities": [
       "text-generation"
     ],
-    "description": "Deepseek Ai/Deepseek V3.1 Terminus language model",
+    "description": "Microsoft/Phi 4 language model",
     "details": {
-      "context_length": 163840,
+      "context_length": 16384,
       "hf_tags": [
         "transformers",
         "safetensors",
-        "deepseek_v3",
+        "phi3",
         "text-generation",
+        "phi",
+        "nlp",
+        "math",
+        "code",
+        "chat",
         "conversational",
-        "custom_code",
-        "arxiv:2412.19437",
+        "en",
+        "arxiv:2412.08905",
         "eval-results",
         "text-generation-inference",
-        "endpoints_compatible",
-        "fp8"
+        "endpoints_compatible"
       ],
       "litellm_provider": "deepinfra",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "max_tokens": 163840,
+      "max_input_tokens": 16384,
+      "max_output_tokens": 16384,
+      "max_tokens": 16384,
       "metadata_sources": {
-        "context_length": "litellm",
+        "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
       "mode": "chat",
       "object": "model",
-      "owned_by": "deepseek-ai",
-      "parameter_count": 680571043840,
+      "owned_by": "microsoft",
+      "parameter_count": 14659507200,
       "pipeline_tag": "text-generation"
     },
-    "display_name": "Deepseek Ai/Deepseek V3.1 Terminus",
+    "display_name": "Microsoft/Phi 4",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.27",
-      "output": "1",
+      "input": "0.07",
+      "output": "0.14",
       "reference": null,
       "type": "one_million_tokens"
     },
-    "offering_name": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "offering_name": "microsoft/phi-4",
     "payout_price": {
       "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.27",
-      "output": "1",
+      "input": "0.07",
+      "output": "0.14",
       "reference": null,
       "type": "one_million_tokens"
     },

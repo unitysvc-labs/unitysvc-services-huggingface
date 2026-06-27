@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "image-text-to-text"
     ],
     "description": "Pearl Ai/Gemma 4 31B It Pearl language model",
     "details": {
@@ -14,8 +14,11 @@
         "gemma",
         "pearl",
         "quantized",
+        "multimodal",
+        "vision",
         "text-generation",
         "mining",
+        "image-text-to-text",
         "conversational",
         "en",
         "8-bit"
@@ -26,7 +29,7 @@
       "object": "model",
       "owned_by": "pearl-ai",
       "parameter_count": 16955473920,
-      "pipeline_tag": "text-generation"
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Pearl Ai/Gemma 4 31B It Pearl",
     "env_api_key_name": "HF_TOKEN",

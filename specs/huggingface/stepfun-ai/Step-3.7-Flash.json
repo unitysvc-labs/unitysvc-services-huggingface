@@ -2,33 +2,37 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "image-text-to-text"
     ],
-    "description": "Minimaxai/Minimax M1 80K language model",
+    "description": "Stepfun Ai/Step 3.7 Flash language model",
     "details": {
       "context_length": null,
       "hf_tags": [
         "transformers",
         "safetensors",
-        "minimax_m1",
+        "step3p7",
         "text-generation",
-        "vllm",
+        "vision-language",
+        "multimodal",
+        "moe",
+        "image-text-to-text",
         "conversational",
         "custom_code",
-        "arxiv:2506.13585"
+        "en",
+        "eval-results"
       ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },
       "object": "model",
-      "owned_by": "MiniMaxAI",
-      "parameter_count": 456073926656,
-      "pipeline_tag": "text-generation"
+      "owned_by": "stepfun-ai",
+      "parameter_count": 201365304064,
+      "pipeline_tag": "image-text-to-text"
     },
-    "display_name": "Minimaxai/Minimax M1 80K",
+    "display_name": "Stepfun Ai/Step 3.7 Flash",
     "env_api_key_name": "HF_TOKEN",
     "list_price": null,
-    "offering_name": "MiniMaxAI/MiniMax-M1-80k",
+    "offering_name": "stepfun-ai/Step-3.7-Flash",
     "payout_price": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",

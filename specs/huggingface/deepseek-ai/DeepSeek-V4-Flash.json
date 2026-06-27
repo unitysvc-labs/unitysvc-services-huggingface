@@ -6,21 +6,28 @@
     ],
     "description": "Deepseek Ai/Deepseek V4 Flash language model",
     "details": {
-      "context_length": null,
+      "context_length": 32768,
       "hf_tags": [
         "transformers",
         "safetensors",
         "deepseek_v4",
         "text-generation",
         "conversational",
+        "arxiv:2606.19348",
         "eval-results",
         "endpoints_compatible",
         "8-bit",
-        "fp8"
+        "fp8",
+        "deploy:azure"
       ],
+      "litellm_provider": "tensormesh",
+      "max_input_tokens": 32768,
+      "max_output_tokens": 32768,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "deepseek-ai",
       "parameter_count": 141733920768,
@@ -28,9 +35,21 @@
     },
     "display_name": "Deepseek Ai/Deepseek V4 Flash",
     "env_api_key_name": "HF_TOKEN",
-    "list_price": null,
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.14",
+      "output": "0.28",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
     "offering_name": "deepseek-ai/DeepSeek-V4-Flash",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.14",
+      "output": "0.28",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

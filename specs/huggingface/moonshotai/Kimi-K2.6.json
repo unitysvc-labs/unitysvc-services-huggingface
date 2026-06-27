@@ -11,7 +11,7 @@
         "transformers",
         "safetensors",
         "kimi_k25",
-        "image-feature-extraction",
+        "feature-extraction",
         "compressed-tensors",
         "image-text-to-text",
         "conversational",
@@ -19,10 +19,14 @@
         "arxiv:2602.02276",
         "eval-results"
       ],
+      "litellm_provider": "tensormesh",
+      "max_input_tokens": 32768,
+      "max_output_tokens": 32768,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "moonshotai",
       "parameter_count": 1014687129600,
@@ -30,9 +34,21 @@
     },
     "display_name": "Moonshotai/Kimi K2.6",
     "env_api_key_name": "HF_TOKEN",
-    "list_price": null,
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.96",
+      "output": "4",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
     "offering_name": "moonshotai/Kimi-K2.6",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.96",
+      "output": "4",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

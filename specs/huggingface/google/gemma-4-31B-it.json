@@ -17,10 +17,14 @@
         "endpoints_compatible",
         "deploy:azure"
       ],
+      "litellm_provider": "tensormesh",
+      "max_input_tokens": 32768,
+      "max_output_tokens": 32768,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "google",
       "parameter_count": 31273088876,
@@ -28,9 +32,21 @@
     },
     "display_name": "Google/Gemma 4 31B It",
     "env_api_key_name": "HF_TOKEN",
-    "list_price": null,
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.14",
+      "output": "0.56",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
     "offering_name": "google/gemma-4-31B-it",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.14",
+      "output": "0.56",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

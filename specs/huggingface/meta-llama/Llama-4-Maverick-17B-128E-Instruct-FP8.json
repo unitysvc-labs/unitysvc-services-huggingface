@@ -2,22 +2,52 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "image-text-to-text"
     ],
     "description": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8 language model",
     "details": {
       "context_length": 1048576,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "llama4",
+        "image-text-to-text",
+        "facebook",
+        "meta",
+        "pytorch",
+        "llama",
+        "conversational",
+        "ar",
+        "de",
+        "en",
+        "es",
+        "fr",
+        "hi",
+        "id",
+        "it",
+        "pt",
+        "th",
+        "tl",
+        "vi",
+        "arxiv:2204.05149",
+        "eval-results",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "compressed-tensors"
+      ],
       "litellm_provider": "deepinfra",
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "max_tokens": 1048576,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
       },
       "mode": "chat",
       "object": "model",
       "owned_by": "meta-llama",
-      "parameter_count": null
+      "parameter_count": 386547056640,
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8",
     "env_api_key_name": "HF_TOKEN",
