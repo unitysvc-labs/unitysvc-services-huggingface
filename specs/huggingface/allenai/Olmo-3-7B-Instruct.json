@@ -17,6 +17,7 @@
         "dataset:allenai/Dolci-Instruct-RL-7B",
         "arxiv:2512.13961",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "litellm_provider": "publicai",

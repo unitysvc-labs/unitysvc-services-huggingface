@@ -17,7 +17,8 @@
         "zh",
         "arxiv:2508.06471",
         "eval-results",
-        "endpoints_compatible"
+        "endpoints_compatible",
+        "deploy:azure"
       ],
       "litellm_provider": "baseten",
       "metadata_sources": {

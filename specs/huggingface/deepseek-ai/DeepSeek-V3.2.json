@@ -15,7 +15,8 @@
         "conversational",
         "eval-results",
         "endpoints_compatible",
-        "fp8"
+        "fp8",
+        "deploy:sagemaker"
       ],
       "litellm_provider": "gmi",
       "max_input_tokens": 163840,
