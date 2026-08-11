@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Thinkingmachines/Inkling Small language model",
+    "details": {
+      "context_length": 524288,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "inkling_mm_model",
+        "image-text-to-text",
+        "conversational",
+        "audio-text-to-text",
+        "moe",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "thinkingmachines",
+      "parameter_count": 265956428810,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Thinkingmachines/Inkling Small",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "thinkingmachines/Inkling-Small",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

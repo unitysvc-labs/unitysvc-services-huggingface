@@ -19,6 +19,7 @@
         "arxiv:2509.14233",
         "eval-results",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "metadata_sources": {

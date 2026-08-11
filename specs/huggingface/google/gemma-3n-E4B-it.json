@@ -2,17 +2,48 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "image-text-to-text"
     ],
     "description": "Google/Gemma 3N E4B It language model",
     "details": {
       "context_length": 32768,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "gemma3n",
+        "image-text-to-text",
+        "automatic-speech-recognition",
+        "automatic-speech-translation",
+        "audio-text-to-text",
+        "video-text-to-text",
+        "conversational",
+        "arxiv:1905.07830",
+        "arxiv:1905.10044",
+        "arxiv:1911.11641",
+        "arxiv:1904.09728",
+        "arxiv:1705.03551",
+        "arxiv:1911.01547",
+        "arxiv:1907.10641",
+        "arxiv:1903.00161",
+        "arxiv:2210.03057",
+        "arxiv:2502.12404",
+        "arxiv:2411.19799",
+        "arxiv:2009.03300",
+        "arxiv:2502.21228",
+        "arxiv:2311.12022",
+        "arxiv:2403.07974",
+        "arxiv:2108.07732",
+        "arxiv:2107.03374",
+        "endpoints_compatible"
+      ],
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
       },
       "object": "model",
       "owned_by": "google",
-      "parameter_count": null
+      "parameter_count": 7849978192,
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Google/Gemma 3N E4B It",
     "env_api_key_name": "HF_TOKEN",

@@ -13,6 +13,7 @@
         "deepseek_v4",
         "text-generation",
         "conversational",
+        "arxiv:2606.19348",
         "eval-results",
         "endpoints_compatible",
         "8-bit",
@@ -23,7 +24,7 @@
       },
       "object": "model",
       "owned_by": "deepseek-ai",
-      "parameter_count": 786381668352,
+      "parameter_count": 1572763336704,
       "pipeline_tag": "text-generation"
     },
     "display_name": "Deepseek Ai/Deepseek V4 Pro",
