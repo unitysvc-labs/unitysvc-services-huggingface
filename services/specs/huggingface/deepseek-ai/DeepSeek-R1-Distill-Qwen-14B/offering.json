@@ -3,12 +3,20 @@
     "llm"
   ],
   "currency": "USD",
-  "description": "Deepseek Ai/Deepseek R1 Distill Qwen 14B language model",
+  "description": "Deepseek Ai/Deepseek R1 Distill Qwen 14B language model\n\nDeepseek Ai/Deepseek R1 Distill Qwen 14B is served by Hugging Face over an OpenAI-compatible API. Requests are proxied through the UnitySVC gateway and billed per token.\n\nReach it through the UnitySVC gateway with your own Hugging Face API key (the byok channel). The endpoint accepts both OpenAI Chat Completions and Anthropic Messages requests \u2014 the gateway auto-detects the dialect, translates to the upstream, and returns the response in the format you sent. See the code examples for both styles.",
   "details": {
     "context_length": null,
+    "input_formats": [
+      "openai",
+      "anthropic"
+    ],
     "litellm_provider": "nscale",
     "mode": "chat",
     "object": "model",
+    "output_formats": [
+      "openai_response",
+      "anthropic_response"
+    ],
     "owned_by": "deepseek-ai",
     "parameter_count": null
   },
@@ -30,11 +38,14 @@
   ],
   "time_created": "2026-04-29T04:27:17.820085Z",
   "upstream_access_config": {
-    "Hugging Face API": {
+    "byok": {
       "access_method": "http",
       "api_key": "${ customer_secrets.HF_TOKEN }",
       "base_url": "https://router.huggingface.co",
       "rate_limits": [],
+      "request_transformer": {
+        "llm_translator": "anthropic_to_openai"
+      },
       "routing_key": {
         "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
       }

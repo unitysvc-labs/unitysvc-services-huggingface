@@ -45,19 +45,43 @@
 
 {%- if ex == "" %}
     "Python code example": {
-      "$doc_preset": "llm_code_example_openai"
+      "$doc_preset": {"name": "llm_code_example_openai", "meta": {"sleep_after_test": 5}}
     },
 
     "Python function calling code example": {
-      "$doc_preset": "llm_code_example_fc_requests"
+      "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
     },
 
     "JavaScript code example": {
-      "$doc_preset": "llm_code_example_javascript"
+      "$doc_preset": {"name": "llm_code_example_javascript", "meta": {"sleep_after_test": 5}}
     },
 
     "cURL code example": {
-      "$doc_preset": "llm_code_example_shell"
+      "$doc_preset": {"name": "llm_code_example_shell", "meta": {"sleep_after_test": 5}}
+    },
+
+    {#- Anthropic-dialect examples (R9): the HuggingFace router speaks OpenAI, so
+        specs run-tests (local_testing) calls it in OpenAI form, while the
+        gateway path speaks Anthropic and exercises the llm_translator. Chat
+        models only. #}
+    "Python code example (Anthropic SDK)": {
+      "category": "code_example",
+      "description": "Anthropic Messages API via the anthropic SDK; the gateway translates to the upstream",
+      "file_path": "anthropic-to-openai-code-example.py.j2",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "python",
+      "meta": {"requirements": ["openai", "anthropic"], "sleep_after_test": 5}
+    },
+
+    "cURL code example (Anthropic style)": {
+      "category": "code_example",
+      "description": "Anthropic Messages API via cURL; the gateway translates to the upstream",
+      "file_path": "anthropic-to-openai-code-example.sh.j2",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "bash",
+      "meta": {"sleep_after_test": 5}
     },
 {%- else %}
     "Python code example": {
@@ -66,11 +90,12 @@
       "file_path": "../../docs/code-example{{ ex }}.py.j2",
       "is_active": true,
       "is_public": true,
-      "mime_type": "python"
+      "mime_type": "python",
+      "meta": {"sleep_after_test": 5}
     },
 
     "Python function calling code example": {
-      "$doc_preset": "llm_code_example_fc_requests"
+      "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
     },
 
     "JavaScript code example": {
@@ -79,7 +104,8 @@
       "file_path": "../../docs/code-example{{ ex }}.js.j2",
       "is_active": true,
       "is_public": true,
-      "mime_type": "javascript"
+      "mime_type": "javascript",
+      "meta": {"sleep_after_test": 5}
     },
 
     "cURL code example": {
@@ -88,12 +114,13 @@
       "file_path": "../../docs/code-example{{ ex }}.sh.j2",
       "is_active": true,
       "is_public": true,
-      "mime_type": "bash"
+      "mime_type": "bash",
+      "meta": {"sleep_after_test": 5}
     },
 {%- endif %}
 
     "Connectivity test": {
-      "$doc_preset": "llm_connectivity"
+      "$doc_preset": {"name": "llm_connectivity", "meta": {"sleep_after_test": 5}}
     },
 
     "Default request body": {
