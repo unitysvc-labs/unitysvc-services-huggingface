@@ -3,9 +3,13 @@
     "llm"
   ],
   "currency": "USD",
-  "description": "Sao10K/L3 70B Euryale V2.1 language model",
+  "description": "Sao10K/L3 70B Euryale V2.1 language model\n\nSao10K/L3 70B Euryale V2.1 is served by Hugging Face over an OpenAI-compatible API with a 200000-token context window. Requests are proxied through the UnitySVC gateway; you bring your own Hugging Face API key, so token usage is billed by Hugging Face directly and the service is free through UnitySVC.\n\nReach it through the UnitySVC gateway with your own Hugging Face API key (the byok channel). The endpoint accepts both OpenAI Chat Completions and Anthropic Messages requests \u2014 the gateway auto-detects the dialect, translates to the upstream, and returns the response in the format you sent. See the code examples for both styles.",
   "details": {
     "context_length": 200000,
+    "input_formats": [
+      "openai",
+      "anthropic"
+    ],
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
     "max_output_tokens": 100000,
@@ -15,6 +19,10 @@
     },
     "mode": "chat",
     "object": "model",
+    "output_formats": [
+      "openai_response",
+      "anthropic_response"
+    ],
     "owned_by": "Sao10K",
     "parameter_count": null
   },
@@ -36,11 +44,14 @@
   ],
   "time_created": "2026-03-23T00:35:51.248953Z",
   "upstream_access_config": {
-    "Hugging Face API": {
+    "byok": {
       "access_method": "http",
       "api_key": "${ customer_secrets.HF_TOKEN }",
       "base_url": "https://router.huggingface.co",
       "rate_limits": [],
+      "request_transformer": {
+        "llm_translator": "anthropic_to_openai"
+      },
       "routing_key": {
         "model": "Sao10K/L3-70B-Euryale-v2.1"
       }
