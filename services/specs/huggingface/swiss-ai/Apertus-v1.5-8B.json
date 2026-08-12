@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Swiss Ai/Apertus V1.5 8B language model",
+    "details": {
+      "context_length": null,
+      "object": "model",
+      "owned_by": "swiss-ai",
+      "parameter_count": null
+    },
+    "display_name": "Swiss Ai/Apertus V1.5 8B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "swiss-ai/Apertus-v1.5-8B",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

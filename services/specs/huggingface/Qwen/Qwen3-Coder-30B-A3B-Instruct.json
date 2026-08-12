@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3 Coder 30B A3B Instruct language model",
     "details": {
-      "context_length": 160000,
+      "context_length": 262144,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -15,6 +15,7 @@
         "conversational",
         "arxiv:2505.09388",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "metadata_sources": {

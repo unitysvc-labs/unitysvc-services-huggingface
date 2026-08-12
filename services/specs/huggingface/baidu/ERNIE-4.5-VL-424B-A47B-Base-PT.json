@@ -6,7 +6,7 @@
     ],
     "description": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt language model",
     "details": {
-      "context_length": 131072,
+      "context_length": 123000,
       "metadata_sources": {
         "context_length": "openrouter"
       },

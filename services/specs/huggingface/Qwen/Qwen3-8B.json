@@ -15,8 +15,10 @@
         "conversational",
         "arxiv:2309.00071",
         "arxiv:2505.09388",
+        "eval-results",
         "text-generation-inference",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "metadata_sources": {

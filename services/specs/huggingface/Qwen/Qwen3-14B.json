@@ -2,35 +2,22 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "llm"
     ],
     "description": "Qwen/Qwen3 14B language model",
     "details": {
-      "context_length": 131702,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3",
-        "text-generation",
-        "conversational",
-        "arxiv:2309.00071",
-        "arxiv:2505.09388",
-        "text-generation-inference",
-        "endpoints_compatible"
-      ],
+      "context_length": 131072,
       "litellm_provider": "deepinfra",
       "max_input_tokens": 40960,
       "max_output_tokens": 40960,
       "max_tokens": 40960,
       "metadata_sources": {
-        "context_length": "openrouter",
-        "parameter_count": "huggingface_safetensors"
+        "context_length": "openrouter"
       },
       "mode": "chat",
       "object": "model",
       "owned_by": "Qwen",
-      "parameter_count": 14768307200,
-      "pipeline_tag": "text-generation"
+      "parameter_count": null
     },
     "display_name": "Qwen/Qwen3 14B",
     "env_api_key_name": "HF_TOKEN",

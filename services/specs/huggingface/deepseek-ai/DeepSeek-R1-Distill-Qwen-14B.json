@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Deepseek Ai/Deepseek R1 Distill Qwen 14B language model",
+    "details": {
+      "context_length": null,
+      "litellm_provider": "nscale",
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "deepseek-ai",
+      "parameter_count": null
+    },
+    "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 14B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.07",
+      "output": "0.07",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.07",
+      "output": "0.07",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

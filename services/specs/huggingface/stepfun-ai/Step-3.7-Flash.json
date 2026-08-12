@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Stepfun Ai/Step 3.7 Flash language model",
+    "details": {
+      "context_length": null,
+      "object": "model",
+      "owned_by": "stepfun-ai",
+      "parameter_count": null
+    },
+    "display_name": "Stepfun Ai/Step 3.7 Flash",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "stepfun-ai/Step-3.7-Flash",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

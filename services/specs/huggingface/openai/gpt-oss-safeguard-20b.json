@@ -2,37 +2,22 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "llm"
     ],
     "description": "Openai/Gpt Oss Safeguard 20B language model",
     "details": {
       "context_length": 131072,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "gpt_oss",
-        "text-generation",
-        "vllm",
-        "conversational",
-        "arxiv:2508.10925",
-        "endpoints_compatible",
-        "8-bit",
-        "mxfp4",
-        "deploy:azure"
-      ],
       "litellm_provider": "groq",
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
       "max_tokens": 65536,
       "metadata_sources": {
-        "context_length": "openrouter",
-        "parameter_count": "huggingface_safetensors"
+        "context_length": "openrouter"
       },
       "mode": "chat",
       "object": "model",
       "owned_by": "openai",
-      "parameter_count": 19707494400,
-      "pipeline_tag": "text-generation"
+      "parameter_count": null
     },
     "display_name": "Openai/Gpt Oss Safeguard 20B",
     "env_api_key_name": "HF_TOKEN",

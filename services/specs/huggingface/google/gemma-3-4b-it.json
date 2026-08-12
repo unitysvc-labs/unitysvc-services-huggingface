@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "llm"
+    ],
+    "description": "Google/Gemma 3 4B It language model",
+    "details": {
+      "context_length": 131072,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 131072,
+      "max_output_tokens": 131072,
+      "max_tokens": 131072,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "google",
+      "parameter_count": null
+    },
+    "display_name": "Google/Gemma 3 4B It",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.04",
+      "output": "0.08",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "offering_name": "google/gemma-3-4b-it",
+    "payout_price": {
+      "description": "Pricing Per 1M Tokens Input/Output",
+      "input": "0.04",
+      "output": "0.08",
+      "reference": null,
+      "type": "one_million_tokens"
+    },
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

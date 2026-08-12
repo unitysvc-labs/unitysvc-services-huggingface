@@ -14,7 +14,8 @@
         "image-text-to-text",
         "conversational",
         "eval-results",
-        "endpoints_compatible"
+        "endpoints_compatible",
+        "deploy:azure"
       ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 262144,
