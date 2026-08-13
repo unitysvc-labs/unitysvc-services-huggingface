@@ -18,6 +18,7 @@
         "eval-results",
         "text-generation-inference",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "litellm_provider": "deepinfra",

@@ -35,7 +35,9 @@
         "eval-results",
         "endpoints_compatible",
         "8-bit",
-        "modelopt"
+        "modelopt",
+        "deploy:sagemaker",
+        "deploy:azure"
       ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"

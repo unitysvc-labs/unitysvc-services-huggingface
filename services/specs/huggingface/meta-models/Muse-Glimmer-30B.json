@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "image-text-to-text"
+    ],
+    "description": "Meta Models/Muse Glimmer 30B language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "muse_glimmer",
+        "image-text-to-text",
+        "conversational",
+        "arxiv:2504.13181",
+        "arxiv:2602.06036",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "meta-models",
+      "parameter_count": 29776626688,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Meta Models/Muse Glimmer 30B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "meta-models/Muse-Glimmer-30B",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

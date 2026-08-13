@@ -19,6 +19,7 @@
         "arxiv:2501.15383",
         "eval-results",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "litellm_provider": "deepinfra",

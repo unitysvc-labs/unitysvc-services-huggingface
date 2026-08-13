@@ -15,6 +15,7 @@
         "conversational",
         "eval-results",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "metadata_sources": {

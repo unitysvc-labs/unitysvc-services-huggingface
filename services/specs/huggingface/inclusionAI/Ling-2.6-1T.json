@@ -14,6 +14,7 @@
         "text-generation",
         "conversational",
         "custom_code",
+        "arxiv:2606.15079",
         "eval-results",
         "compressed-tensors"
       ],

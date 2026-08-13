@@ -17,6 +17,7 @@
         "arxiv:2502.13923",
         "arxiv:2409.12191",
         "arxiv:2308.12966",
+        "eval-results",
         "endpoints_compatible",
         "deploy:azure"
       ],

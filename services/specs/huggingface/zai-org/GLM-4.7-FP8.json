@@ -18,7 +18,8 @@
         "arxiv:2508.06471",
         "eval-results",
         "endpoints_compatible",
-        "compressed-tensors"
+        "compressed-tensors",
+        "deploy:azure"
       ],
       "litellm_provider": "gmi",
       "max_input_tokens": 202752,

@@ -28,7 +28,8 @@
         "arxiv:2204.05149",
         "eval-results",
         "text-generation-inference",
-        "endpoints_compatible"
+        "endpoints_compatible",
+        "deploy:sagemaker"
       ],
       "litellm_provider": "nscale",
       "metadata_sources": {

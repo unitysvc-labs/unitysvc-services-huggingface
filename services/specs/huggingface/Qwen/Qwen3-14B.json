@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3 14B language model",
     "details": {
-      "context_length": 131702,
+      "context_length": 131072,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -16,7 +16,9 @@
         "arxiv:2309.00071",
         "arxiv:2505.09388",
         "text-generation-inference",
-        "endpoints_compatible"
+        "endpoints_compatible",
+        "deploy:sagemaker",
+        "deploy:azure"
       ],
       "litellm_provider": "deepinfra",
       "max_input_tokens": 40960,

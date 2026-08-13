@@ -2,14 +2,28 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "text-generation"
     ],
     "description": "Deepseek Ai/Deepseek V3.2 Exp language model",
     "details": {
       "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "deepseek_v32",
+        "text-generation",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible",
+        "fp8"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
       "object": "model",
       "owned_by": "deepseek-ai",
-      "parameter_count": null
+      "parameter_count": 681408069632,
+      "pipeline_tag": "text-generation"
     },
     "display_name": "Deepseek Ai/Deepseek V3.2 Exp",
     "env_api_key_name": "HF_TOKEN",
