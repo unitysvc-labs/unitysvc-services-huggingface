@@ -30,11 +30,17 @@
     "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 1.5B",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
+<<<<<<< Updated upstream:services/specs/huggingface/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B.json
       "description": "Pricing Per 1M Tokens Input/Output",
       "input": "0.09",
       "output": "0.09",
       "reference": null,
       "type": "one_million_tokens"
+=======
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+>>>>>>> Stashed changes:services/specs/huggingface/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B.json
     },
     "offering_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
     "payout_price": {
@@ -44,6 +50,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.07 / $0.07 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

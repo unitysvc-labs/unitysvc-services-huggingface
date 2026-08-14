@@ -28,7 +28,11 @@
     },
     "display_name": "Inclusionai/Ling 2.6 1T",
     "env_api_key_name": "HF_TOKEN",
-    "list_price": null,
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
     "offering_name": "inclusionAI/Ling-2.6-1T",
     "payout_price": null,
     "provider_display_name": "Hugging Face",

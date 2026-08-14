@@ -43,11 +43,9 @@
     "display_name": "Qwen/Qwen2.5 Coder 32B Instruct",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.12",
-      "output": "0.3",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "offering_name": "Qwen/Qwen2.5-Coder-32B-Instruct",
     "payout_price": {
@@ -57,6 +55,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.12 / $0.3 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

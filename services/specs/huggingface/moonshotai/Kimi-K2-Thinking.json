@@ -35,11 +35,17 @@
     "display_name": "Moonshotai/Kimi K2 Thinking",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
+<<<<<<< Updated upstream:services/specs/huggingface/moonshotai/Kimi-K2-Thinking.json
       "description": "Pricing Per 1M Tokens Input/Output",
       "input": "0.7999999999999999",
       "output": "1.2",
       "reference": null,
       "type": "one_million_tokens"
+=======
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+>>>>>>> Stashed changes:services/specs/huggingface/Qwen/Qwen3-30B-A3B.json
     },
     "offering_name": "moonshotai/Kimi-K2-Thinking",
     "payout_price": {
@@ -49,6 +55,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.08 / $0.29 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

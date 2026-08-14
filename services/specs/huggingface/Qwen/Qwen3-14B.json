@@ -35,11 +35,9 @@
     "display_name": "Qwen/Qwen3 14B",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.06",
-      "output": "0.24",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "offering_name": "Qwen/Qwen3-14B",
     "payout_price": {
@@ -49,6 +47,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.06 / $0.24 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

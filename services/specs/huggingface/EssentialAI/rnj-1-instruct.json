@@ -28,8 +28,17 @@
     },
     "display_name": "Essentialai/Rnj 1 Instruct",
     "env_api_key_name": "HF_TOKEN",
+<<<<<<< Updated upstream:services/specs/huggingface/EssentialAI/rnj-1-instruct.json
     "list_price": null,
     "offering_name": "EssentialAI/rnj-1-instruct",
+=======
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "tencent/Hy3",
+>>>>>>> Stashed changes:services/specs/huggingface/tencent/Hy3.json
     "payout_price": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",

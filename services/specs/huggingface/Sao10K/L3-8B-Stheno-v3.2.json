@@ -39,11 +39,9 @@
     "display_name": "Sao10K/L3 8B Stheno V3.2",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.049999999999999996",
-      "output": "0.049999999999999996",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "offering_name": "Sao10K/L3-8B-Stheno-v3.2",
     "payout_price": {
@@ -53,6 +51,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.05 / $0.05 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

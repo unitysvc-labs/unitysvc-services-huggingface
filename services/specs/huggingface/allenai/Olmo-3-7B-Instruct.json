@@ -36,11 +36,17 @@
     "display_name": "Allenai/Olmo 3 7B Instruct",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
+<<<<<<< Updated upstream:services/specs/huggingface/allenai/Olmo-3-7B-Instruct.json
       "description": "Pricing Per 1M Tokens Input/Output",
       "input": "0",
       "output": "0",
       "reference": null,
       "type": "one_million_tokens"
+=======
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+>>>>>>> Stashed changes:services/specs/huggingface/CohereLabs/command-a-vision-07-2025.json
     },
     "offering_name": "allenai/Olmo-3-7B-Instruct",
     "payout_price": {
@@ -50,6 +56,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$1 / $2 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"
