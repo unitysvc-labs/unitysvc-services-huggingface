@@ -4,35 +4,31 @@
     "capabilities": [
       "text-generation"
     ],
-    "description": "Swiss Ai/Apertus 70B Instruct 2509 language model",
+    "description": "Qwen/Qwen3.8 2.4T A95B language model",
     "details": {
-      "context_length": null,
+      "context_length": 1010000,
       "hf_tags": [
         "transformers",
         "safetensors",
-        "apertus",
+        "qwen3_5_moe_text",
         "text-generation",
-        "multilingual",
-        "compliant",
-        "swiss-ai",
         "conversational",
-        "arxiv:2509.14233",
         "eval-results",
-        "endpoints_compatible",
-        "deploy:azure"
+        "endpoints_compatible"
       ],
       "metadata_sources": {
+        "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
       "object": "model",
-      "owned_by": "swiss-ai",
-      "parameter_count": 70599864480,
+      "owned_by": "Qwen",
+      "parameter_count": 2446182725504,
       "pipeline_tag": "text-generation"
     },
-    "display_name": "Swiss Ai/Apertus 70B Instruct 2509",
+    "display_name": "Qwen/Qwen3.8 2.4T A95B",
     "env_api_key_name": "HF_TOKEN",
     "list_price": null,
-    "offering_name": "swiss-ai/Apertus-70B-Instruct-2509",
+    "offering_name": "Qwen/Qwen3.8-2.4T-A95B",
     "payout_price": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",

@@ -2,41 +2,23 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "image-text-to-text"
     ],
-    "description": "Coherelabs/Command A Reasoning 08 2025 language model",
+    "description": "Coherelabs/Command A Vision 07 2025 language model",
     "details": {
       "context_length": 4096,
       "hf_tags": [
         "transformers",
         "safetensors",
-        "cohere2",
-        "text-generation",
+        "cohere2_vision",
+        "image-text-to-text",
         "conversational",
         "en",
         "fr",
         "de",
         "es",
         "it",
-        "pt",
-        "ja",
-        "ko",
-        "zh",
-        "ar",
-        "el",
-        "fa",
-        "pl",
-        "id",
-        "cs",
-        "he",
-        "hi",
-        "nl",
-        "ro",
-        "ru",
-        "tr",
-        "uk",
-        "vi",
-        "eval-results"
+        "pt"
       ],
       "litellm_provider": "cohere",
       "max_input_tokens": 4096,
@@ -49,10 +31,10 @@
       "mode": "completion",
       "object": "model",
       "owned_by": "CohereLabs",
-      "parameter_count": 111057580032,
-      "pipeline_tag": "text-generation"
+      "parameter_count": 111867525360,
+      "pipeline_tag": "image-text-to-text"
     },
-    "display_name": "Coherelabs/Command A Reasoning 08 2025",
+    "display_name": "Coherelabs/Command A Vision 07 2025",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Pricing Per 1M Tokens Input/Output",
@@ -61,7 +43,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
-    "offering_name": "CohereLabs/command-a-reasoning-08-2025",
+    "offering_name": "CohereLabs/command-a-vision-07-2025",
     "payout_price": {
       "description": "Pricing Per 1M Tokens Input/Output",
       "input": "1",

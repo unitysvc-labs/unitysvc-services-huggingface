@@ -26,7 +26,8 @@
         "dataset:nvidia/nemotron-pre-training-datasets",
         "eval-results",
         "endpoints_compatible",
-        "deploy:azure"
+        "deploy:azure",
+        "deploy:sagemaker"
       ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"

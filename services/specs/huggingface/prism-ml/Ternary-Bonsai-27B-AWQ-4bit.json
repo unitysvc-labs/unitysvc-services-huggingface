@@ -2,14 +2,30 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "image-text-to-text"
     ],
     "description": "Prism Ml/Ternary Bonsai 27B Awq 4Bit language model",
     "details": {
       "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_5",
+        "image-text-to-text",
+        "conversational",
+        "prismml",
+        "bonsai",
+        "awq",
+        "4-bit",
+        "endpoints_compatible"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
       "object": "model",
       "owned_by": "prism-ml",
-      "parameter_count": null
+      "parameter_count": 24326963200,
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Prism Ml/Ternary Bonsai 27B Awq 4Bit",
     "env_api_key_name": "HF_TOKEN",

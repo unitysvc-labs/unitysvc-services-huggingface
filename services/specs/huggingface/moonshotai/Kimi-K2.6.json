@@ -2,21 +2,35 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "image-text-to-text"
     ],
     "description": "Moonshotai/Kimi K2.6 language model",
     "details": {
       "context_length": 262144,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "kimi_k25",
+        "feature-extraction",
+        "compressed-tensors",
+        "image-text-to-text",
+        "conversational",
+        "custom_code",
+        "arxiv:2602.02276",
+        "eval-results"
+      ],
       "litellm_provider": "tensormesh",
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
       },
       "mode": "chat",
       "object": "model",
       "owned_by": "moonshotai",
-      "parameter_count": null
+      "parameter_count": 1014686023680,
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Moonshotai/Kimi K2.6",
     "env_api_key_name": "HF_TOKEN",

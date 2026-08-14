@@ -2,14 +2,33 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "text-generation"
     ],
     "description": "Xiaomimimo/Mimo V2.5 Pro language model",
     "details": {
       "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "mimo_v2",
+        "text-generation",
+        "agent",
+        "long-context",
+        "code",
+        "conversational",
+        "custom_code",
+        "en",
+        "zh",
+        "eval-results",
+        "fp8"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
       "object": "model",
       "owned_by": "XiaomiMiMo",
-      "parameter_count": null
+      "parameter_count": 1013569290240,
+      "pipeline_tag": "text-generation"
     },
     "display_name": "Xiaomimimo/Mimo V2.5 Pro",
     "env_api_key_name": "HF_TOKEN",

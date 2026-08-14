@@ -30,12 +30,13 @@
       "max_output_tokens": 16384,
       "max_tokens": 16384,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
       },
       "mode": "chat",
       "object": "model",
       "owned_by": "microsoft",
-      "parameter_count": null,
+      "parameter_count": 14659507200,
       "pipeline_tag": "text-generation"
     },
     "display_name": "Microsoft/Phi 4",

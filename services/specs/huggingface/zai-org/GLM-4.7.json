@@ -2,16 +2,33 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "llm"
+      "text-generation"
     ],
     "description": "Zai Org/Glm 4.7 language model",
     "details": {
       "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "glm4_moe",
+        "text-generation",
+        "conversational",
+        "en",
+        "zh",
+        "arxiv:2508.06471",
+        "eval-results",
+        "endpoints_compatible",
+        "deploy:azure"
+      ],
       "litellm_provider": "baseten",
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
       "mode": "chat",
       "object": "model",
       "owned_by": "zai-org",
-      "parameter_count": null
+      "parameter_count": 358337776896,
+      "pipeline_tag": "text-generation"
     },
     "display_name": "Zai Org/Glm 4.7",
     "env_api_key_name": "HF_TOKEN",
