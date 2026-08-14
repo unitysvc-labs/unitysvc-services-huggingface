@@ -32,11 +32,9 @@
     "display_name": "Zai Org/Glm 5",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.95",
-      "output": "3.15",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "offering_name": "zai-org/GLM-5",
     "payout_price": {
@@ -46,6 +44,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.95 / $3.15 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

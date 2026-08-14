@@ -42,11 +42,9 @@
     "display_name": "Microsoft/Phi 4",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.07",
-      "output": "0.14",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "offering_name": "microsoft/phi-4",
     "payout_price": {
@@ -56,6 +54,7 @@
       "reference": null,
       "type": "one_million_tokens"
     },
+    "pricing_note": "$0.07 / $0.14 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

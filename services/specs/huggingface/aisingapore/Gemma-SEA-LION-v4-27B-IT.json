@@ -51,11 +51,9 @@
     "display_name": "Aisingapore/Gemma Sea Lion V4 27B It",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0",
-      "output": "0",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "offering_name": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
     "payout_price": {
