@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3 Coder 480B A35B Instruct language model",
     "details": {
-      "context_length": 1048576,
+      "context_length": 262144,
       "hf_tags": [
         "transformers",
         "safetensors",

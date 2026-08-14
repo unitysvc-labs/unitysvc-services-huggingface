@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen2.5 Vl 72B Instruct language model",
     "details": {
-      "context_length": 131072,
+      "context_length": 128000,
       "hf_tags": [
         "transformers",
         "safetensors",

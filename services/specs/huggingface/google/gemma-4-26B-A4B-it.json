@@ -13,8 +13,10 @@
         "gemma4",
         "image-text-to-text",
         "conversational",
+        "arxiv:2607.02770",
         "eval-results",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "metadata_sources": {

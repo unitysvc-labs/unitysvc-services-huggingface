@@ -15,7 +15,8 @@
         "conversational",
         "eval-results",
         "endpoints_compatible",
-        "deploy:azure"
+        "deploy:azure",
+        "deploy:sagemaker"
       ],
       "metadata_sources": {
         "context_length": "openrouter",

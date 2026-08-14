@@ -17,6 +17,7 @@
         "eval-results",
         "endpoints_compatible",
         "fp8",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "litellm_provider": "baseten",

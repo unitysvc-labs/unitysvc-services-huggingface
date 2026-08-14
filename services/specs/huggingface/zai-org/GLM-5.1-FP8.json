@@ -18,7 +18,8 @@
         "arxiv:2602.15763",
         "eval-results",
         "endpoints_compatible",
-        "fp8"
+        "fp8",
+        "deploy:sagemaker"
       ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"

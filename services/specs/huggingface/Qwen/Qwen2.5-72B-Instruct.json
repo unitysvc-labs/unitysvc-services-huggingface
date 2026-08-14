@@ -19,6 +19,7 @@
         "arxiv:2407.10671",
         "text-generation-inference",
         "endpoints_compatible",
+        "deploy:sagemaker",
         "deploy:azure"
       ],
       "litellm_provider": "deepinfra",

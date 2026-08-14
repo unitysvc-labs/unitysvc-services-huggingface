@@ -18,7 +18,8 @@
         "eval-results",
         "text-generation-inference",
         "endpoints_compatible",
-        "fp8"
+        "fp8",
+        "deploy:sagemaker"
       ],
       "litellm_provider": "deepinfra",
       "max_input_tokens": 163840,

@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "text-generation"
+    ],
+    "description": "Deepseek Ai/Deepseek V4 Flash 0731 language model",
+    "details": {
+      "context_length": null,
+      "hf_tags": [
+        "transformers",
+        "safetensors",
+        "deepseek_v4",
+        "text-generation",
+        "conversational",
+        "arxiv:2606.19348",
+        "eval-results",
+        "endpoints_compatible",
+        "8-bit",
+        "fp8",
+        "deploy:azure"
+      ],
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "deepseek-ai",
+      "parameter_count": 296352743424,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Deepseek Ai/Deepseek V4 Flash 0731",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": null,
+    "offering_name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "payout_price": null,
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready"
+  }
+}

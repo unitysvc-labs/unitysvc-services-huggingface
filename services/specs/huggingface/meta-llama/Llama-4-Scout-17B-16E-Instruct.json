@@ -6,7 +6,7 @@
     ],
     "description": "Meta Llama/Llama 4 Scout 17B 16E Instruct language model",
     "details": {
-      "context_length": 10000000,
+      "context_length": 1310720,
       "hf_tags": [
         "transformers",
         "safetensors",
