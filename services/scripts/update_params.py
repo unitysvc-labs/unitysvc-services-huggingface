@@ -9,6 +9,7 @@ Usage: python scripts/update_services.py
 
 import os
 import sys
+import time
 from pathlib import Path
 from typing import Any, Iterator
 
@@ -42,6 +43,69 @@ class ModelSource:
         self.data_fetcher = ModelDataFetcher()
         self.litellm_data = None
 
+    def probe_model(self, model_id: str) -> tuple[bool, bool, str]:
+        """One 1-token chat call with a ``tools`` param, classifying the model.
+
+        Returns ``(servable, supports_tools, note)``:
+
+        - 200                                  -> servable, tools supported
+        - "Tool calling is not supported"      -> servable, tools NOT supported
+          (the router rejects the request pre-inference; the 21 FC-only
+          rejections in the first full submit round were exactly this)
+        - "model_not_supported"                -> NOT servable for this
+          account's enabled providers (e.g. zai-org/GLM-*-FP8) — the /v1/models
+          catalog lists it anyway, so only a live probe can tell
+        - anything else (429 / burst-block / 5xx / timeouts) -> OPTIMISTIC:
+          servable with tools — never drop or gate a model on a transient
+        """
+        try:
+            r = httpx.post(
+                f"{ROUTER_API_URL}/chat/completions",
+                headers={"Authorization": f"Bearer {self.api_key}"},
+                json={
+                    "model": model_id,
+                    "messages": [{"role": "user", "content": "ping"}],
+                    "max_tokens": 1,
+                    "tools": [{
+                        "type": "function",
+                        "function": {
+                            "name": "get_weather",
+                            "description": "Get the current weather for a city",
+                            "parameters": {
+                                "type": "object",
+                                "properties": {"city": {"type": "string"}},
+                                "required": ["city"],
+                            },
+                        },
+                    }],
+                },
+                timeout=60.0,
+            )
+        except httpx.HTTPError as exc:
+            return True, True, f"probe error ({exc}); kept optimistically"
+        if r.status_code == 200:
+            return True, True, "ok"
+        # Error shapes vary BY PROVIDER behind the router: the OpenAI-style
+        # {"error": {"message", "code"}} envelope, but also Cohere's flat
+        # {"error_type": "TOOL_USE_NOT_SUPPORTED", "message": ...}. Parse both.
+        try:
+            body = r.json()
+        except ValueError:
+            body = {}
+        err = body.get("error") or {}
+        msg = err.get("message", "") if isinstance(err, dict) else str(err)
+        msg = msg or str(body.get("message", "")) or r.text[:120]
+        code = err.get("code") if isinstance(err, dict) else None
+        error_type = str(body.get("error_type", ""))
+        if code == "model_not_supported" or "not supported by any provider" in msg:
+            return False, False, msg[:80]
+        blob = (msg + " " + error_type).lower()
+        if "tool_use_not_supported" in blob or (
+            "tool" in blob and ("not supported" in blob or "not available" in blob)
+        ):
+            return True, False, "no tool support"
+        return True, True, f"HTTP {r.status_code} ({msg[:60]}); kept optimistically"
+
     def iter_models(self) -> Iterator[dict]:
         """Yield model dictionaries for template rendering."""
         # Fetch LiteLLM data once
@@ -69,11 +133,20 @@ class ModelSource:
                 continue
             print(f"[{i}/{len(models)}] {model_id}", end="")
 
+            servable, supports_tools, note = self.probe_model(model_id)
+            if not servable:
+                print(f"  skip (not servable: {note})")
+                continue
+
             # Build template variables
             template_vars = self._build_template_vars(model_id, model_info)
             if template_vars:
+                template_vars["supports_tools"] = supports_tools
                 yield template_vars
-                print("  OK")
+                print(f"  OK (tools={'yes' if supports_tools else 'no'})")
+            # Pace the router probes: the first full submit round tripped HF's
+            # burst blocking ("Your request was blocked"); don't invite it here.
+            time.sleep(0.5)
 
     def _build_template_vars(self, model_id: str, model_info: dict) -> dict:
         """Build template variables for a model."""

@@ -48,9 +48,15 @@
       "$doc_preset": {"name": "llm_code_example_openai", "meta": {"sleep_after_test": 5}}
     },
 
+{#- Only models the router reports as tool-capable get the function-calling
+    example — others 405 "Tool calling is not supported for model: X"
+    (probed by update_params.py -> supports_tools; default true for params
+    generated before the probe existed). #}
+{%- if supports_tools | default(true) %}
     "Python function calling code example": {
       "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
     },
+{%- endif %}
 
     "JavaScript code example": {
       "$doc_preset": {"name": "llm_code_example_javascript", "meta": {"sleep_after_test": 5}}
@@ -82,9 +88,15 @@
       "meta": {"sleep_after_test": 5}
     },
 
+{#- Only models the router reports as tool-capable get the function-calling
+    example — others 405 "Tool calling is not supported for model: X"
+    (probed by update_params.py -> supports_tools; default true for params
+    generated before the probe existed). #}
+{%- if supports_tools | default(true) %}
     "Python function calling code example": {
       "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
     },
+{%- endif %}
 
     "JavaScript code example": {
       "category": "code_example",
