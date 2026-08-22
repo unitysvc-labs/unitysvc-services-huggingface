@@ -69,11 +69,9 @@
     },
     "offering_name": "google/gemma-3-4b-it",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.04",
-      "output": "0.08",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "pricing_note": "$0.04 / $0.08 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
