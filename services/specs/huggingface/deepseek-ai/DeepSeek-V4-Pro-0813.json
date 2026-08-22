@@ -4,51 +4,43 @@
     "capabilities": [
       "text-generation"
     ],
-    "description": "Deepseek Ai/Deepseek R1 language model",
+    "description": "Deepseek Ai/Deepseek V4 Pro 0813 language model",
     "details": {
-      "context_length": 163840,
+      "context_length": null,
       "hf_tags": [
         "transformers",
         "safetensors",
-        "deepseek_v3",
+        "deepseek_v4",
         "text-generation",
         "conversational",
-        "custom_code",
-        "arxiv:2501.12948",
+        "arxiv:2606.19348",
         "eval-results",
-        "text-generation-inference",
         "endpoints_compatible",
-        "fp8",
-        "deploy:sagemaker"
+        "8-bit",
+        "fp8"
       ],
-      "litellm_provider": "deepinfra",
-      "max_input_tokens": 163840,
-      "max_output_tokens": 163840,
-      "max_tokens": 163840,
       "metadata_sources": {
-        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
-      "mode": "chat",
       "object": "model",
       "owned_by": "deepseek-ai",
-      "parameter_count": 680571043840,
+      "parameter_count": 1623497637888,
       "pipeline_tag": "text-generation"
     },
-    "display_name": "Deepseek Ai/Deepseek R1",
+    "display_name": "Deepseek Ai/Deepseek V4 Pro 0813",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "offering_name": "deepseek-ai/DeepSeek-R1",
+    "offering_name": "deepseek-ai/DeepSeek-V4-Pro-0813",
     "payout_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.7 / $2.4 per 1M input/output tokens",
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

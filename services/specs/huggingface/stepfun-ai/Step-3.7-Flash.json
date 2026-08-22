@@ -11,15 +11,15 @@
         "transformers",
         "safetensors",
         "step3p7",
-        "text-generation",
+        "image-text-to-text",
         "vision-language",
         "multimodal",
         "moe",
-        "image-text-to-text",
         "conversational",
         "custom_code",
         "en",
-        "eval-results"
+        "eval-results",
+        "endpoints_compatible"
       ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
@@ -37,7 +37,12 @@
       "type": "constant"
     },
     "offering_name": "stepfun-ai/Step-3.7-Flash",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"
