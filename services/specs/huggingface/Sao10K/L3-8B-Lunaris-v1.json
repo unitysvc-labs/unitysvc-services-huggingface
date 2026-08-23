@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "chat"
     ],
     "description": "Sao10K/L3 8B Lunaris V1 language model",
     "details": {

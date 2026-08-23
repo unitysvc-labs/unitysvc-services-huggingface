@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "image-text-to-text"
+      "chat"
     ],
     "description": "Baidu/Ernie 4.5 Vl 424B A47B Base Pt language model",
     "details": {

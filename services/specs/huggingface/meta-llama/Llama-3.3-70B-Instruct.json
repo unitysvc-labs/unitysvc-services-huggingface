@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "chat"
     ],
     "description": "Meta Llama/Llama 3.3 70B Instruct language model",
     "details": {

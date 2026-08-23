@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "image-text-to-text"
+      "chat"
     ],
     "description": "Qwen/Qwen3.6 35B A3B language model",
     "details": {

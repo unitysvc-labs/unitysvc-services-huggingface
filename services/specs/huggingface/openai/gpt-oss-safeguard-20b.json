@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "chat"
     ],
     "description": "Openai/Gpt Oss Safeguard 20B language model",
     "details": {
