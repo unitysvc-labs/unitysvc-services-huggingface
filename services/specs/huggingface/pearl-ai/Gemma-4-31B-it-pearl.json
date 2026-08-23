@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "image-text-to-text"
+      "chat"
     ],
     "description": "Pearl Ai/Gemma 4 31B It Pearl language model",
     "details": {

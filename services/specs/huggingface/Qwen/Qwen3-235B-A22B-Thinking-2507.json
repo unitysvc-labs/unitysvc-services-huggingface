@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "chat"
     ],
     "description": "Qwen/Qwen3 235B A22B Thinking 2507 language model",
     "details": {

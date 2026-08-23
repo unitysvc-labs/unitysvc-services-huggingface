@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "image-text-to-text"
+      "chat"
     ],
     "description": "Coherelabs/Command A Plus 05 2026 Bf16 language model",
     "details": {

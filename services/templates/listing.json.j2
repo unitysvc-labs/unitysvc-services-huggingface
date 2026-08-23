@@ -1,18 +1,22 @@
-{#- Select code example templates based on model capabilities (HuggingFace pipeline_tag) -#}
-{%- if "automatic-speech-recognition" in capabilities -%}
+{#- Select code example templates from the model's HuggingFace task taxonomy.
+    Branches on `details.pipeline_tag`, NOT on `capabilities`: the two used to
+    hold the identical value, but `capabilities` now carries the platform
+    vocabulary (unitysvc docs/capabilities.yml) and pipeline_tag is the upstream
+    fact this dispatch actually depends on. Keeping them separate means a change
+    to the customer-facing vocabulary cannot silently re-route examples. -#}
+{%- set _pt = (details.pipeline_tag | default("", true)) -%}
+{%- if _pt == "automatic-speech-recognition" -%}
   {%- set ex = "-prerecordedtranscription" -%}
-{%- elif "text-to-speech" in capabilities or "text-to-audio" in capabilities -%}
+{%- elif _pt in ("text-to-speech", "text-to-audio") -%}
   {%- set ex = "-tts" -%}
-{%- elif "text-to-video" in capabilities or "image-to-video" in capabilities -%}
+{%- elif _pt in ("text-to-video", "image-to-video") -%}
   {%- set ex = "-ttv" -%}
-{%- elif "image-to-image" in capabilities -%}
+{%- elif _pt == "image-to-image" -%}
   {%- set ex = "-imagetoimage" -%}
-{%- elif "text-to-image" in capabilities or "unconditional-image-generation" in capabilities -%}
+{%- elif _pt in ("text-to-image", "unconditional-image-generation") -%}
   {%- set ex = "-image" -%}
-{%- elif "feature-extraction" in capabilities or "sentence-similarity" in capabilities -%}
+{%- elif _pt in ("feature-extraction", "sentence-similarity") -%}
   {%- set ex = "-sentencetransformers" -%}
-{%- elif "guard" in (capabilities | join(" ")) -%}
-  {%- set ex = "-guard" -%}
 {%- else -%}
   {%- set ex = "" -%}
 {%- endif -%}

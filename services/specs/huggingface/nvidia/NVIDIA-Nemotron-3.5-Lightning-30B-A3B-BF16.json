@@ -2,7 +2,7 @@
   "parameters": {
     "api_base_url": "https://router.huggingface.co/v1",
     "capabilities": [
-      "text-generation"
+      "chat"
     ],
     "description": "Nvidia/Nvidia Nemotron 3.5 Lightning 30B A3B Bf16 language model",
     "details": {

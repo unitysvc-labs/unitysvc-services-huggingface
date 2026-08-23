@@ -75,23 +75,53 @@ class ModelSource:
                 yield template_vars
                 print("  OK")
 
+    #: HuggingFace ``pipeline_tag`` -> platform capability vocabulary
+    #: (unitysvc ``docs/capabilities.yml``). Anything not listed is a
+    #: text-in/text-out task and maps to ``chat`` — including
+    #: ``image-text-to-text`` and the other vision tags, since an image in
+    #: the request is an attribute of a chat call, not a capability.
+    _PIPELINE_CAPABILITY = {
+        "feature-extraction": "embed",
+        "sentence-similarity": "embed",
+        "text-to-image": "image-generate",
+        "unconditional-image-generation": "image-generate",
+        "image-to-image": "image-edit",
+        "automatic-speech-recognition": "speech-transcribe",
+        "text-to-speech": "speech-synthesize",
+        "text-to-audio": "speech-synthesize",
+        "text-to-video": "video-generate",
+        "image-to-video": "video-generate",
+    }
+
+    @classmethod
+    def _capability_for(cls, pipeline_tags: list[str]) -> str:
+        """The platform capability implied by a HuggingFace pipeline tag."""
+        tag = pipeline_tags[0] if pipeline_tags else ""
+        return cls._PIPELINE_CAPABILITY.get(tag, "chat")
+
     def _build_template_vars(self, model_id: str, model_info: dict) -> dict:
         """Build template variables for a model."""
         service_type = self._determine_service_type(model_id)
         display_name = model_id.replace("-", " ").replace("_", " ").title()
 
-        # Get capabilities from HuggingFace pipeline_tag
-        capabilities, _ = ModelDataLookup.get_capabilities_from_hf(
+        # HuggingFace's task taxonomy for this model. This is an UPSTREAM
+        # fact, stored in details.pipeline_tag, and it is what both templates
+        # branch on to pick the right code-example / connectivity presets.
+        pipeline_tags, _ = ModelDataLookup.get_capabilities_from_hf(
             model_id, self.data_fetcher
         )
+        # The platform capability is a separate axis: what the caller GETS
+        # (unitysvc docs/capabilities.yml). Derived from the pipeline tag,
+        # never equal to it.
+        capabilities = [self._capability_for(pipeline_tags)]
 
         # Get cleaned HF tags for details
         hf_tags = ModelDataLookup.get_hf_tags(model_id, self.data_fetcher)
 
         # Build details from LiteLLM data and model info
         details: dict[str, Any] = {}
-        if capabilities and capabilities != ["llm"]:
-            details["pipeline_tag"] = capabilities[0]
+        if pipeline_tags and pipeline_tags != ["llm"]:
+            details["pipeline_tag"] = pipeline_tags[0]
         if hf_tags:
             details["hf_tags"] = hf_tags
 

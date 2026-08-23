@@ -14,17 +14,22 @@
     dialect-aware marketplace copy apply ONLY to text-generation/chat models
     (incl. image-text-to-text VLMs). Non-chat capabilities (ASR/TTS/image/video/
     embeddings/guard) keep the plain channel with no translator/formats. #}
-{%- if "automatic-speech-recognition" in capabilities
-    or "text-to-speech" in capabilities or "text-to-audio" in capabilities
-    or "text-to-video" in capabilities or "image-to-video" in capabilities
-    or "image-to-image" in capabilities
-    or "text-to-image" in capabilities or "unconditional-image-generation" in capabilities
-    or "feature-extraction" in capabilities or "sentence-similarity" in capabilities
-    or "guard" in (capabilities | join(" ")) -%}
-  {%- set is_chat = false -%}
-{%- else -%}
-  {%- set is_chat = true -%}
-{%- endif -%}
+{#- Dispatch moved off `capabilities` onto `details.pipeline_tag`. The two held
+    the identical value, but they are different axes: pipeline_tag is
+    HuggingFace's task taxonomy (an upstream fact, and the right thing to branch
+    on), while `capabilities` is now the platform vocabulary
+    (unitysvc docs/capabilities.yml) — a customer-facing promise. -#}
+{%- set _pt = (details.pipeline_tag | default("", true)) -%}
+{%- set _pt_capability = {
+      "feature-extraction": "embed", "sentence-similarity": "embed",
+      "text-to-image": "image-generate", "unconditional-image-generation": "image-generate",
+      "image-to-image": "image-edit",
+      "automatic-speech-recognition": "speech-transcribe",
+      "text-to-speech": "speech-synthesize", "text-to-audio": "speech-synthesize",
+      "text-to-video": "video-generate", "image-to-video": "video-generate",
+  } -%}
+{%- set _cap = _pt_capability.get(_pt, "chat") -%}
+{%- set is_chat = (_cap == "chat") -%}
 {#- Marketplace copy (unitysvc/unitysvc#1838): the teaser paragraph now lives
     in the required `summary` field (max 200 chars, shown in the collapsed
     list view); `description` holds the long-form paragraphs (the populate
@@ -55,7 +60,7 @@
   "summary": {{ (_brief | trim)[:200] | tojson }},
   "description": {{ _description | tojson }},
   "service_type": "{{ service_type }}",
-  "capabilities": {{ capabilities | tojson }},
+  "capabilities": ["{{ _cap }}"],
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
   "tags": ["ai", "gateway", "byok"],
