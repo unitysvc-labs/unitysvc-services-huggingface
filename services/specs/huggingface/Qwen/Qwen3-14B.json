@@ -43,11 +43,9 @@
     },
     "offering_name": "Qwen/Qwen3-14B",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.06",
-      "output": "0.24",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "pricing_note": "$0.06 / $0.24 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",

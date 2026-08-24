@@ -41,13 +41,11 @@
     },
     "offering_name": "Sao10K/L3-8B-Lunaris-v1",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.04",
-      "output": "0.049999999999999996",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
-    "pricing_note": "$0.04 / $0.05 per 1M input/output tokens",
+    "pricing_note": "$0.04 / $0.049999999999999996 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"

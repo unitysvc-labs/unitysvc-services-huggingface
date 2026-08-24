@@ -37,13 +37,11 @@
     },
     "offering_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.19999999999999998",
-      "output": "0.19999999999999998",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
-    "pricing_note": "$0.2 / $0.2 per 1M input/output tokens",
+    "pricing_note": "$0.19999999999999998 / $0.19999999999999998 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"
