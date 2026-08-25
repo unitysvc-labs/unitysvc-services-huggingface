@@ -36,9 +36,15 @@
       "type": "constant"
     },
     "offering_name": "google/gemma-4-26B-A4B-it",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": false
   }
 }

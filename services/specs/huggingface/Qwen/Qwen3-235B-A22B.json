@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3 235B A22B language model",
     "details": {
-      "context_length": 262144,
+      "context_length": 131072,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -41,15 +41,14 @@
     },
     "offering_name": "Qwen/Qwen3-235B-A22B",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.18",
-      "output": "0.54",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "pricing_note": "$0.18 / $0.54 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": true
   }
 }

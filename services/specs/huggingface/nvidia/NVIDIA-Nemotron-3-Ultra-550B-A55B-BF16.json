@@ -51,9 +51,15 @@
       "type": "constant"
     },
     "offering_name": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": false
   }
 }

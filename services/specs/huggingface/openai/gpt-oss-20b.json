@@ -33,7 +33,7 @@
       "mode": "chat",
       "object": "model",
       "owned_by": "openai",
-      "parameter_count": 19707494400,
+      "parameter_count": 19110297600,
       "pipeline_tag": "text-generation"
     },
     "display_name": "Openai/Gpt Oss 20B",
@@ -45,15 +45,14 @@
     },
     "offering_name": "openai/gpt-oss-20b",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.19999999999999998",
-      "output": "0.3",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
-    "pricing_note": "$0.2 / $0.3 per 1M input/output tokens",
+    "pricing_note": "$0.19999999999999998 / $0.3 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": true
   }
 }
