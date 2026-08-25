@@ -80,6 +80,19 @@ class ModelSource:
     #: text-in/text-out task and maps to ``chat`` — including
     #: ``image-text-to-text`` and the other vision tags, since an image in
     #: the request is an attribute of a chat call, not a capability.
+    #: Models LiteLLM marks tool-capable whose routed HF Inference Provider
+    #: rejects ``tools`` at request time (400 TOOL_USE_NOT_SUPPORTED /
+    #: "function calling not support", or a 405). Observed on staging
+    #: 2026-08-25; drop entries when the provider gains tool support.
+    _FC_DENYLIST = frozenset({
+        "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "Qwen/Qwen2.5-VL-72B-Instruct",
+        "Sao10K/L3-8B-Stheno-v3.2",
+        "alpindale/WizardLM-2-8x22B",
+        "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "microsoft/phi-4",
+    })
+
     _PIPELINE_CAPABILITY = {
         "feature-extraction": "embed",
         "sentence-similarity": "embed",
@@ -147,7 +160,12 @@ class ModelSource:
         # LiteLLM positively records tool support. Models without the flag
         # (or absent from LiteLLM) fail the fc example against providers
         # that reject `tools` (TOOL_USE_NOT_SUPPORTED / UNSUPPORTED_OPENAI_PARAMS).
+        # The denylist corrects LiteLLM optimism: models it marks tool-capable
+        # whose routed HF provider nonetheless rejects `tools` (same pattern as
+        # unitysvc-services-nebius). Drop entries when a provider gains support.
         supports_tools = bool(model_data and model_data.get("supports_function_calling"))
+        if model_id in self._FC_DENYLIST:
+            supports_tools = False
 
         # Canonical (snake_case) metadata required by the platform validator
         # for LLM offerings.  Both keys must be present; null asserts
