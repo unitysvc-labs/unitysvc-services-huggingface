@@ -40,15 +40,14 @@
     },
     "offering_name": "Qwen/Qwen3.6-27B",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.32",
-      "output": "3.1999999999999997",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
-    "pricing_note": "$0.32 / $3.2 per 1M input/output tokens",
+    "pricing_note": "$0.32 / $3.1999999999999997 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": true
   }
 }

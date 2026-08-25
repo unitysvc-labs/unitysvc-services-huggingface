@@ -61,15 +61,14 @@
     },
     "offering_name": "CohereLabs/command-a-reasoning-08-2025",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "1",
-      "output": "2",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "pricing_note": "$1 / $2 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": false
   }
 }

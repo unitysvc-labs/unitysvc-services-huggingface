@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3.8 2.4T A95B language model",
     "details": {
-      "context_length": 1010000,
+      "context_length": 1048576,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -33,9 +33,15 @@
       "type": "constant"
     },
     "offering_name": "Qwen/Qwen3.8-2.4T-A95B",
-    "payout_price": null,
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready"
+    "status": "ready",
+    "supports_tools": false
   }
 }
