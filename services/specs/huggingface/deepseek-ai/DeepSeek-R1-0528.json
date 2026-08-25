@@ -44,13 +44,11 @@
     },
     "offering_name": "deepseek-ai/DeepSeek-R1-0528",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.5",
-      "output": "2.1500000000000004",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
-    "pricing_note": "$0.5 / $2.15 per 1M input/output tokens",
+    "pricing_note": "$0.5 / $2.1500000000000004 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready"
