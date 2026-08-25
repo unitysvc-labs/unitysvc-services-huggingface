@@ -143,6 +143,12 @@ class ModelSource:
         if "object" in model_info:
             details["object"] = model_info["object"]
 
+        # Gate for the function-calling code example: only attach it when
+        # LiteLLM positively records tool support. Models without the flag
+        # (or absent from LiteLLM) fail the fc example against providers
+        # that reject `tools` (TOOL_USE_NOT_SUPPORTED / UNSUPPORTED_OPENAI_PARAMS).
+        supports_tools = bool(model_data and model_data.get("supports_function_calling"))
+
         # Canonical (snake_case) metadata required by the platform validator
         # for LLM offerings.  Both keys must be present; null asserts
         # "unknown".  metadata_sources records provenance so reviewers
@@ -184,6 +190,7 @@ class ModelSource:
             "description": f"{display_name} language model",
             "service_type": service_type,
             "capabilities": capabilities,
+            "supports_tools": supports_tools,
             "status": "ready",
             "details": details,
             "payout_price": pricing,

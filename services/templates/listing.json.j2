@@ -75,9 +75,15 @@
       "$doc_preset": {"name": "llm_code_example_openai", "meta": {"sleep_after_test": 5}}
     },
 
+{%- if supports_tools | default(true) %}
+    {#- Only attached when LiteLLM records supports_function_calling: providers
+        without tool support 400 the example (TOOL_USE_NOT_SUPPORTED /
+        UNSUPPORTED_OPENAI_PARAMS). Param files written before the populator
+        emitted supports_tools default to attaching it. #}
     "Python function calling code example": {
       "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
     },
+{%- endif %}
 
     "JavaScript code example": {
       "$doc_preset": {"name": "llm_code_example_javascript", "meta": {"sleep_after_test": 5}}
@@ -109,9 +115,15 @@
       "meta": {"sleep_after_test": 5}
     },
 
+{%- if supports_tools | default(true) %}
+    {#- Only attached when LiteLLM records supports_function_calling: providers
+        without tool support 400 the example (TOOL_USE_NOT_SUPPORTED /
+        UNSUPPORTED_OPENAI_PARAMS). Param files written before the populator
+        emitted supports_tools default to attaching it. #}
     "Python function calling code example": {
       "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
     },
+{%- endif %}
 
     "JavaScript code example": {
       "category": "code_example",
