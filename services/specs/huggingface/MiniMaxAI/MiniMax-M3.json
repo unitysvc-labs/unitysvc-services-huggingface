@@ -6,7 +6,7 @@
     ],
     "description": "Minimaxai/Minimax M3 language model",
     "details": {
-      "context_length": null,
+      "context_length": 524288,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -23,9 +23,15 @@
         "eval-results",
         "endpoints_compatible"
       ],
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 524288,
+      "max_output_tokens": 524288,
+      "max_tokens": 524288,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "MiniMaxAI",
       "parameter_count": 426993800960,
@@ -44,10 +50,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.3 / $1.2 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

@@ -18,10 +18,15 @@
         "eval-results",
         "endpoints_compatible"
       ],
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 524288,
+      "max_output_tokens": 524288,
+      "max_tokens": 524288,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "thinkingmachines",
       "parameter_count": 952377607178,
@@ -40,10 +45,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$1 / $4.05 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }
