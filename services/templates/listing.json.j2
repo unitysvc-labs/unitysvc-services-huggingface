@@ -1,25 +1,20 @@
-{#- Select code example templates from the model's HuggingFace task taxonomy.
-    Branches on `details.pipeline_tag`, NOT on `capabilities`: the two used to
-    hold the identical value, but `capabilities` now carries the platform
-    vocabulary (unitysvc docs/capabilities.yml) and pipeline_tag is the upstream
-    fact this dispatch actually depends on. Keeping them separate means a change
-    to the customer-facing vocabulary cannot silently re-route examples. -#}
 {%- set _pt = (details.pipeline_tag | default("", true)) -%}
-{%- if _pt == "automatic-speech-recognition" -%}
-  {%- set ex = "-prerecordedtranscription" -%}
-{%- elif _pt in ("text-to-speech", "text-to-audio") -%}
-  {%- set ex = "-tts" -%}
-{%- elif _pt in ("text-to-video", "image-to-video") -%}
-  {%- set ex = "-ttv" -%}
-{%- elif _pt == "image-to-image" -%}
-  {%- set ex = "-imagetoimage" -%}
-{%- elif _pt in ("text-to-image", "unconditional-image-generation") -%}
-  {%- set ex = "-image" -%}
-{%- elif _pt in ("feature-extraction", "sentence-similarity") -%}
-  {%- set ex = "-sentencetransformers" -%}
-{%- else -%}
-  {%- set ex = "" -%}
-{%- endif -%}
+{#- Branch on HuggingFace's task taxonomy, not on `capabilities`: the platform
+    vocabulary is customer-facing, while `pipeline_tag` is the upstream fact that
+    tells the example collection which capability shape to demonstrate. -#}
+{%- set _pt_capability = {
+      "feature-extraction": "embed", "sentence-similarity": "embed",
+      "text-to-image": "image-generate", "unconditional-image-generation": "image-generate",
+      "image-to-image": "image-edit",
+      "automatic-speech-recognition": "speech-transcribe",
+      "text-to-speech": "speech-synthesize", "text-to-audio": "speech-synthesize",
+      "text-to-video": "video-generate", "image-to-video": "video-generate",
+      "text-classification": "moderate",
+      "text-ranking": "rerank",
+  } -%}
+{%- set _capability = _pt_capability.get(_pt, "chat") -%}
+{%- set _capabilities = ["chat", "image-text-to-text"] if _pt == "image-text-to-text" else [_capability] -%}
+{%- set _formats = ["openai", "anthropic"] if _capability == "chat" else ["openai"] -%}
 
 {
   "status": "{{ status | default('ready') }}",
@@ -64,116 +59,22 @@
     }
   },
 
+  {#- Every document below is derived from what this service is: its
+      HuggingFace task/capability and the request dialects it accepts
+      (unitysvc/unitysvc#1899). The shared `llm_example_collection` carries the
+      catalog-wide example shape, connectivity probe selection, request
+      template, sleep spacing, vision examples, and tool-example gating.
+
+      Vision-language models declare both `chat` and `image-text-to-text`, so
+      the collection emits both plain-chat and image-bearing examples while
+      keeping one connectivity probe. #}
   "documents": {
-
-    "How to use this model": {
-      "$doc_preset": "llm_description"
-    },
-
-{%- if ex == "" %}
-    "Python code example": {
-      "$doc_preset": {"name": "llm_code_example_openai", "meta": {"sleep_after_test": 5}}
-    },
-
-{%- if supports_tools | default(true) %}
-    {#- Only attached when LiteLLM records supports_function_calling: providers
-        without tool support 400 the example (TOOL_USE_NOT_SUPPORTED /
-        UNSUPPORTED_OPENAI_PARAMS). Param files written before the populator
-        emitted supports_tools default to attaching it. #}
-    "Python function calling code example": {
-      "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
-    },
-{%- endif %}
-
-    "JavaScript code example": {
-      "$doc_preset": {"name": "llm_code_example_javascript", "meta": {"sleep_after_test": 5}}
-    },
-
-    "cURL code example": {
-      "$doc_preset": {"name": "llm_code_example_shell", "meta": {"sleep_after_test": 5}}
-    },
-
-{%- if _pt == "image-text-to-text" %}
-    {#- The offering declares `image-text-to-text` for these models, and a
-        capability nobody can demonstrate must not be declared — so the
-        image-bearing examples ride with the declaration rather than trailing
-        it. They send text plus an image to the same /chat/completions
-        surface, which is what separates a VLM from the text model beside it.
-        Executed like every other example, so a model that cannot actually
-        take an image fails here instead of shipping a false claim. #}
-    "Python code example (vision, requests)": {
-      "$doc_preset": {"name": "llm_code_example_vision_requests", "meta": {"sleep_after_test": 5}}
-    },
-
-    "JavaScript code example (vision)": {
-      "$doc_preset": {"name": "llm_code_example_vision_javascript", "meta": {"sleep_after_test": 5}}
-    },
-
-    "cURL code example (vision)": {
-      "$doc_preset": {"name": "llm_code_example_vision_shell", "meta": {"sleep_after_test": 5}}
-    },
-{%- endif %}
-
-    {#- Anthropic-dialect examples (R9): the HuggingFace router speaks OpenAI, so
-        specs run-tests (local_testing) calls it in OpenAI form, while the
-        gateway path speaks Anthropic and exercises the llm_translator. Chat
-        models only. #}
-    "Python code example (Anthropic-style input)": {
-      "$doc_preset": {"name": "llm_code_example_anthropic_to_openai_sdk", "meta": {"sleep_after_test": 5}}
-    },
-
-    "cURL code example (Anthropic-style input)": {
-      "$doc_preset": {"name": "llm_code_example_anthropic_to_openai_shell", "meta": {"sleep_after_test": 5}}
-    },
-{%- else %}
-    "Python code example": {
-      "category": "code_example",
-      "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ ex }}.py.j2",
-      "is_active": true,
-      "is_public": true,
-      "mime_type": "python",
-      "meta": {"sleep_after_test": 5}
-    },
-
-{%- if supports_tools | default(true) %}
-    {#- Only attached when LiteLLM records supports_function_calling: providers
-        without tool support 400 the example (TOOL_USE_NOT_SUPPORTED /
-        UNSUPPORTED_OPENAI_PARAMS). Param files written before the populator
-        emitted supports_tools default to attaching it. #}
-    "Python function calling code example": {
-      "$doc_preset": {"name": "llm_code_example_fc_requests", "meta": {"sleep_after_test": 5}}
-    },
-{%- endif %}
-
-    "JavaScript code example": {
-      "category": "code_example",
-      "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ ex }}.js.j2",
-      "is_active": true,
-      "is_public": true,
-      "mime_type": "javascript",
-      "meta": {"sleep_after_test": 5}
-    },
-
-    "cURL code example": {
-      "category": "code_example",
-      "description": "Example code to use the model",
-      "file_path": "../../docs/code-example{{ ex }}.sh.j2",
-      "is_active": true,
-      "is_public": true,
-      "mime_type": "bash",
-      "meta": {"sleep_after_test": 5}
-    },
-{%- endif %}
-
-    "Connectivity test": {
-      "$doc_preset": {"name": "llm_connectivity", "meta": {"sleep_after_test": 5}}
-    },
-
-    "Default request body": {
-      "$doc_preset": "llm_request_template"
+    "$llm_example_collection": {
+      "capabilities": {{ _capabilities | tojson }},
+      "formats": {{ _formats | tojson }},
+      "upstream_dialect": "openai",
+      "tools": {{ (supports_tools | default(false)) | tojson }},
+      "sleep": 5
     }
-
   }
 }
