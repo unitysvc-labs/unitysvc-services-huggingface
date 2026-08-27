@@ -30,6 +30,14 @@
   } -%}
 {%- set _cap = _pt_capability.get(_pt, "chat") -%}
 {%- set is_chat = (_cap == "chat") -%}
+{#- A vision-language model is a chat model that ALSO accepts an image
+    alongside the text instruction. That second call has its own defined input
+    and its own code examples, so it is a capability rather than a flag —
+    `image-text-to-text`, which is also HuggingFace's own task id, so the
+    mapping is an identity here. It is declared BESIDE `chat`, never instead
+    of it: the same endpoint still holds a plain text conversation. -#}
+{%- set is_vision = (_pt == "image-text-to-text") -%}
+{%- set _caps = ["chat", "image-text-to-text"] if is_vision else [_cap] -%}
 {#- Marketplace copy (unitysvc/unitysvc#1838): the teaser paragraph now lives
     in the required `summary` field (max 200 chars, shown in the collapsed
     list view); `description` holds the long-form paragraphs (the populate
@@ -60,7 +68,7 @@
   "summary": {{ (_brief | trim)[:200] | tojson }},
   "description": {{ _description | tojson }},
   "service_type": "{{ service_type }}",
-  "capabilities": ["{{ _cap }}"],
+  "capabilities": {{ _caps | tojson }},
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
   "tags": ["ai", "gateway", "byok"],
