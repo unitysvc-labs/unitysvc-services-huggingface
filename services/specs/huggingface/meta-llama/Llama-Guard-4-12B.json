@@ -6,7 +6,7 @@
     ],
     "description": "Meta Llama/Llama Guard 4 12B language model",
     "details": {
-      "context_length": 1048576,
+      "context_length": 163840,
       "hf_tags": [
         "transformers",
         "safetensors",

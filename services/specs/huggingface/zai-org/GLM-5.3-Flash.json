@@ -4,52 +4,48 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Deepseek Ai/Deepseek V4 Pro language model",
+    "description": "Zai Org/Glm 5.3 Flash language model",
     "details": {
-      "context_length": 512000,
+      "context_length": null,
       "hf_tags": [
         "transformers",
         "safetensors",
-        "deepseek_v4",
+        "glm5_next",
+        "image-text-to-text",
         "text-generation",
         "conversational",
-        "arxiv:2606.19348",
+        "en",
+        "zh",
+        "arxiv:2602.15763",
         "eval-results",
         "endpoints_compatible",
-        "8-bit",
         "fp8"
       ],
-      "litellm_provider": "together_ai",
-      "max_input_tokens": 512000,
-      "max_output_tokens": 512000,
-      "max_tokens": 512000,
       "metadata_sources": {
-        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
-      "mode": "chat",
       "object": "model",
-      "owned_by": "deepseek-ai",
-      "parameter_count": 1572763336704,
+      "owned_by": "zai-org",
+      "parameter_count": 314396639232,
       "pipeline_tag": "text-generation"
     },
-    "display_name": "Deepseek Ai/Deepseek V4 Pro",
+    "display_name": "Zai Org/Glm 5.3 Flash",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "offering_name": "deepseek-ai/DeepSeek-V4-Pro",
+    "offering_name": "zai-org/GLM-5.3-Flash",
     "payout_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$1.74 / $3.48 per 1M input/output tokens",
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": true
+    "supports_tools": false
   }
 }

@@ -6,7 +6,7 @@
     ],
     "description": "Deepseek Ai/Deepseek V4 Flash 0731 language model",
     "details": {
-      "context_length": null,
+      "context_length": 1048576,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -20,9 +20,15 @@
         "fp8",
         "deploy:azure"
       ],
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "max_tokens": 1048576,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "deepseek-ai",
       "parameter_count": 296352743424,
@@ -41,10 +47,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.14 / $0.28 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

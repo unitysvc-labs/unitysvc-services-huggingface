@@ -19,9 +19,10 @@
         "deploy:sagemaker",
         "deploy:azure"
       ],
-      "litellm_provider": "tensormesh",
-      "max_input_tokens": 32768,
-      "max_output_tokens": 32768,
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 262144,
+      "max_output_tokens": 262144,
+      "max_tokens": 262144,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
@@ -45,7 +46,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.14 / $0.56 per 1M input/output tokens",
+    "pricing_note": "$0.39 / $0.9700000000000001 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
