@@ -6,7 +6,7 @@
     ],
     "description": "Minimaxai/Minimax M2.7 language model",
     "details": {
-      "context_length": null,
+      "context_length": 196608,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -19,9 +19,14 @@
         "fp8",
         "deploy:sagemaker"
       ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 196608,
+      "max_tokens": 196608,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "MiniMaxAI",
       "parameter_count": 227410968576,
@@ -40,10 +45,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.25 / $1 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }
