@@ -86,9 +86,9 @@ class ModelSource:
         "text-to-image": "image-generate",
         "unconditional-image-generation": "image-generate",
         "image-to-image": "image-edit",
-        "automatic-speech-recognition": "speech-transcribe",
-        "text-to-speech": "speech-synthesize",
-        "text-to-audio": "speech-synthesize",
+        "automatic-speech-recognition": "speech-to-text",
+        "text-to-speech": "text-to-speech",
+        "text-to-audio": "text-to-speech",
         "text-to-video": "video-generate",
         "image-to-video": "video-generate",
     }
