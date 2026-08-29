@@ -7,18 +7,6 @@
     "description": "Meta Models/Muse Glimmer 30B language model",
     "details": {
       "context_length": 131072,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "muse_glimmer",
-        "image-text-to-text",
-        "conversational",
-        "arxiv:2504.13181",
-        "arxiv:2602.06036",
-        "eval-results",
-        "endpoints_compatible",
-        "deploy:sagemaker"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,

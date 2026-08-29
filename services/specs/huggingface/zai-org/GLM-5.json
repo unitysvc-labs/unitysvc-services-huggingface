@@ -7,18 +7,6 @@
     "description": "Zai Org/Glm 5 language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm_moe_dsa",
-        "text-generation",
-        "conversational",
-        "en",
-        "zh",
-        "arxiv:2602.15763",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "litellm_provider": "baseten",
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"

@@ -7,23 +7,14 @@
     "description": "Qwen/Qwen3 Vl 30B A3B Instruct language model",
     "details": {
       "context_length": 262144,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_vl_moe",
-        "image-text-to-text",
-        "conversational",
-        "arxiv:2505.09388",
-        "arxiv:2502.13923",
-        "arxiv:2409.12191",
-        "arxiv:2308.12966",
-        "endpoints_compatible",
-        "deploy:azure"
-      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 262144,
+      "max_tokens": 262144,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "Qwen",
       "parameter_count": 31070754032,
@@ -42,10 +33,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.15 / $0.6 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

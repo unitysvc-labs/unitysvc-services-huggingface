@@ -7,28 +7,6 @@
     "description": "Nvidia/Nvidia Nemotron 3.5 Lightning 30B A3B Bf16 language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "nemotron_h",
-        "text-generation",
-        "nvidia",
-        "pytorch",
-        "nemotron-3.5",
-        "conversational",
-        "en",
-        "es",
-        "fr",
-        "de",
-        "it",
-        "ja",
-        "dataset:nvidia/nemotron-post-training-v3",
-        "dataset:nvidia/nemotron-pre-training-datasets",
-        "eval-results",
-        "endpoints_compatible",
-        "deploy:azure",
-        "deploy:sagemaker"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

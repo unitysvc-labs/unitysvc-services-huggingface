@@ -7,23 +7,6 @@
     "description": "Prism Ml/Ternary Bonsai 27B Gguf language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "llama.cpp",
-        "gguf",
-        "conversational",
-        "ternary",
-        "2-bit",
-        "llama-cpp",
-        "cuda",
-        "metal",
-        "on-device",
-        "hybrid-attention",
-        "prismml",
-        "bonsai",
-        "text-generation",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "object": "model",
       "owned_by": "prism-ml",
       "parameter_count": null,

@@ -7,19 +7,6 @@
     "description": "Zai Org/Autoglm Phone 9B Multilingual language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm4v",
-        "image-text-to-text",
-        "agent",
-        "conversational",
-        "zh",
-        "arxiv:2411.00820",
-        "arxiv:2509.18119",
-        "endpoints_compatible",
-        "deploy:azure"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

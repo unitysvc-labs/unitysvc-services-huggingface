@@ -7,20 +7,14 @@
     "description": "Qwen/Qwen3.5 35B A3B language model",
     "details": {
       "context_length": 262144,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5_moe",
-        "image-text-to-text",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible",
-        "deploy:azure"
-      ],
+      "litellm_provider": "wandb",
+      "max_input_tokens": 262144,
+      "max_tokens": 262144,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "Qwen",
       "parameter_count": 35951817904,
@@ -39,7 +33,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.25 / $1.25 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

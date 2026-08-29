@@ -7,22 +7,6 @@
     "description": "Minimaxai/Minimax M3 language model",
     "details": {
       "context_length": 524288,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "minimax_m3_vl",
-        "image-text-to-text",
-        "multimodal",
-        "moe",
-        "agent",
-        "coding",
-        "video",
-        "conversational",
-        "custom_code",
-        "arxiv:2606.13392",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 524288,
       "max_output_tokens": 524288,

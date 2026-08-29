@@ -7,19 +7,6 @@
     "description": "Zai Org/Glm 5.2 language model",
     "details": {
       "context_length": 1048575,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm_moe_dsa",
-        "text-generation",
-        "conversational",
-        "en",
-        "zh",
-        "arxiv:2602.15763",
-        "arxiv:2603.12201",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 1048575,
       "max_output_tokens": 1048575,

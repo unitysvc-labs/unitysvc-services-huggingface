@@ -7,17 +7,6 @@
     "description": "Qwen/Qwen3 30B A3B language model",
     "details": {
       "context_length": 81920,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_moe",
-        "text-generation",
-        "conversational",
-        "arxiv:2309.00071",
-        "arxiv:2505.09388",
-        "endpoints_compatible",
-        "deploy:sagemaker"
-      ],
       "litellm_provider": "deepinfra",
       "max_input_tokens": 40960,
       "max_output_tokens": 40960,
@@ -45,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.08 / $0.29 per 1M input/output tokens",
+    "pricing_note": "$0.12 / $0.5 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

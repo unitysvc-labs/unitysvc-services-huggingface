@@ -7,18 +7,6 @@
     "description": "Zai Org/Glm 4.6 language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm4_moe",
-        "text-generation",
-        "conversational",
-        "en",
-        "zh",
-        "arxiv:2508.06471",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "litellm_provider": "baseten",
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"

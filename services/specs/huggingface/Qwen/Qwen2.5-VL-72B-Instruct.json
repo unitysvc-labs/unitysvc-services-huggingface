@@ -7,22 +7,6 @@
     "description": "Qwen/Qwen2.5 Vl 72B Instruct language model",
     "details": {
       "context_length": 128000,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen2_5_vl",
-        "image-text-to-text",
-        "multimodal",
-        "conversational",
-        "en",
-        "arxiv:2309.00071",
-        "arxiv:2409.12191",
-        "arxiv:2308.12966",
-        "eval-results",
-        "text-generation-inference",
-        "endpoints_compatible",
-        "deploy:azure"
-      ],
       "litellm_provider": "nebius",
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,
@@ -50,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.13 / $0.39999999999999997 per 1M input/output tokens",
+    "pricing_note": "$0.13 / $0.4 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

@@ -4,33 +4,31 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Deepseek Ai/Deepseek R1 Distill Qwen 7B language model",
+    "description": "Zai Org/Glm 5.3 Bf16 language model",
     "details": {
       "context_length": null,
-      "litellm_provider": "nscale",
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },
-      "mode": "chat",
       "object": "model",
-      "owned_by": "deepseek-ai",
-      "parameter_count": 7615616512,
+      "owned_by": "zai-org",
+      "parameter_count": 753329921024,
       "pipeline_tag": "text-generation"
     },
-    "display_name": "Deepseek Ai/Deepseek R1 Distill Qwen 7B",
+    "display_name": "Zai Org/Glm 5.3 Bf16",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "offering_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "offering_name": "zai-org/GLM-5.3-BF16",
     "payout_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.2 / $0.2 per 1M input/output tokens",
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

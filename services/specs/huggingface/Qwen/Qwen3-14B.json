@@ -7,19 +7,6 @@
     "description": "Qwen/Qwen3 14B language model",
     "details": {
       "context_length": 131072,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3",
-        "text-generation",
-        "conversational",
-        "arxiv:2309.00071",
-        "arxiv:2505.09388",
-        "text-generation-inference",
-        "endpoints_compatible",
-        "deploy:sagemaker",
-        "deploy:azure"
-      ],
       "litellm_provider": "deepinfra",
       "max_input_tokens": 40960,
       "max_output_tokens": 40960,
@@ -47,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.06 / $0.24 per 1M input/output tokens",
+    "pricing_note": "$0.12 / $0.24 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
