@@ -10,6 +10,7 @@ Usage: python scripts/update_services.py
 import json
 import os
 import sys
+from decimal import Decimal
 from pathlib import Path
 from typing import Any, Iterator
 
@@ -156,15 +157,10 @@ class ModelSource:
         # never equal to it.
         capabilities = [self._capability_for(pipeline_tags)]
 
-        # Get cleaned HF tags for details
-        hf_tags = ModelDataLookup.get_hf_tags(model_id, self.data_fetcher)
-
         # Build details from LiteLLM data and model info
         details: dict[str, Any] = {}
         if pipeline_tags and pipeline_tags != ["llm"]:
             details["pipeline_tag"] = pipeline_tags[0]
-        if hf_tags:
-            details["hf_tags"] = hf_tags
 
         model_data = ModelDataLookup.lookup_model_details(
             model_id, self.litellm_data or {})
@@ -215,8 +211,13 @@ class ModelSource:
         pricing = {"type": "constant", "price": "0", "description": "Free (BYOK)"}
         pricing_note = None
         if model_data and "input_cost_per_token" in model_data and "output_cost_per_token" in model_data:
-            input_price = float(model_data["input_cost_per_token"]) * 1_000_000
-            output_price = float(model_data["output_cost_per_token"]) * 1_000_000
+            # Per-token costs arrive as JSON floats (e.g. 5e-08). Scaling them
+            # in binary float gives 0.049999999999999996 rather than 0.05, and
+            # that string was written straight into pricing_note. Decimal(str(x))
+            # recovers the intended decimal exactly — str() gives the shortest
+            # round-tripping repr — and the arithmetic stays in Decimal.
+            input_price = Decimal(str(model_data["input_cost_per_token"])) * 1_000_000
+            output_price = Decimal(str(model_data["output_cost_per_token"])) * 1_000_000
             pricing_note = (
                 f"${self._format_price(input_price)} / "
                 f"${self._format_price(output_price)} "
@@ -276,11 +277,14 @@ class ModelSource:
         # vision_language_model → llm (vision is a capability, not a service type)
         return "llm"
 
-    def _format_price(self, price: float) -> str:
-        """Format price without trailing .0 for whole numbers."""
-        if price == int(price):
-            return str(int(price))
-        return str(price)
+    def _format_price(self, price: Decimal) -> str:
+        """Render a Decimal price as a plain string.
+
+        normalize() strips trailing zeros ("2.50" -> "2.5", "2.0" -> "2") but can
+        emit scientific notation for round values ("100" -> "1E+2"), so format
+        with "f" to force plain digits.
+        """
+        return format(price.normalize(), "f")
 
 
 def main():
