@@ -71,7 +71,20 @@
   "capabilities": {{ _caps | tojson }},
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
-  "tags": ["ai", "gateway", "byok"],
+{#- Closed tag vocabulary (unitysvc/unitysvc#1962): ingest now rejects any tag
+    outside docs/tags.yml, and the legacy trio (ai / gateway / byok) is gone
+    — each one restated a field the platform already derives (service_type,
+    gateway_type, the enrolment channel). `feature:func-call` is the only tag a
+    seller may declare, and it is a promise about the endpoint's contract, so it
+    rides the SAME signal that gates the function-calling code example: LiteLLM's
+    supports_function_calling, corrected per-model in the .override.json
+    companions. Gated on is_chat as well — an embedding/ASR/image model has no
+    tools surface to claim, whatever the upstream metadata says. Defaults to
+    false, matching the populator (`bool(model_data and ...)`): an absent flag is
+    an unknown signal, and an unknown must not become a customer-facing claim. -#}
+{%- if is_chat and supports_tools | default(false) %}
+  "tags": ["feature:func-call"],
+{%- endif %}
 {%- if is_chat %}
 {#- Merge the dual-dialect formats into the provider's details (R8); the
     llm_translator below exposes the OpenAI upstream in both dialects. #}
