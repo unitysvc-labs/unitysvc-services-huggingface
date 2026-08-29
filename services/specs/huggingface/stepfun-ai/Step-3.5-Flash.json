@@ -7,9 +7,13 @@
     "description": "Stepfun Ai/Step 3.5 Flash language model",
     "details": {
       "context_length": null,
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
       "object": "model",
       "owned_by": "stepfun-ai",
-      "parameter_count": null
+      "parameter_count": 199384289280,
+      "pipeline_tag": "text-generation"
     },
     "display_name": "Stepfun Ai/Step 3.5 Flash",
     "env_api_key_name": "HF_TOKEN",

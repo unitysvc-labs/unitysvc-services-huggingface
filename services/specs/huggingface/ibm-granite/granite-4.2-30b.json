@@ -7,31 +7,6 @@
     "description": "Ibm Granite/Granite 4.2 30B language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "granite",
-        "text-generation",
-        "granite-4.2",
-        "reasoning",
-        "thinking",
-        "tool-calling",
-        "ibm",
-        "conversational",
-        "en",
-        "de",
-        "es",
-        "fr",
-        "ja",
-        "pt",
-        "ar",
-        "cs",
-        "it",
-        "ko",
-        "nl",
-        "zh",
-        "endpoints_compatible"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

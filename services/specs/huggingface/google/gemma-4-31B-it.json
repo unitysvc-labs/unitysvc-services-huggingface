@@ -7,18 +7,6 @@
     "description": "Google/Gemma 4 31B It language model",
     "details": {
       "context_length": 262144,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "gemma4",
-        "image-text-to-text",
-        "conversational",
-        "arxiv:2607.02770",
-        "eval-results",
-        "endpoints_compatible",
-        "deploy:sagemaker",
-        "deploy:azure"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
@@ -46,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.39 / $0.9700000000000001 per 1M input/output tokens",
+    "pricing_note": "$0.39 / $0.97 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

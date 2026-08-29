@@ -7,17 +7,6 @@
     "description": "Qwen/Qwen3 Coder Next language model",
     "details": {
       "context_length": 262144,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_next",
-        "text-generation",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible",
-        "deploy:sagemaker",
-        "deploy:azure"
-      ],
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"

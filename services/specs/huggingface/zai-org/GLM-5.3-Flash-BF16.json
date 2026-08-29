@@ -7,18 +7,6 @@
     "description": "Zai Org/Glm 5.3 Flash Bf16 language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm5_next",
-        "image-text-to-text",
-        "text-generation",
-        "conversational",
-        "en",
-        "zh",
-        "arxiv:2602.15763",
-        "endpoints_compatible"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

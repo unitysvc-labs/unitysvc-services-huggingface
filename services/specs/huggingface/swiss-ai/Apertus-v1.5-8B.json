@@ -7,20 +7,6 @@
     "description": "Swiss Ai/Apertus V1.5 8B language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "apertus1p5",
-        "text-generation",
-        "multilingual",
-        "multimodal",
-        "switzerland",
-        "swiss-ai",
-        "apertus",
-        "image-text-to-text",
-        "conversational",
-        "endpoints_compatible"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

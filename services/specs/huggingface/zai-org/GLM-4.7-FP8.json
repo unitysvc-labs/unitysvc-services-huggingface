@@ -12,12 +12,14 @@
       "max_output_tokens": 16384,
       "max_tokens": 16384,
       "metadata_sources": {
-        "context_length": "litellm"
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
       },
       "mode": "chat",
       "object": "model",
       "owned_by": "zai-org",
-      "parameter_count": null
+      "parameter_count": 355105505280,
+      "pipeline_tag": "text-generation"
     },
     "display_name": "Zai Org/Glm 4.7 Fp8",
     "env_api_key_name": "HF_TOKEN",
@@ -32,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.39999999999999997 / $2 per 1M input/output tokens",
+    "pricing_note": "$0.4 / $2 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

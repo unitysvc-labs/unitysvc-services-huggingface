@@ -6,24 +6,16 @@
     ],
     "description": "Zai Org/Glm 5.3 Flash language model",
     "details": {
-      "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm5_next",
-        "image-text-to-text",
-        "text-generation",
-        "conversational",
-        "en",
-        "zh",
-        "arxiv:2602.15763",
-        "eval-results",
-        "endpoints_compatible",
-        "fp8"
-      ],
+      "context_length": 1048575,
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 1048575,
+      "max_output_tokens": 1048575,
+      "max_tokens": 1048575,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "zai-org",
       "parameter_count": 314396639232,
@@ -42,10 +34,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.15 / $0.5 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

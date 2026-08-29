@@ -7,9 +7,13 @@
     "description": "Minimaxai/Minimax M1 80K language model",
     "details": {
       "context_length": null,
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
       "object": "model",
       "owned_by": "MiniMaxAI",
-      "parameter_count": null
+      "parameter_count": 456073926656,
+      "pipeline_tag": "text-generation"
     },
     "display_name": "Minimaxai/Minimax M1 80K",
     "env_api_key_name": "HF_TOKEN",

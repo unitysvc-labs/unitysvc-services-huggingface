@@ -7,21 +7,6 @@
     "description": "Openai/Gpt Oss 20B language model",
     "details": {
       "context_length": 131072,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "gpt_oss",
-        "text-generation",
-        "vllm",
-        "conversational",
-        "arxiv:2508.10925",
-        "eval-results",
-        "endpoints_compatible",
-        "8-bit",
-        "mxfp4",
-        "deploy:sagemaker",
-        "deploy:azure"
-      ],
       "litellm_provider": "cloudflare",
       "max_input_tokens": 128000,
       "max_output_tokens": 128000,
@@ -49,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.19999999999999998 / $0.3 per 1M input/output tokens",
+    "pricing_note": "$0.2 / $0.3 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

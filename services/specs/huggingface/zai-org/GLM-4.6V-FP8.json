@@ -7,18 +7,6 @@
     "description": "Zai Org/Glm 4.6V Fp8 language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "glm4v_moe",
-        "image-text-to-text",
-        "conversational",
-        "zh",
-        "en",
-        "arxiv:2507.01006",
-        "endpoints_compatible",
-        "compressed-tensors"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

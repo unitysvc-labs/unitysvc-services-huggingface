@@ -7,18 +7,6 @@
     "description": "Deepseek Ai/Deepseek V4 Pro 0813 language model",
     "details": {
       "context_length": 1048576,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "deepseek_v4",
-        "text-generation",
-        "conversational",
-        "arxiv:2606.19348",
-        "eval-results",
-        "endpoints_compatible",
-        "8-bit",
-        "fp8"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
@@ -46,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$1.32 / $3.9600000000000004 per 1M input/output tokens",
+    "pricing_note": "$1.32 / $3.96 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

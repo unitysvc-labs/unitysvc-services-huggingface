@@ -7,18 +7,14 @@
     "description": "Inclusionai/Ling 3.0 Flash language model",
     "details": {
       "context_length": 262144,
-      "hf_tags": [
-        "safetensors",
-        "bailing_hybrid",
-        "text-generation",
-        "conversational",
-        "custom_code",
-        "eval-results"
-      ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 131072,
+      "max_tokens": 131072,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "inclusionAI",
       "parameter_count": 127486240128,
@@ -37,10 +33,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.06 / $0.18 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

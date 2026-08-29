@@ -7,19 +7,6 @@
     "description": "Deepseek Ai/Deepseek V4 Flash 0731 language model",
     "details": {
       "context_length": 1048576,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "deepseek_v4",
-        "text-generation",
-        "conversational",
-        "arxiv:2606.19348",
-        "eval-results",
-        "endpoints_compatible",
-        "8-bit",
-        "fp8",
-        "deploy:azure"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,

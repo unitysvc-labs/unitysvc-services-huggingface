@@ -7,15 +7,6 @@
     "description": "Qwen/Qwen3.8 2.4T A95B language model",
     "details": {
       "context_length": 1048576,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5_moe_text",
-        "text-generation",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 1010000,
       "max_output_tokens": 1010000,

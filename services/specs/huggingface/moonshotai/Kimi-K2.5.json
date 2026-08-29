@@ -7,19 +7,6 @@
     "description": "Moonshotai/Kimi K2.5 language model",
     "details": {
       "context_length": 262144,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "kimi_k25",
-        "feature-extraction",
-        "compressed-tensors",
-        "image-text-to-text",
-        "conversational",
-        "custom_code",
-        "arxiv:2602.02276",
-        "eval-results",
-        "deploy:sagemaker"
-      ],
       "litellm_provider": "baseten",
       "metadata_sources": {
         "context_length": "openrouter",

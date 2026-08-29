@@ -7,18 +7,6 @@
     "description": "Prism Ml/Ternary Bonsai 27B Awq 4Bit language model",
     "details": {
       "context_length": null,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5",
-        "image-text-to-text",
-        "conversational",
-        "prismml",
-        "bonsai",
-        "awq",
-        "4-bit",
-        "endpoints_compatible"
-      ],
       "metadata_sources": {
         "parameter_count": "huggingface_safetensors"
       },

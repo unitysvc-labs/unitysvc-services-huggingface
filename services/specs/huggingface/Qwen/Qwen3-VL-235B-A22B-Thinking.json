@@ -7,19 +7,6 @@
     "description": "Qwen/Qwen3 Vl 235B A22B Thinking language model",
     "details": {
       "context_length": 131072,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_vl_moe",
-        "image-text-to-text",
-        "conversational",
-        "arxiv:2505.09388",
-        "arxiv:2502.13923",
-        "arxiv:2409.12191",
-        "arxiv:2308.12966",
-        "endpoints_compatible",
-        "deploy:azure"
-      ],
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"

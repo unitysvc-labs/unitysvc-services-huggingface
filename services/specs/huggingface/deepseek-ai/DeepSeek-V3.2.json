@@ -7,17 +7,6 @@
     "description": "Deepseek Ai/Deepseek V3.2 language model",
     "details": {
       "context_length": 163840,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "deepseek_v32",
-        "text-generation",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible",
-        "fp8",
-        "deploy:sagemaker"
-      ],
       "litellm_provider": "gmi",
       "max_input_tokens": 163840,
       "max_output_tokens": 16384,
@@ -45,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.28 / $0.39999999999999997 per 1M input/output tokens",
+    "pricing_note": "$0.28 / $0.4 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

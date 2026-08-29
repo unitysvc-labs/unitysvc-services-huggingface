@@ -7,17 +7,6 @@
     "description": "Thinkingmachines/Inkling Small language model",
     "details": {
       "context_length": 1048576,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "inkling_mm_model",
-        "image-text-to-text",
-        "conversational",
-        "audio-text-to-text",
-        "moe",
-        "eval-results",
-        "endpoints_compatible"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 524288,
       "max_output_tokens": 524288,

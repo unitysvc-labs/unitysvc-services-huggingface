@@ -7,18 +7,6 @@
     "description": "Moonshotai/Kimi K3 language model",
     "details": {
       "context_length": 1048576,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "kimi_k3",
-        "feature-extraction",
-        "compressed-tensors",
-        "conversational",
-        "image-text-to-text",
-        "custom_code",
-        "eval-results",
-        "8-bit"
-      ],
       "litellm_provider": "together_ai",
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
