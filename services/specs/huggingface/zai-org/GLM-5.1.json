@@ -6,7 +6,7 @@
     ],
     "description": "Zai Org/Glm 5.1 language model",
     "details": {
-      "context_length": null,
+      "context_length": 202752,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -19,9 +19,14 @@
         "eval-results",
         "endpoints_compatible"
       ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 202752,
+      "max_tokens": 202752,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "zai-org",
       "parameter_count": 753864119552,
@@ -40,10 +45,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$1.0499999999999998 / $3.5 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

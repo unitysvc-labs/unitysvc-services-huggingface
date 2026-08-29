@@ -49,7 +49,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.14 / $1.4 per 1M input/output tokens",
+    "pricing_note": "$0.09 / $1.1 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

@@ -6,7 +6,7 @@
     ],
     "description": "Stepfun Ai/Step 3.7 Flash language model",
     "details": {
-      "context_length": null,
+      "context_length": 262144,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -21,9 +21,14 @@
         "eval-results",
         "endpoints_compatible"
       ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 262144,
+      "max_tokens": 262144,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "stepfun-ai",
       "parameter_count": 201365304064,
@@ -42,10 +47,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.19999999999999998 / $1.15 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

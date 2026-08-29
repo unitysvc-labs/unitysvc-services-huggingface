@@ -6,7 +6,7 @@
     ],
     "description": "Xiaomimimo/Mimo V2.5 language model",
     "details": {
-      "context_length": null,
+      "context_length": 262144,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -25,9 +25,14 @@
         "eval-results",
         "fp8"
       ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 262144,
+      "max_tokens": 262144,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "XiaomiMiMo",
       "parameter_count": 306655002624,
@@ -46,10 +51,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.39999999999999997 / $2 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

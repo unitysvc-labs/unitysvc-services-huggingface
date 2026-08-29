@@ -6,7 +6,7 @@
     ],
     "description": "Zai Org/Glm 4.7 Flash language model",
     "details": {
-      "context_length": null,
+      "context_length": 202752,
       "hf_tags": [
         "transformers",
         "safetensors",
@@ -20,9 +20,14 @@
         "endpoints_compatible",
         "deploy:azure"
       ],
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 202752,
+      "max_tokens": 202752,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "zai-org",
       "parameter_count": 31221485568,
@@ -41,10 +46,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.06 / $0.39999999999999997 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }
