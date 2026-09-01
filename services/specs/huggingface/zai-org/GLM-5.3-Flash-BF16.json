@@ -13,7 +13,7 @@
       "object": "model",
       "owned_by": "zai-org",
       "parameter_count": 321322735872,
-      "pipeline_tag": "text-generation"
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Zai Org/Glm 5.3 Flash Bf16",
     "env_api_key_name": "HF_TOKEN",

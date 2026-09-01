@@ -9,7 +9,6 @@
       "context_length": 512000,
       "litellm_provider": "together_ai",
       "max_input_tokens": 512000,
-      "max_output_tokens": 512000,
       "max_tokens": 512000,
       "metadata_sources": {
         "context_length": "litellm",
