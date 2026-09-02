@@ -2,6 +2,7 @@
   "contact_email": "api-enterprise@huggingface.co",
   "display_name": "Hugging Face",
   "homepage": "https://huggingface.co/",
+  "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
   "name": "huggingface",
   "rate_limits": [
     {
