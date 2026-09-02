@@ -9,8 +9,8 @@
       "context_length": 1048575,
       "litellm_provider": "together_ai",
       "max_input_tokens": 1048575,
-      "max_output_tokens": 1048575,
-      "max_tokens": 1048575,
+      "max_output_tokens": 128000,
+      "max_tokens": 128000,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
@@ -19,7 +19,7 @@
       "object": "model",
       "owned_by": "zai-org",
       "parameter_count": 314396639232,
-      "pipeline_tag": "text-generation"
+      "pipeline_tag": "image-text-to-text"
     },
     "display_name": "Zai Org/Glm 5.3 Flash",
     "env_api_key_name": "HF_TOKEN",
