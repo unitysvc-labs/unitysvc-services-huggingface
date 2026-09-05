@@ -31,7 +31,7 @@
     "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": false
   }
 }
