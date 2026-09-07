@@ -8,9 +8,9 @@
     "details": {
       "context_length": 128000,
       "litellm_provider": "nebius",
-      "max_input_tokens": 131072,
-      "max_output_tokens": 131072,
-      "max_tokens": 131072,
+      "max_input_tokens": 32000,
+      "max_output_tokens": 32000,
+      "max_tokens": 32000,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
@@ -34,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.13 / $0.4 per 1M input/output tokens",
+    "pricing_note": "$0.25 / $0.75 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
