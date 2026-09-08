@@ -4,40 +4,35 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Qwen/Qwen3.5 397B A17B language model",
+    "description": "Inclusionai/Ling 3.0 Flash Fin language model",
     "details": {
       "context_length": 262144,
-      "litellm_provider": "nebius",
-      "max_input_tokens": 262144,
-      "max_output_tokens": 262144,
-      "max_tokens": 262144,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
-      "mode": "chat",
       "object": "model",
-      "owned_by": "Qwen",
-      "parameter_count": 403397920304,
-      "pipeline_tag": "image-text-to-text"
+      "owned_by": "inclusionAI",
+      "parameter_count": 127486240128,
+      "pipeline_tag": "text-generation"
     },
-    "display_name": "Qwen/Qwen3.5 397B A17B",
+    "display_name": "Inclusionai/Ling 3.0 Flash Fin",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "offering_name": "Qwen/Qwen3.5-397B-A17B",
+    "offering_name": "inclusionAI/Ling-3.0-flash-Fin",
     "payout_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.6 / $3.6 per 1M input/output tokens",
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": true
+    "supports_tools": false
   }
 }

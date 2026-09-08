@@ -6,10 +6,11 @@
     ],
     "description": "Deepseek Ai/Deepseek V4 Flash language model",
     "details": {
-      "context_length": 32768,
-      "litellm_provider": "tensormesh",
-      "max_input_tokens": 32768,
-      "max_output_tokens": 32768,
+      "context_length": 1048576,
+      "litellm_provider": "nebius",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "max_tokens": 1048576,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"

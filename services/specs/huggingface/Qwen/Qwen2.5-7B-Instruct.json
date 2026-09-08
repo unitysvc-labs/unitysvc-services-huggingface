@@ -7,22 +7,6 @@
     "description": "Qwen/Qwen2.5 7B Instruct language model",
     "details": {
       "context_length": 32768,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "qwen2",
-        "text-generation",
-        "chat",
-        "conversational",
-        "en",
-        "arxiv:2309.00071",
-        "arxiv:2407.10671",
-        "eval-results",
-        "text-generation-inference",
-        "endpoints_compatible",
-        "deploy:sagemaker",
-        "deploy:azure"
-      ],
       "litellm_provider": "deepinfra",
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
@@ -46,15 +30,14 @@
     },
     "offering_name": "Qwen/Qwen2.5-7B-Instruct",
     "payout_price": {
-      "description": "Pricing Per 1M Tokens Input/Output",
-      "input": "0.04",
-      "output": "0.09999999999999999",
-      "reference": null,
-      "type": "one_million_tokens"
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
     },
     "pricing_note": "$0.04 / $0.1 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated"
+    "status": "ready",
+    "supports_tools": false
   }
 }
