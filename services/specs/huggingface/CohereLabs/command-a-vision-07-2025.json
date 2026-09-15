@@ -7,19 +7,6 @@
     "description": "Coherelabs/Command A Vision 07 2025 language model",
     "details": {
       "context_length": 4096,
-      "hf_tags": [
-        "transformers",
-        "safetensors",
-        "cohere2_vision",
-        "image-text-to-text",
-        "conversational",
-        "en",
-        "fr",
-        "de",
-        "es",
-        "it",
-        "pt"
-      ],
       "litellm_provider": "cohere",
       "max_input_tokens": 4096,
       "max_output_tokens": 4096,
@@ -50,7 +37,7 @@
     "pricing_note": "$1 / $2 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": false
   }
 }

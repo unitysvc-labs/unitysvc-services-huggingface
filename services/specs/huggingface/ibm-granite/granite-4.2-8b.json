@@ -7,10 +7,12 @@
     "description": "Ibm Granite/Granite 4.2 8B language model",
     "details": {
       "context_length": 131072,
+      "litellm_provider": "wandb",
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "ibm-granite",
       "parameter_count": 8791592960,
@@ -29,7 +31,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.1 / $0.15 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
