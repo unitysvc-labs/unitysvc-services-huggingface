@@ -4,40 +4,35 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Minimaxai/Minimax M2 language model",
+    "description": "Inclusionai/Ling 3.0 Flash Vl language model",
     "details": {
-      "context_length": 196608,
-      "litellm_provider": "friendliai",
-      "max_input_tokens": 196608,
-      "max_output_tokens": 196608,
-      "max_tokens": 196608,
+      "context_length": 131072,
       "metadata_sources": {
-        "context_length": "litellm",
+        "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
-      "mode": "chat",
       "object": "model",
-      "owned_by": "MiniMaxAI",
-      "parameter_count": 227410968576,
-      "pipeline_tag": "text-generation"
+      "owned_by": "inclusionAI",
+      "parameter_count": 124848295536,
+      "pipeline_tag": "image-text-to-text"
     },
-    "display_name": "Minimaxai/Minimax M2",
+    "display_name": "Inclusionai/Ling 3.0 Flash Vl",
     "env_api_key_name": "HF_TOKEN",
     "list_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "offering_name": "MiniMaxAI/MiniMax-M2",
+    "offering_name": "inclusionAI/Ling-3.0-flash-VL",
     "payout_price": {
       "description": "Free (BYOK)",
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.3 / $1.2 per 1M input/output tokens",
+    "pricing_note": null,
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": true
+    "supports_tools": false
   }
 }
