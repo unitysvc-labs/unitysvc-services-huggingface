@@ -6,9 +6,12 @@
     ],
     "description": "Deepseek Ai/Deepseek V4.1 Flash language model",
     "details": {
-      "context_length": null,
+      "context_length": 1048576,
       "litellm_provider": "together_ai",
+      "max_input_tokens": 1048576,
+      "max_tokens": 1048576,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
       "mode": "chat",
@@ -34,6 +37,6 @@
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

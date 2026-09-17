@@ -6,9 +6,9 @@
     ],
     "description": "Zai Org/Glm 4.5 Air language model",
     "details": {
-      "context_length": 128000,
+      "context_length": 131072,
       "litellm_provider": "together_ai",
-      "max_input_tokens": 128000,
+      "max_input_tokens": 131072,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
