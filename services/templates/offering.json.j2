@@ -36,7 +36,7 @@
     `image-text-to-text`, which is also HuggingFace's own task id, so the
     mapping is an identity here. It is declared BESIDE `chat`, never instead
     of it: the same endpoint still holds a plain text conversation. -#}
-{%- set is_vision = (_pt == "image-text-to-text") -%}
+{%- set is_vision = vision_enabled | default(_pt == "image-text-to-text") -%}
 {%- set _caps = ["chat", "image-text-to-text"] if is_vision else [_cap] -%}
 {#- Marketplace copy (unitysvc/unitysvc#1838): the teaser paragraph now lives
     in the required `summary` field (max 200 chars, shown in the collapsed
@@ -104,10 +104,10 @@
       "api_key": "${ customer_secrets.{{ env_api_key_name }} }",
       "rate_limits": [],
 {%- if is_chat %}
-      "routing_key": {"model": "{{ offering_name }}"},
+      "routing_key": {"model": "{{ upstream_model | default(offering_name) }}"},
       "request_transformer": {"llm_translator": "anthropic_to_openai"}
 {%- else %}
-      "routing_key": {"model": "{{ offering_name }}"}
+      "routing_key": {"model": "{{ upstream_model | default(offering_name) }}"}
 {%- endif %}
     }
   }

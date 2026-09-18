@@ -13,7 +13,8 @@
       "text-ranking": "rerank",
   } -%}
 {%- set _capability = _pt_capability.get(_pt, "chat") -%}
-{%- set _capabilities = ["chat", "image-text-to-text"] if _pt == "image-text-to-text" else [_capability] -%}
+{%- set _is_vision = vision_enabled | default(_pt == "image-text-to-text") -%}
+{%- set _capabilities = ["chat", "image-text-to-text"] if _is_vision else [_capability] -%}
 {%- set _formats = ["openai", "anthropic"] if _capability == "chat" else ["openai"] -%}
 
 {

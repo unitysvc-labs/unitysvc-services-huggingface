@@ -1,0 +1,6 @@
+{
+  "parameters": {
+    "upstream_model": "CohereLabs/aya-vision-32b:cohere",
+    "vision_enabled": false
+  }
+}
