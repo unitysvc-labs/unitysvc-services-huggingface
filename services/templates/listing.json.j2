@@ -75,7 +75,10 @@
       "formats": {{ _formats | tojson }},
       "upstream_dialect": "openai",
       "tools": {{ (supports_tools | default(false)) | tojson }},
-      "sleep": 5
+      "sleep": 5{% if example_max_tokens | default("") %},
+      "params": {
+        "max_tokens": {{ example_max_tokens | string | tojson }}
+      }{% endif %}
     }
   }
 }

@@ -4,6 +4,7 @@
       "max_output_tokens": 32768,
       "max_tokens": 32768
     },
+    "example_max_tokens": "64",
     "upstream_model": "Qwen/Qwen3-30B-A3B:deepinfra"
   }
 }
