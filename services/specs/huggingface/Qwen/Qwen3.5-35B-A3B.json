@@ -8,7 +8,7 @@
     "details": {
       "context_length": 262144,
       "litellm_provider": "wandb",
-      "max_input_tokens": 262144,
+      "max_input_tokens": 262000,
       "max_tokens": 262144,
       "metadata_sources": {
         "context_length": "openrouter",
