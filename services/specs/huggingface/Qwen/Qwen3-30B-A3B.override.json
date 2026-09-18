@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "details": {
+      "max_output_tokens": 32768,
+      "max_tokens": 32768
+    },
+    "upstream_model": "Qwen/Qwen3-30B-A3B:deepinfra"
+  }
+}

@@ -25,6 +25,15 @@ PROVIDER_DISPLAY_NAME = "Hugging Face"
 ROUTER_API_URL = "https://router.huggingface.co/v1"
 ENV_API_KEY_NAME = "HF_TOKEN"
 
+# These models are listed by the router but cannot be exercised by the seller's
+# production credential: their only live provider requires provider-specific
+# pay-as-you-go enablement. Keep them out of generated specs until Hugging Face
+# exposes a route that the production activation tests can actually call.
+EXCLUDED_MODEL_IDS = {
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+}
+
 SCRIPT_DIR = Path(__file__).parent
 SPECS_DIR = SCRIPT_DIR.parent / "specs"
 
@@ -107,6 +116,9 @@ class ModelSource:
         for i, model_info in enumerate(models, 1):
             model_id = model_info.get("id", "")
             if not model_id:
+                continue
+            if model_id in EXCLUDED_MODEL_IDS:
+                print(f"[{i}/{len(models)}] {model_id}  SKIPPED (unusable provider route)")
                 continue
             print(f"[{i}/{len(models)}] {model_id}", end="")
 
