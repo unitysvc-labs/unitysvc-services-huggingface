@@ -9,6 +9,7 @@
       "context_length": 131072,
       "litellm_provider": "together_ai",
       "max_input_tokens": 131072,
+      "max_tokens": 131072,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
@@ -32,10 +33,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.2 / $1.1 per 1M input/output tokens",
+    "pricing_note": "$0.13 / $0.85 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": true
+    "supports_tools": false
   }
 }

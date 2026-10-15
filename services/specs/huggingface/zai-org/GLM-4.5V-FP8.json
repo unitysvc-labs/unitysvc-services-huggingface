@@ -28,7 +28,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
