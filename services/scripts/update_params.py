@@ -7,7 +7,6 @@ Yields model dictionaries that are rendered using Jinja2 templates.
 Usage: python scripts/update_services.py
 """
 
-import json
 import os
 import sys
 from decimal import Decimal
@@ -38,23 +37,15 @@ SCRIPT_DIR = Path(__file__).parent
 SPECS_DIR = SCRIPT_DIR.parent / "specs"
 
 
-def committed_parameters(service_name: str) -> dict:
-    """The parameters already committed for ``service_name`` ({} if it is new).
+def _usd_per_million(value: float) -> Decimal:
+    """A router price (USD per 1M tokens) as an exact Decimal.
 
-    unitysvc-sellers >= 0.3.1 keeps a committed value when the iterator yields
-    ``None`` for it: from inside the writer, a lookup that failed and a lookup
-    that legitimately found nothing are the same event. That is right for
-    enrichment, but it means a price we FAILED to derive gets re-shipped as
-    though it were this run's answer. Reading the previous value here is what
-    separates the two cases — see the price guard in ``_build_template_vars``.
+    The router computes these in binary float and serves the artefacts
+    (``0.12000000000000001``, ``0.8799999999999999``). No provider prices
+    below a millionth of a dollar per 1M tokens, so rounding to 6 places
+    recovers the published rate.
     """
-    path = SPECS_DIR / f"{service_name}.json"
-    if not path.is_file():
-        return {}
-    try:
-        return (json.loads(path.read_text()) or {}).get("parameters") or {}
-    except (OSError, ValueError):
-        return {}
+    return Decimal(str(value)).quantize(Decimal("0.000001"))
 
 
 def _hf_canonical_id(raw: str) -> str:
@@ -75,14 +66,14 @@ class ModelSource:
 
     def iter_models(self) -> Iterator[dict]:
         """Yield model dictionaries for template rendering."""
-        # Fetch LiteLLM data once
+        # Fetch LiteLLM data once. It supplies token limits and the tool-support
+        # gate only — never prices (see _router_pricing_note). An empty fetch
+        # would flip every model's supports_tools to False, so it is fatal.
         self.litellm_data = self.data_fetcher.fetch_litellm_model_data()
         if not self.litellm_data:
             print(
-                "Error: LiteLLM model data came back empty. Every price lookup "
-                "would fail, and unitysvc-sellers >= 0.3.1 would preserve the "
-                "committed prices instead — re-shipping stale rate cards as "
-                "though they were current."
+                "Error: LiteLLM model data came back empty; refusing to drop "
+                "every model's tool-support flag and token limits."
             )
             sys.exit(1)
 
@@ -221,37 +212,7 @@ class ModelSource:
         # the provider's reference rates go into pricing_note, which the template
         # renders as the closing paragraph of the offering description.
         pricing = {"type": "constant", "price": "0", "description": "Free (BYOK)"}
-        pricing_note = None
-        if model_data and "input_cost_per_token" in model_data and "output_cost_per_token" in model_data:
-            # Per-token costs arrive as JSON floats (e.g. 5e-08). Scaling them
-            # in binary float gives 0.049999999999999996 rather than 0.05, and
-            # that string was written straight into pricing_note. Decimal(str(x))
-            # recovers the intended decimal exactly — str() gives the shortest
-            # round-tripping repr — and the arithmetic stays in Decimal.
-            input_price = Decimal(str(model_data["input_cost_per_token"])) * 1_000_000
-            output_price = Decimal(str(model_data["output_cost_per_token"])) * 1_000_000
-            pricing_note = (
-                f"${self._format_price(input_price)} / "
-                f"${self._format_price(output_price)} "
-                f"per 1M input/output tokens"
-            )
-
-        # `pricing_note` is the only field derived from the upstream rate card
-        # here (the price itself is the constant "Free (BYOK)"). It is nullable,
-        # it is a template param rather than a schema field, and so a failed
-        # lookup is rejected by nothing downstream. Since unitysvc-sellers 0.3.1
-        # preserves committed values against a yielded None, that failure now
-        # SHIPS THE PREVIOUS RATE CARD as though it were this run's answer. A
-        # model that has never appeared in the LiteLLM data has no committed
-        # value and nothing to silently ship; a model that had one and can no
-        # longer derive it is the regression, and it is fatal.
-        if pricing_note is None and committed_parameters(service_name).get("pricing_note") is not None:
-            print(
-                f"  FATAL: {model_id} has a committed pricing_note but no "
-                "input_cost_per_token/output_cost_per_token in this run's "
-                "LiteLLM data. Refusing to re-ship the previous rate card."
-            )
-            sys.exit(1)
+        pricing_note = self._router_pricing_note(model_info)
 
         return {
             # The service's name IS its path under specs/ (flat layout, #1263).
@@ -288,6 +249,53 @@ class ModelSource:
             return "embedding"
         # vision_language_model → llm (vision is a capability, not a service type)
         return "llm"
+
+    def _router_pricing_note(self, model_info: dict) -> str:
+        """Reference rates for ``model_info``, taken ONLY from Hugging Face.
+
+        The router's ``/v1/models`` entry lists each inference provider serving
+        the model with its own ``pricing`` ({"input", "output"} in USD per 1M
+        tokens, or null when the provider publishes none). Hugging Face bills
+        the provider's rate with no markup, and by default routes each request
+        to the fastest live provider — so the customer pays one of these rates,
+        and which one can change per request. A range is the honest note.
+
+        Rates never come from a third-party list (LiteLLM): its fuzzy match once
+        priced every CohereLabs model at the legacy Cohere ``command`` rate.
+
+        Returns "" — not None — when Hugging Face publishes no price. A yielded
+        None makes unitysvc-sellers keep the committed value, which would
+        re-ship a rate card this run could not confirm; "" clears it, and the
+        templates render nothing for an empty note.
+        """
+        rates = []
+        for provider in model_info.get("providers") or []:
+            if provider.get("status") != "live":
+                continue
+            price = provider.get("pricing")
+            if not isinstance(price, dict):
+                continue
+            if price.get("input") is None or price.get("output") is None:
+                continue
+            rates.append(
+                (_usd_per_million(price["input"]), _usd_per_million(price["output"]))
+            )
+        if not rates:
+            return ""
+
+        def span(values: list[Decimal]) -> str:
+            lo, hi = min(values), max(values)
+            if lo == hi:
+                return f"${self._format_price(lo)}"
+            return f"${self._format_price(lo)}–${self._format_price(hi)}"
+
+        note = (
+            f"{span([r[0] for r in rates])} / {span([r[1] for r in rates])} "
+            "per 1M input/output tokens"
+        )
+        if len(set(rates)) > 1:
+            note += " depending on the provider Hugging Face routes the request to"
+        return note
 
     def _format_price(self, price: Decimal) -> str:
         """Render a Decimal price as a plain string.
