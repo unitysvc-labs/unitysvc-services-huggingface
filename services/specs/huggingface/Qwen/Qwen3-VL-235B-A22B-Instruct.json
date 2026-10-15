@@ -7,7 +7,7 @@
     "description": "Qwen/Qwen3 Vl 235B A22B Instruct language model",
     "details": {
       "context_length": 262144,
-      "litellm_provider": "deepinfra",
+      "litellm_provider": "inferenceapis",
       "max_input_tokens": 262144,
       "max_tokens": 262144,
       "metadata_sources": {

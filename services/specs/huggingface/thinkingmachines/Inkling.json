@@ -6,7 +6,7 @@
     ],
     "description": "Thinkingmachines/Inkling language model",
     "details": {
-      "context_length": 1048576,
+      "context_length": 524288,
       "litellm_provider": "together_ai",
       "max_input_tokens": 524288,
       "max_tokens": 524288,
@@ -33,7 +33,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$1 / $4.05 per 1M input/output tokens",
+    "pricing_note": "$0.95–$1 / $4.05 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

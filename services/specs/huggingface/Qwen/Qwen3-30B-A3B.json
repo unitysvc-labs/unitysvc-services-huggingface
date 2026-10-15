@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3 30B A3B language model",
     "details": {
-      "context_length": 81920,
+      "context_length": 262144,
       "litellm_provider": "deepinfra",
       "max_input_tokens": 40960,
       "max_output_tokens": 40960,

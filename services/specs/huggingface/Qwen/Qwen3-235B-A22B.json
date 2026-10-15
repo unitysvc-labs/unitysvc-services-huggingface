@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3 235B A22B language model",
     "details": {
-      "context_length": 131072,
+      "context_length": 128000,
       "litellm_provider": "deepinfra",
       "max_input_tokens": 40960,
       "max_output_tokens": 40960,
@@ -34,7 +34,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.18 / $0.54 per 1M input/output tokens",
+    "pricing_note": "$0.2 / $0.6 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",

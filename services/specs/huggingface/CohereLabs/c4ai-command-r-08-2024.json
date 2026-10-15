@@ -6,16 +6,16 @@
     ],
     "description": "Coherelabs/C4Ai Command R 08 2024 language model",
     "details": {
-      "context_length": 4096,
-      "litellm_provider": "cohere",
-      "max_input_tokens": 4096,
+      "context_length": 128000,
+      "litellm_provider": "cohere_chat",
+      "max_input_tokens": 128000,
       "max_output_tokens": 4096,
       "max_tokens": 4096,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
-      "mode": "completion",
+      "mode": "chat",
       "object": "model",
       "owned_by": "CohereLabs",
       "parameter_count": 32296476672,
@@ -34,10 +34,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$1 / $2 per 1M input/output tokens",
+    "pricing_note": "",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }
