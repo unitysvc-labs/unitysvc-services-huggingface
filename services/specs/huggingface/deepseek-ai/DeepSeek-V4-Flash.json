@@ -7,9 +7,8 @@
     "description": "Deepseek Ai/Deepseek V4 Flash language model",
     "details": {
       "context_length": 1048576,
-      "litellm_provider": "nebius",
+      "litellm_provider": "inferenceapis",
       "max_input_tokens": 1048576,
-      "max_output_tokens": 1048576,
       "max_tokens": 1048576,
       "metadata_sources": {
         "context_length": "litellm",
@@ -34,10 +33,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.14 / $0.28 per 1M input/output tokens",
+    "pricing_note": "$0.09 / $0.18 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": true
   }
 }
