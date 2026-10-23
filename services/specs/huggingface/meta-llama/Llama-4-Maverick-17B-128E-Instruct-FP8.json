@@ -6,7 +6,7 @@
     ],
     "description": "Meta Llama/Llama 4 Maverick 17B 128E Instruct Fp8 language model",
     "details": {
-      "context_length": 1048576,
+      "context_length": 524288,
       "litellm_provider": "deepinfra",
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,

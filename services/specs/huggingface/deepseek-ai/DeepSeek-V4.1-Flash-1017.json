@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Deepseek Ai/Deepseek V4.1 Flash 1017 language model",
+    "details": {
+      "context_length": 1048576,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 131072,
+      "max_tokens": 131072,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "deepseek-ai",
+      "parameter_count": 557171343360,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Deepseek Ai/Deepseek V4.1 Flash 1017",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.3 / $1.2 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": true
+  }
+}

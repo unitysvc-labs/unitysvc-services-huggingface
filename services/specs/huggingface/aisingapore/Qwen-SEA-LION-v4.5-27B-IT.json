@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Aisingapore/Qwen Sea Lion V4.5 27B It language model",
+    "details": {
+      "context_length": null,
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "aisingapore",
+      "parameter_count": 27781427952,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Aisingapore/Qwen Sea Lion V4.5 27B It",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.2 / $0.4 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}
