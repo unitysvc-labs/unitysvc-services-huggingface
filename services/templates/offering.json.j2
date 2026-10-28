@@ -102,7 +102,6 @@
       "access_method": "http",
       "base_url": "{{ api_base_url | replace('/v1', '') }}",
       "api_key": "${ customer_secrets.{{ env_api_key_name }} }",
-      "rate_limits": [],
 {%- if is_chat %}
       "routing_key": {"model": "{{ upstream_model | default(offering_name) }}"},
       "request_transformer": {"llm_translator": "anthropic_to_openai"}
