@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Minimaxai/Minimax M3.1 Flash language model",
+    "details": {
+      "context_length": 1048576,
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "MiniMaxAI",
+      "parameter_count": 206561083392,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Minimaxai/Minimax M3.1 Flash",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "MiniMaxAI/MiniMax-M3.1-Flash",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.15 / $0.6 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}

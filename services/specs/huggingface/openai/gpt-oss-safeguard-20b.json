@@ -10,7 +10,6 @@
       "litellm_provider": "groq",
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
-      "max_tokens": 65536,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
