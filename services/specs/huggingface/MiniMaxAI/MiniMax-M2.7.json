@@ -9,7 +9,7 @@
       "context_length": 196608,
       "litellm_provider": "deepinfra",
       "max_input_tokens": 196608,
-      "max_tokens": 196608,
+      "max_output_tokens": 196608,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
