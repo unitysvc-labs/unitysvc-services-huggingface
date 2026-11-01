@@ -10,7 +10,6 @@
       "litellm_provider": "gmi",
       "max_input_tokens": 202752,
       "max_output_tokens": 16384,
-      "max_tokens": 16384,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
@@ -37,7 +36,7 @@
     "pricing_note": "",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": false
   }
 }

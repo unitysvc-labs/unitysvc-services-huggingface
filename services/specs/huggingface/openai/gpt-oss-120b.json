@@ -10,7 +10,6 @@
       "litellm_provider": "cloudflare",
       "max_input_tokens": 128000,
       "max_output_tokens": 128000,
-      "max_tokens": 128000,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
@@ -34,7 +33,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.037–$0.35 / $0.17–$0.75 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
+    "pricing_note": "$0.05–$0.35 / $0.25–$0.75 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
