@@ -10,7 +10,6 @@
       "litellm_provider": "baseten",
       "max_input_tokens": 200000,
       "max_output_tokens": 200000,
-      "max_tokens": 200000,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"

@@ -10,7 +10,6 @@
       "litellm_provider": "publicai",
       "max_input_tokens": 32768,
       "max_output_tokens": 4096,
-      "max_tokens": 4096,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
@@ -37,7 +36,7 @@
     "pricing_note": "$0.25 / $0.5 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": true
   }
 }
