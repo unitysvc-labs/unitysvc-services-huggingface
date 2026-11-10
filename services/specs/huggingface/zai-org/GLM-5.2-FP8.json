@@ -6,10 +6,14 @@
     ],
     "description": "Zai Org/Glm 5.2 Fp8 language model",
     "details": {
-      "context_length": null,
+      "context_length": 1048576,
+      "litellm_provider": "gmi",
+      "max_input_tokens": 1048576,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "zai-org",
       "parameter_count": 751226191872,
