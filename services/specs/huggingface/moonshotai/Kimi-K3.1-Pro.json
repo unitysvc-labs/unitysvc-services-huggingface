@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Moonshotai/Kimi K3.1 Pro language model",
+    "details": {
+      "context_length": 1048576,
+      "litellm_provider": "nebius",
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "moonshotai",
+      "parameter_count": 2722740830208,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Moonshotai/Kimi K3.1 Pro",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "moonshotai/Kimi-K3.1-Pro",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$2 / $10 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": true
+  }
+}

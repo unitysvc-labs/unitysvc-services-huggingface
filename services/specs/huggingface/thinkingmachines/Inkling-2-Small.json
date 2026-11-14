@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Thinkingmachines/Inkling 2 Small language model",
+    "details": {
+      "context_length": 1048576,
+      "litellm_provider": "together_ai",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "thinkingmachines",
+      "parameter_count": 489223618560,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Thinkingmachines/Inkling 2 Small",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "thinkingmachines/Inkling-2-Small",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.3 / $1 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": true
+  }
+}

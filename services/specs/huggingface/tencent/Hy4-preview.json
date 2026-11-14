@@ -7,10 +7,14 @@
     "description": "Tencent/Hy4 Preview language model",
     "details": {
       "context_length": 1048576,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 131072,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "tencent",
       "parameter_count": 779930197312,
@@ -33,6 +37,6 @@
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }
