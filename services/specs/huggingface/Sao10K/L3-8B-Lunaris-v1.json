@@ -10,7 +10,6 @@
       "litellm_provider": "deepinfra",
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
-      "max_tokens": 8192,
       "metadata_sources": {
         "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
@@ -37,7 +36,7 @@
     "pricing_note": "$0.04 / $0.05 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": false
   }
 }

@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Rekaai/Reka Edge 2603 language model",
+    "details": {
+      "context_length": 16384,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "RekaAI",
+      "parameter_count": 7128509568,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Rekaai/Reka Edge 2603",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "RekaAI/reka-edge-2603",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.1 / $0.1 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}

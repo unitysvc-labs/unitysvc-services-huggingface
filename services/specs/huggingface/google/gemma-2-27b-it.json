@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Google/Gemma 2 27B It language model",
+    "details": {
+      "context_length": 8192,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "google",
+      "parameter_count": 27227128320,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Google/Gemma 2 27B It",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "google/gemma-2-27b-it",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.65 / $0.65 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}

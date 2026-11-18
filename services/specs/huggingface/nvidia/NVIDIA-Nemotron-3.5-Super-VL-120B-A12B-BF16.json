@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Nvidia/Nvidia Nemotron 3.5 Super Vl 120B A12B Bf16 language model",
+    "details": {
+      "context_length": 32768,
+      "litellm_provider": "gmi",
+      "max_input_tokens": 32768,
+      "metadata_sources": {
+        "context_length": "litellm",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "nvidia",
+      "parameter_count": 124453374976,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Nvidia/Nvidia Nemotron 3.5 Super Vl 120B A12B Bf16",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.09–$0.3 / $0.3–$0.9 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}

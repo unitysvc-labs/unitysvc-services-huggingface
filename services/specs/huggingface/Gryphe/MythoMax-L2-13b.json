@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Gryphe/Mythomax L2 13B language model",
+    "details": {
+      "context_length": 8192,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 4096,
+      "max_output_tokens": 4096,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "Gryphe",
+      "parameter_count": null,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Gryphe/Mythomax L2 13B",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "Gryphe/MythoMax-L2-13b",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.08–$0.3 / $0.11–$0.5 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": true
+  }
+}

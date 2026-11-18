@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Dphn/Dolphin Mistral 24B Venice Edition language model",
+    "details": {
+      "context_length": null,
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "dphn",
+      "parameter_count": 24011361280,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Dphn/Dolphin Mistral 24B Venice Edition",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "dphn/Dolphin-Mistral-24B-Venice-Edition",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.2 / $0.9 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}

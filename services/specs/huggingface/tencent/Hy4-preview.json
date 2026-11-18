@@ -7,10 +7,14 @@
     "description": "Tencent/Hy4 Preview language model",
     "details": {
       "context_length": 1048576,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 131072,
       "metadata_sources": {
         "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "tencent",
       "parameter_count": 779930197312,
@@ -29,10 +33,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.834 / $2.501 per 1M input/output tokens",
+    "pricing_note": "$0.834–$1.0425 / $2.501–$3.12625 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }
