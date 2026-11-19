@@ -6,10 +6,15 @@
     ],
     "description": "Coherelabs/Command A Translate 08 2025 language model",
     "details": {
-      "context_length": 4096,
+      "context_length": 8992,
+      "litellm_provider": "cohere_chat",
+      "max_input_tokens": 8992,
+      "max_output_tokens": 8000,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "CohereLabs",
       "parameter_count": 111057580032,
@@ -32,6 +37,6 @@
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

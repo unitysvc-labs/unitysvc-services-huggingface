@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Meta Llama/Llama 3.2 3B Instruct language model",
+    "details": {
+      "context_length": 131072,
+      "litellm_provider": "deepinfra",
+      "max_input_tokens": 131072,
+      "max_output_tokens": 131072,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "mode": "chat",
+      "object": "model",
+      "owned_by": "meta-llama",
+      "parameter_count": 3212749824,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Meta Llama/Llama 3.2 3B Instruct",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "meta-llama/Llama-3.2-3B-Instruct",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.05–$0.0509 / $0.33–$0.335 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": true
+  }
+}

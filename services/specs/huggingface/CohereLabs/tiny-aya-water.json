@@ -6,10 +6,15 @@
     ],
     "description": "Coherelabs/Tiny Aya Water language model",
     "details": {
-      "context_length": null,
+      "context_length": 8192,
+      "litellm_provider": "cohere_chat",
+      "max_input_tokens": 8192,
+      "max_output_tokens": 8000,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "CohereLabs",
       "parameter_count": 3349227520,
@@ -32,6 +37,6 @@
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

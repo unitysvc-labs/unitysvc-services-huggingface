@@ -6,10 +6,14 @@
     ],
     "description": "Deepseek Ai/Deepseek V3.2 Exp language model",
     "details": {
-      "context_length": null,
+      "context_length": 163840,
+      "litellm_provider": "gmi",
+      "max_input_tokens": 163840,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "deepseek-ai",
       "parameter_count": 681408069632,
@@ -28,10 +32,10 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": null,
+    "pricing_note": "$0.27 / $0.41 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": false
   }
 }

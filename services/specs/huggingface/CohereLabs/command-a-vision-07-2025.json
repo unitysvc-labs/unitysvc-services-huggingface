@@ -6,10 +6,15 @@
     ],
     "description": "Coherelabs/Command A Vision 07 2025 language model",
     "details": {
-      "context_length": 4096,
+      "context_length": 128000,
+      "litellm_provider": "cohere_chat",
+      "max_input_tokens": 128000,
+      "max_output_tokens": 8000,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "CohereLabs",
       "parameter_count": 111867525360,
@@ -31,7 +36,7 @@
     "pricing_note": "",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "deprecated",
+    "status": "ready",
     "supports_tools": false
   }
 }

@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Tencent/Hy4 Flash language model",
+    "details": {
+      "context_length": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter",
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "tencent",
+      "parameter_count": 220241986961,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "display_name": "Tencent/Hy4 Flash",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "tencent/Hy4-flash",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$0.035 / $0.1405 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}

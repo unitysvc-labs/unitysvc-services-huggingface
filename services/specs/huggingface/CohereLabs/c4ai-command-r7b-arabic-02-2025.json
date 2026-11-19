@@ -6,10 +6,14 @@
     ],
     "description": "Coherelabs/C4Ai Command R7B Arabic 02 2025 language model",
     "details": {
-      "context_length": 4096,
+      "context_length": 128000,
+      "litellm_provider": "cohere_chat",
+      "max_input_tokens": 128000,
       "metadata_sources": {
+        "context_length": "litellm",
         "parameter_count": "huggingface_safetensors"
       },
+      "mode": "chat",
       "object": "model",
       "owned_by": "CohereLabs",
       "parameter_count": 8028033024,
@@ -32,6 +36,6 @@
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
-    "supports_tools": false
+    "supports_tools": true
   }
 }

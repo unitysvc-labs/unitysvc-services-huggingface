@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3.8 27B language model",
     "details": {
-      "context_length": 1048575,
+      "context_length": 1024000,
       "litellm_provider": "nebius",
       "max_input_tokens": 262144,
       "metadata_sources": {
@@ -32,7 +32,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.2–$0.99 / $1.49–$3.19 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
+    "pricing_note": "$0.04–$0.99 / $1.35–$3.2 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
