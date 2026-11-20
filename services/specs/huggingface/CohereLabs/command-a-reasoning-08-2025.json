@@ -6,9 +6,9 @@
     ],
     "description": "Coherelabs/Command A Reasoning 08 2025 language model",
     "details": {
-      "context_length": 288768,
+      "context_length": 256000,
       "litellm_provider": "cohere_chat",
-      "max_input_tokens": 288768,
+      "max_input_tokens": 256000,
       "max_output_tokens": 32000,
       "metadata_sources": {
         "context_length": "litellm",
