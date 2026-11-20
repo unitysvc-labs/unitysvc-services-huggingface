@@ -7,7 +7,7 @@
     "description": "Minimaxai/Minimax M3.1 Flash language model",
     "details": {
       "context_length": 1048576,
-      "litellm_provider": "together_ai",
+      "litellm_provider": "inferenceapis",
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "metadata_sources": {
