@@ -6,8 +6,9 @@
     ],
     "description": "Radixark/Daisyrose 27B language model",
     "details": {
-      "context_length": null,
+      "context_length": 262144,
       "metadata_sources": {
+        "context_length": "openrouter",
         "parameter_count": "huggingface_safetensors"
       },
       "object": "model",
@@ -28,7 +29,7 @@
       "price": "0",
       "type": "constant"
     },
-    "pricing_note": "$0.2 / $2.5 per 1M input/output tokens",
+    "pricing_note": "$0.15 / $1.875 per 1M input/output tokens",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
     "status": "ready",
