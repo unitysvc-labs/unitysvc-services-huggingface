@@ -36,7 +36,7 @@
     "pricing_note": "$0.5–$0.7 / $2.15–$2.5 per 1M input/output tokens depending on the provider Hugging Face routes the request to",
     "provider_display_name": "Hugging Face",
     "service_type": "llm",
-    "status": "ready",
+    "status": "deprecated",
     "supports_tools": true
   }
 }
