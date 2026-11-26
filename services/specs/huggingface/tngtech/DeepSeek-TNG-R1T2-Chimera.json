@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "api_base_url": "https://router.huggingface.co/v1",
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Tngtech/Deepseek Tng R1T2 Chimera language model",
+    "details": {
+      "context_length": null,
+      "metadata_sources": {
+        "parameter_count": "huggingface_safetensors"
+      },
+      "object": "model",
+      "owned_by": "tngtech",
+      "parameter_count": 680571043840,
+      "pipeline_tag": "text-generation"
+    },
+    "display_name": "Tngtech/Deepseek Tng R1T2 Chimera",
+    "env_api_key_name": "HF_TOKEN",
+    "list_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "offering_name": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+    "payout_price": {
+      "description": "Free (BYOK)",
+      "price": "0",
+      "type": "constant"
+    },
+    "pricing_note": "$1 / $2.625 per 1M input/output tokens",
+    "provider_display_name": "Hugging Face",
+    "service_type": "llm",
+    "status": "ready",
+    "supports_tools": false
+  }
+}
