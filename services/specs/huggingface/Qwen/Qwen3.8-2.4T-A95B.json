@@ -6,7 +6,7 @@
     ],
     "description": "Qwen/Qwen3.8 2.4T A95B language model",
     "details": {
-      "context_length": 1048576,
+      "context_length": 1000000,
       "litellm_provider": "together_ai",
       "max_input_tokens": 1010000,
       "max_output_tokens": 1010000,
